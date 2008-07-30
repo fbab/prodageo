@@ -1,0 +1,85 @@
+[Wed Jul 30 00:38:00 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 00:43:37 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 00:43:45 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 00:44:12 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 00:54:51 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 00:56:07 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 01:16:28 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 01:23:43 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 01:33:56 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 01:49:05 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 01:51:23 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 01:51:57 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 01:52:17 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 02:32:29 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 02:33:15 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 02:35:28 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 02:43:15 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 02:43:29 2008] [error] (2)No such file or directory: could not open transfer log file /home/fbab/symfony/log/access.log.
+[Wed Jul 30 02:51:16 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 02:56:20 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 12:34:18 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 12:34:18 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/
+[Wed Jul 30 12:34:18 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/
+[Wed Jul 30 12:34:18 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/
+[Wed Jul 30 12:34:18 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 12:34:18 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 12:34:57 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/web
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 12:46:21 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:16 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:31 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:31 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:31 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:31 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:31 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:31 2008] [error] [client 192.168.1.11] File does not exist: /usr/share/php/symfony/data, referer: http://cllaj.intra/frontend_dev.php/post
+[Wed Jul 30 13:16:31 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:37 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:38 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:43 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:43 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:16:43 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:13 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:14 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:14 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:14 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:31 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:31 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:38 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:41 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:41 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:41 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 13:57:41 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 14:01:30 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico
+[Wed Jul 30 14:15:12 2008] [error] [client 192.168.1.11] File does not exist: /home/fbab/symfony/scratch/web/favicon.ico

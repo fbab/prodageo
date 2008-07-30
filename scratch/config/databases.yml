@@ -1,0 +1,6 @@
+all:
+  propel:
+    class:          sfPropelDatabase
+    param:          
+      phptype:      mysql
+      dsn:          'mysql://root@localhost/scratch'
