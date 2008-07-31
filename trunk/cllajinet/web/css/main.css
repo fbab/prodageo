@@ -1,0 +1,21 @@
+
+table.tableauDossier
+{
+   table-layout: fixed;
+   width: 3000px;
+   border-collapse: separate;
+}
+
+.tableauDossier th
+{
+   background-color: gray;
+   color: white;
+}
+
+.tableauDossier td
+{
+   background-color: silver;
+   color: black;
+}
+
+

@@ -1,0 +1,123 @@
+propel:
+  personne:
+    id:                              ~
+    dossier_id:                      ~
+    nom:                             varchar(255)
+    prenom:                          varchar(255)
+    num_telephone:                   varchar(255)
+    sexe:                            varchar(255)
+    date_naissance:                  date
+    tranche_age:                     integer
+    statut:                          varchar(255)
+    enfants:                         varchar(255)
+    nb_enfants:                      integer
+    lieu_naissance:                  varchar(255)
+    nationalite:                     varchar(255)
+    adresse_actuelle:                varchar(255)
+    ville_actuelle:                 varchar(255)
+    type_logement_actuel:            varchar(255)
+    categorie_logement_actuel:       varchar(255)
+    origine_demande:                 varchar(255)
+    type_structure:                  varchar(255)
+    referent:                        varchar(255)
+    loyer_actuel:                    float
+    profession_actuelle:             varchar(255)
+    employeur_actuel:                varchar(255)
+    ville_employeur_actuel:          varchar(255)
+    dpt_employeur_actuel:            integer
+    date_embauche:                   date
+    type_contrat:                    varchar(255)
+    tranche_salaire:                 integer
+    salaire_exact:                   float
+    dettes_credits:                  float
+    motif_recherche_logement:        longvarchar
+    observations:                    longvarchar 
+
+  dossier:
+    id:                              ~
+    date_ouverture_dossier:          date
+    date_cloture_dossier:            date
+    type_dossier:                    varchar(255)
+
+  finDossier:
+    id:                              ~
+    dossier_id:                      ~
+    type_parc:                       varchar(255)
+    type_proprietaire_bailleur:      varchar(255)
+    nom_proprietaire_bailleur:       varchar(255)
+    type_condition_acces:            varchar(255)
+    nom_condition_acces:             varchar(255)
+    ville_logement:                  varchar(255)
+    departement_logement:            integer
+    type_logement:                   varchar(255)
+    superficie_logement:             integer
+    loyer:                           float
+    edf_gdf:                         float
+    chauffage:                       float
+    difficultes_rencontrees:         longvarchar
+    categorie_classement:            varchar(255)  
+
+  nationalite:
+    id:                              ~
+    listnationalite:                 varchar(255)
+
+  ville:
+    id:                              ~
+    listville:                       varchar(255)
+
+  categorielogementactuel:
+    id:                              ~
+    listcategorielogementactuel:     varchar(255)
+
+  typeStructure:
+    id:                              ~
+    listtypestructure:               varchar(255)
+
+  typeContrat:
+    id:                              ~
+    listtypecontrat:                 varchar(255)
+
+  trancheSalaire:
+    id:                              ~
+    listtranchesalaire:              varchar(255)
+
+  typeParc:
+    id:                              ~    
+    listtypeparc:                    varchar(255)
+  
+  typeProprietaireHLM:
+    id:                              ~
+    listtypeproprietairehlm:         varchar(255)
+
+  typeProprietairePrive:
+    id:                              ~
+    listtypeproprietaireprive:       varchar(255)
+
+  typeProprietaireHebTemp:
+    id:                              ~
+    listtypeproprietairehebtemp:     varchar(255)
+
+  nomBailleursHLM:
+    id:                              ~
+    listnombailleurshlm:             varchar(255)
+
+  nomFJT:
+    id:                              ~
+    listnomfjt:                      varchar(255)
+
+  nomCHRS:
+    id:                              ~
+    listnomchrs:                     varchar(255)
+
+  conditionsAcces:
+    id:                              ~
+    listconditionsacces:             varchar(255)
+
+  nomLocapass:
+    id:                              ~
+    listnomlocapass:                 varchar(255)
+
+  typeLogement:
+    id:                              ~
+    listtypelogement:                varchar(255)          
+    
