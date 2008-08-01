@@ -103,6 +103,7 @@
         <td>
           <?php echo $form['loyer']->renderError() ?>
           <?php echo $form['loyer'] ?>
+          <label>euros</label>
         </td>
       </tr>
       <tr>
@@ -110,6 +111,7 @@
         <td>
           <?php echo $form['edf_gdf']->renderError() ?>
           <?php echo $form['edf_gdf'] ?>
+          <label>euros</label>
         </td>
       </tr>
       <tr>
@@ -117,6 +119,7 @@
         <td>
           <?php echo $form['chauffage']->renderError() ?>
           <?php echo $form['chauffage'] ?>
+          <label>euros</label>
         </td>
       </tr>
       <tr>
