@@ -1,6 +1,8 @@
 <a href="<?php echo url_for('dossier/create/index') ?>">Nouveau Dossier</a><br/><br/><br/><br/>
 
-<?php require ('/var/www/cllajinet/lib/model/Personne.php');
+<?php 
+// require ('/var/www/cllajinet/lib/model/Personne.php');
+require (sfConfig::get('sf_root_dir').'/lib/model/Personne.php');
      $personne= new Personne();   
 ?>
 
