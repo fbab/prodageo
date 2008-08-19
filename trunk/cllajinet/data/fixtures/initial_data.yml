@@ -1,0 +1,395 @@
+Nomfjt:
+  Nomfjt_1:
+    listnomfjt: 'Marcel Callo'
+  Nomfjt_2:
+    listnomfjt: 'La Clairière'
+  Nomfjt_3:
+    listnomfjt: 'Edouard Lefebvre'
+Dossier:
+  Dossier_1:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-18'
+    date_cloture_dossier: '2008-08-18'
+    type_dossier: '1'
+  Dossier_2:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-18'
+    date_cloture_dossier: '2008-06-13'
+    type_dossier: '1'
+  Dossier_3:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-18'
+    date_cloture_dossier: '2007-03-03'
+    type_dossier: '1'
+Typestructure:
+  Typestructure_1:
+    listtypestructure: 'Mission locale'
+  Typestructure_2:
+    listtypestructure: Mairie
+  Typestructure_3:
+    listtypestructure: 'Structure d''hébergement'
+  Typestructure_4:
+    listtypestructure: 'Travailleurs sociaux'
+  Typestructure_5:
+    listtypestructure: Connaissances
+  Typestructure_6:
+    listtypestructure: Autre
+Nomchrs:
+  Nomchrs_1:
+    listnomchrs: 'L''Oustal'
+  Nomchrs_2:
+    listnomchrs: 'La Marcotte'
+  Nomchrs_3:
+    listnomchrs: 'Le Bel-air'
+  Nomchrs_4:
+    listnomchrs: 'Le Béthel'
+  Nomchrs_5:
+    listnomchrs: 'Saint Yves'
+  Nomchrs_6:
+    listnomchrs: Stuart-Mill
+Tranchesalaire:
+  Tranchesalaire_1:
+    listtranchesalaire: 'moins de 457'
+  Tranchesalaire_2:
+    listtranchesalaire: 'entre 457 et 761'
+  Tranchesalaire_3:
+    listtranchesalaire: 'entre 762 et 914'
+  Tranchesalaire_4:
+    listtranchesalaire: 'entre 915 et 1067'
+  Tranchesalaire_5:
+    listtranchesalaire: 'plus de 1067'
+  Tranchesalaire_6:
+    listtranchesalaire: sans
+Nombailleurshlm:
+  Nombailleurshlm_1:
+    listnombailleurshlm: opievoy
+  Nombailleurshlm_2:
+    listnombailleurshlm: 3F
+  Nombailleurshlm_3:
+    listnombailleurshlm: 'Versailles habitat'
+  Nombailleurshlm_4:
+    listnombailleurshlm: 'France habitation'
+  Nombailleurshlm_5:
+    listnombailleurshlm: 'OSICA habitat'
+Typecontrat:
+  Typecontrat_1:
+    listtypecontrat: 'CDI C'
+  Typecontrat_2:
+    listtypecontrat: 'CDI P'
+  Typecontrat_3:
+    listtypecontrat: 'CDD / interim'
+  Typecontrat_4:
+    listtypecontrat: 'Formation / stage'
+  Typecontrat_5:
+    listtypecontrat: 'Assedic / sans'
+  Typecontrat_6:
+    listtypecontrat: 'Etudiant / lycéen'
+Findossier:
+  Findossier_1:
+    dossier_id: Dossier_1
+    type_parc: '0'
+    type_proprietaire_bailleur: '1'
+    nom_proprietaire_bailleur: '1'
+    type_condition_acces: '1'
+    nom_condition_acces: ''
+    ville_logement: '3'
+    type_logement: '2'
+    difficultes_rencontrees: ''
+    categorie_classement: '0'
+  Findossier_2:
+    dossier_id: Dossier_2
+    type_parc: '0'
+    type_proprietaire_bailleur: '1'
+    nom_proprietaire_bailleur: '1'
+    type_condition_acces: '0'
+    nom_condition_acces: '1'
+    ville_logement: '3'
+    type_logement: '4'
+    difficultes_rencontrees: ''
+    categorie_classement: '3'
+  Findossier_3:
+    dossier_id: Dossier_3
+    type_parc: '1'
+    type_proprietaire_bailleur: '2'
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: '4'
+    nom_condition_acces: ''
+    ville_logement: '8'
+    type_logement: '5'
+    difficultes_rencontrees: ''
+    categorie_classement: '2'
+  Findossier_4:
+    dossier_id: Dossier_1
+    type_parc: ''
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_5:
+    dossier_id: Dossier_2
+    type_parc: '0'
+    type_proprietaire_bailleur: '2'
+    nom_proprietaire_bailleur: '3'
+    type_condition_acces: '4'
+    nom_condition_acces: ''
+    ville_logement: '0'
+    type_logement: '5'
+    difficultes_rencontrees: ''
+    categorie_classement: '3'
+  Findossier_6:
+    dossier_id: Dossier_2
+    type_parc: '0'
+    type_proprietaire_bailleur: '0'
+    nom_proprietaire_bailleur: '1'
+    type_condition_acces: '0'
+    nom_condition_acces: '0'
+    ville_logement: '0'
+    type_logement: '2'
+    difficultes_rencontrees: ''
+    categorie_classement: '3'
+  Findossier_7:
+    dossier_id: Dossier_2
+    type_parc: '1'
+    type_proprietaire_bailleur: '1'
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: '0'
+    nom_condition_acces: '0'
+    ville_logement: '3'
+    type_logement: '1'
+    difficultes_rencontrees: ''
+    categorie_classement: '2'
+  Findossier_8:
+    dossier_id: Dossier_2
+    type_parc: ''
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+Typeparc:
+  Typeparc_1:
+    listtypeparc: HLM
+  Typeparc_2:
+    listtypeparc: Privé
+  Typeparc_3:
+    listtypeparc: 'Hébergement temporaire'
+Nationalite:
+  Nationalite_1:
+    listnationalite: Français(e)
+  Nationalite_2:
+    listnationalite: Etranger(e)
+  Nationalite_3:
+    listnationalite: 'Afrique Noire'
+  Nationalite_4:
+    listnationalite: UE
+  Nationalite_5:
+    listnationalite: 'Dom Tom'
+  Nationalite_6:
+    listnationalite: Autre
+Nomlocapass:
+  Nomlocapass_1:
+    listnomlocapass: Aliance
+  Nomlocapass_2:
+    listnomlocapass: Procilia
+Typeproprietaireprive:
+  Typeproprietaireprive_1:
+    listtypeproprietaireprive: 'Agence immobilière'
+  Typeproprietaireprive_2:
+    listtypeproprietaireprive: Propriétaire
+  Typeproprietaireprive_3:
+    listtypeproprietaireprive: UNPI
+Typeproprietairehebtemp:
+  Typeproprietairehebtemp_1:
+    listtypeproprietairehebtemp: FJT
+  Typeproprietairehebtemp_2:
+    listtypeproprietairehebtemp: 'ALT / Sous-location'
+  Typeproprietairehebtemp_3:
+    listtypeproprietairehebtemp: CHRS
+Ville:
+  Ville_1:
+    listville: Versailles
+  Ville_2:
+    listville: Viroflay
+  Ville_3:
+    listville: Vélizy
+  Ville_4:
+    listville: 'Saint Cyr'
+  Ville_5:
+    listville: 'Le Chesnay'
+  Ville_6:
+    listville: Buc
+  Ville_7:
+    listville: Fontenay
+  Ville_8:
+    listville: Plaisir
+  Ville_9:
+    listville: 'Autre 78'
+  Ville_10:
+    listville: 'Autre Ile-de-France'
+  Ville_11:
+    listville: Province
+  Ville_12:
+    listville: Sans
+Typeproprietairehlm:
+  Typeproprietairehlm_1:
+    listtypeproprietairehlm: 1%
+  Typeproprietairehlm_2:
+    listtypeproprietairehlm: Préfecture
+  Typeproprietairehlm_3:
+    listtypeproprietairehlm: Mairie
+  Typeproprietairehlm_4:
+    listtypeproprietairehlm: Bailleur
+Conditionsacces:
+  Conditionsacces_1:
+    listconditionsacces: Loca-Pass
+  Conditionsacces_2:
+    listconditionsacces: FSL
+  Conditionsacces_3:
+    listconditionsacces: GRL
+  Conditionsacces_4:
+    listconditionsacces: 'parent / famille'
+  Conditionsacces_5:
+    listconditionsacces: sans
+Listerequetes:
+  Listerequetes_1:
+    listrequetes: 'SELECT COUNT(*) AS nbMenages FROM dossier'
+Personne:
+  Personne_1:
+    dossier_id: Dossier_1
+    nom: sance
+    prenom: basile
+    num_telephone: ''
+    sexe: '0'
+    date_naissance: '1985-03-01'
+    tranche_age: '0'
+    statut: '0'
+    enfants: '0'
+    nb_enfants: '4'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '3'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '0'
+    origine_demande: ''
+    type_structure: '1'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '2'
+    date_embauche: '1991-02-27'
+    type_contrat: '2'
+    tranche_salaire: '2'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_2:
+    dossier_id: Dossier_2
+    nom: dvvsd
+    prenom: vddvs
+    num_telephone: ''
+    sexe: '1'
+    tranche_age: '0'
+    statut: '0'
+    enfants: '1'
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '3'
+    adresse_actuelle: ''
+    ville_actuelle: '5'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '2'
+    origine_demande: ''
+    type_structure: '4'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '2'
+    type_contrat: '0'
+    tranche_salaire: '4'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_3:
+    dossier_id: Dossier_3
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: '0'
+    tranche_age: '3'
+    statut: '1'
+    enfants: '0'
+    nb_enfants: '9'
+    lieu_naissance: ''
+    nationalite: '4'
+    adresse_actuelle: ''
+    ville_actuelle: '10'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '3'
+    origine_demande: ''
+    type_structure: '2'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '4'
+    type_contrat: '4'
+    tranche_salaire: '3'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_4:
+    dossier_id: Dossier_3
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: '1'
+    tranche_age: '1'
+    statut: '1'
+    enfants: '0'
+    nb_enfants: '2'
+    lieu_naissance: ''
+    nationalite: '1'
+    adresse_actuelle: ''
+    ville_actuelle: '3'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '1'
+    origine_demande: ''
+    type_structure: '2'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '5'
+    type_contrat: '1'
+    tranche_salaire: '1'
+    motif_recherche_logement: ''
+    observations: ''
+Categorielogementactuel:
+  Categorielogementactuel_1:
+    listcategorielogementactuel: 'Logement autonome'
+  Categorielogementactuel_2:
+    listcategorielogementactuel: 'Chez les parents'
+  Categorielogementactuel_3:
+    listcategorielogementactuel: 'famille / ami'
+  Categorielogementactuel_4:
+    listcategorielogementactuel: 'Foyer / CHRS'
+  Categorielogementactuel_5:
+    listcategorielogementactuel: 'Situation précaire'
+Typelogement:
+  Typelogement_1:
+    listtypelogement: Chambre
+  Typelogement_2:
+    listtypelogement: Studette
+  Typelogement_3:
+    listtypelogement: Studio
+  Typelogement_4:
+    listtypelogement: T2
+  Typelogement_5:
+    listtypelogement: T3
+  Typelogement_6:
+    listtypelogement: T4
+  Typelogement_7:
+    listtypelogement: Autre

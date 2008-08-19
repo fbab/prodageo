@@ -61,6 +61,7 @@ DROP TABLE IF EXISTS `dossier`;
 CREATE TABLE `dossier`
 (
 	`id` INTEGER  NOT NULL AUTO_INCREMENT,
+	`etat` VARCHAR(255),
 	`date_ouverture_dossier` DATE,
 	`date_cloture_dossier` DATE,
 	`type_dossier` VARCHAR(255),
@@ -320,6 +321,102 @@ CREATE TABLE `typeLogement`
 (
 	`id` INTEGER  NOT NULL AUTO_INCREMENT,
 	`listtypelogement` VARCHAR(255),
+	PRIMARY KEY (`id`)
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
+#-- listeRequetes
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `listeRequetes`;
+
+
+CREATE TABLE `listeRequetes`
+(
+	`id` INTEGER  NOT NULL AUTO_INCREMENT,
+	`listrequetes` TEXT,
+	`titrerequetes` VARCHAR(255),
+	`chapitre_id` INTEGER,
+	PRIMARY KEY (`id`),
+	INDEX `listeRequetes_FI_1` (`chapitre_id`),
+	CONSTRAINT `listeRequetes_FK_1`
+		FOREIGN KEY (`chapitre_id`)
+		REFERENCES `chapitre` (`id`)
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
+#-- statistiques
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `statistiques`;
+
+
+CREATE TABLE `statistiques`
+(
+	`id` INTEGER  NOT NULL AUTO_INCREMENT,
+	`datestat` DATE,
+	`nbmenagesrecu` INTEGER,
+	`nbadultesrecu` INTEGER,
+	`nbenfantsrecu` INTEGER,
+	`nbloges` INTEGER,
+	`nblogesadultes` INTEGER,
+	`nblogesenfants` INTEGER,
+	`nblogesdirect` INTEGER,
+	`nblogesdirectadultes` INTEGER,
+	`nblogesdirectenfants` INTEGER,
+	`nblogesindirect` INTEGER,
+	`nblogesindirectadultes` INTEGER,
+	`nblogesindirectenfants` INTEGER,
+	`nbaltsousloc` INTEGER,
+	`nbaltaltsouslocadultes` INTEGER,
+	`nbaltaltsouslocenfants` INTEGER,
+	`nbencours` INTEGER,
+	`nbencoursadultes` INTEGER,
+	`nbencoursenfants` INTEGER,
+	`nbabandon` INTEGER,
+	`nbabandonadultes` INTEGER,
+	`nbabandonenfants` INTEGER,
+	`sexe` INTEGER,
+	`trancheage` INTEGER,
+	`nationalite` INTEGER,
+	`situationfamiliale` INTEGER,
+	`originedemande` INTEGER,
+	`villeresidence` INTEGER,
+	`modehebergement` INTEGER,
+	`lieutravail` INTEGER,
+	`typecontrat` INTEGER,
+	`revenus` INTEGER,
+	`sexeloges` INTEGER,
+	`trancheageloges` INTEGER,
+	`nationaliteloges` INTEGER,
+	`situationfamilialeloges` INTEGER,
+	`originedemandeloges` INTEGER,
+	`villeresidenceloges` INTEGER,
+	`modehebergementloges` INTEGER,
+	`lieutravailloges` INTEGER,
+	`typecontratloges` INTEGER,
+	`revenusloges` INTEGER,
+	`typelogementtrouveloges` INTEGER,
+	`typeproprietaireloges` INTEGER,
+	`villelogementtrouveloges` INTEGER,
+	`nbrecu` INTEGER,
+	`nbabandons` INTEGER,
+	PRIMARY KEY (`id`)
+)Type=InnoDB;
+
+#-----------------------------------------------------------------------------
+#-- chapitre
+#-----------------------------------------------------------------------------
+
+DROP TABLE IF EXISTS `chapitre`;
+
+
+CREATE TABLE `chapitre`
+(
+	`id` INTEGER  NOT NULL AUTO_INCREMENT,
+	`anneecreation` INTEGER,
+	`anneesupression` INTEGER,
+	`titrechapitre` VARCHAR(255),
 	PRIMARY KEY (`id`)
 )Type=InnoDB;
 
