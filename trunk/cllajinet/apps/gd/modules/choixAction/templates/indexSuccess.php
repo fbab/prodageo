@@ -6,19 +6,12 @@ require (sfConfig::get('sf_root_dir').'/lib/model/Personne.php');
      $personne= new Personne();   
 ?>
 
-<form method="post" action="">
+<form method="post" action="<?php echo url_for('personne/search ')?>">
  
 <p>
     <label>rechrecher dossier de : </label><br/>
     <label> Nom </label><input type="text" name="nom" /><br/> 
-    <label> Prenom </label><input type="text" name="prenom"/><input type="submit" value="Valider" />
+    <label> Prenom </label><input type="text" name="prenom"/><input type="submit" value="Lancer la recherche" name="recherche"/>
 </p> 
 </form>
 
-<?php
-        if (isset($_POST['nom']) && isset($_POST['prenom'])) {
-         $num=$personne->getIdPersonne($_POST['nom'],$_POST['prenom']);
-        }
-        
-?>
-<a href="<?php echo url_for('personne/edit?id='.$num) ?>">Lancer la recherche</a>

@@ -13,7 +13,7 @@ abstract class BaseDossierPeer {
 	const CLASS_DEFAULT = 'lib.model.Dossier';
 
 	
-	const NUM_COLUMNS = 4;
+	const NUM_COLUMNS = 5;
 
 	
 	const NUM_LAZY_LOAD_COLUMNS = 0;
@@ -21,6 +21,9 @@ abstract class BaseDossierPeer {
 
 	
 	const ID = 'dossier.ID';
+
+	
+	const ETAT = 'dossier.ETAT';
 
 	
 	const DATE_OUVERTURE_DOSSIER = 'dossier.DATE_OUVERTURE_DOSSIER';
@@ -37,18 +40,18 @@ abstract class BaseDossierPeer {
 
 	
 	private static $fieldNames = array (
-		BasePeer::TYPE_PHPNAME => array ('Id', 'DateOuvertureDossier', 'DateClotureDossier', 'TypeDossier', ),
-		BasePeer::TYPE_COLNAME => array (DossierPeer::ID, DossierPeer::DATE_OUVERTURE_DOSSIER, DossierPeer::DATE_CLOTURE_DOSSIER, DossierPeer::TYPE_DOSSIER, ),
-		BasePeer::TYPE_FIELDNAME => array ('id', 'date_ouverture_dossier', 'date_cloture_dossier', 'type_dossier', ),
-		BasePeer::TYPE_NUM => array (0, 1, 2, 3, )
+		BasePeer::TYPE_PHPNAME => array ('Id', 'Etat', 'DateOuvertureDossier', 'DateClotureDossier', 'TypeDossier', ),
+		BasePeer::TYPE_COLNAME => array (DossierPeer::ID, DossierPeer::ETAT, DossierPeer::DATE_OUVERTURE_DOSSIER, DossierPeer::DATE_CLOTURE_DOSSIER, DossierPeer::TYPE_DOSSIER, ),
+		BasePeer::TYPE_FIELDNAME => array ('id', 'etat', 'date_ouverture_dossier', 'date_cloture_dossier', 'type_dossier', ),
+		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, )
 	);
 
 	
 	private static $fieldKeys = array (
-		BasePeer::TYPE_PHPNAME => array ('Id' => 0, 'DateOuvertureDossier' => 1, 'DateClotureDossier' => 2, 'TypeDossier' => 3, ),
-		BasePeer::TYPE_COLNAME => array (DossierPeer::ID => 0, DossierPeer::DATE_OUVERTURE_DOSSIER => 1, DossierPeer::DATE_CLOTURE_DOSSIER => 2, DossierPeer::TYPE_DOSSIER => 3, ),
-		BasePeer::TYPE_FIELDNAME => array ('id' => 0, 'date_ouverture_dossier' => 1, 'date_cloture_dossier' => 2, 'type_dossier' => 3, ),
-		BasePeer::TYPE_NUM => array (0, 1, 2, 3, )
+		BasePeer::TYPE_PHPNAME => array ('Id' => 0, 'Etat' => 1, 'DateOuvertureDossier' => 2, 'DateClotureDossier' => 3, 'TypeDossier' => 4, ),
+		BasePeer::TYPE_COLNAME => array (DossierPeer::ID => 0, DossierPeer::ETAT => 1, DossierPeer::DATE_OUVERTURE_DOSSIER => 2, DossierPeer::DATE_CLOTURE_DOSSIER => 3, DossierPeer::TYPE_DOSSIER => 4, ),
+		BasePeer::TYPE_FIELDNAME => array ('id' => 0, 'etat' => 1, 'date_ouverture_dossier' => 2, 'date_cloture_dossier' => 3, 'type_dossier' => 4, ),
+		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, )
 	);
 
 	
@@ -102,6 +105,8 @@ abstract class BaseDossierPeer {
 	{
 
 		$criteria->addSelectColumn(DossierPeer::ID);
+
+		$criteria->addSelectColumn(DossierPeer::ETAT);
 
 		$criteria->addSelectColumn(DossierPeer::DATE_OUVERTURE_DOSSIER);
 

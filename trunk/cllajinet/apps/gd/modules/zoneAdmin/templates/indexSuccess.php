@@ -1,5 +1,5 @@
-<a href="<?php echo url_for('categorielogementactuel/index') ?>">categorie logement</a><br/>
-<a href="<?php echo url_for('conditionsacces/index') ?>">conditions d'accès</a><br/>
+<a href="<?php echo url_for('categorielogementactuel/index')?>">categorie logement</a><br/>
+<a href="<?php echo url_for('conditionsacces/index') ?>">conditions d accès</a><br/>
 <a href="<?php echo url_for('nationalite/index') ?>">nationalité</a><br/>
 <a href="<?php echo url_for('nombailleurshlm/index') ?>">nom des bailleurs HLM</a><br/>
 <a href="<?php echo url_for('nomchrs/index') ?>">nom CHRS</a><br/>
@@ -13,5 +13,7 @@
 <a href="<?php echo url_for('typeproprietairehlm/index') ?>">typeproprietairehlm</a><br/>
 <a href="<?php echo url_for('typeproprietaireprive/index') ?>">typeproprietaireprive</a><br/>
 <a href="<?php echo url_for('typestructure/index') ?>">typestructure</a><br/>
-<a href="<?php echo url_for('ville/index') ?>">ville</a><br\>
+<a href="<?php echo url_for('ville/index')?>">ville</a><br/>
+<a href="<?php echo url_for('chapitre/index')?>">chapitre</a><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<a href="<?php echo url_for('listerequetes/index')?>">listes de requêtes</a><br\>
 

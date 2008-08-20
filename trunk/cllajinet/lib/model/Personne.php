@@ -10,7 +10,7 @@
 class Personne extends BasePersonne
 {
 
-      function getNationalite()
+      function getListNationalite()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listnationalite AS liste FROM nationalite';
@@ -24,7 +24,7 @@ class Personne extends BasePersonne
         return $liste;
         
       }
-      function getVilles()
+      function getListVilles()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listville AS liste FROM ville';
@@ -38,7 +38,7 @@ class Personne extends BasePersonne
         return $liste;
         
       }
-function getCatLogActuel()
+function getListCatLogActuel()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listcategorielogementactuel AS liste FROM categorielogementactuel';
@@ -52,7 +52,7 @@ function getCatLogActuel()
         return $liste;
         
       }
-function getTypeStructure()
+function getListTypeStructure()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listtypestructure AS liste FROM typeStructure';
@@ -63,10 +63,9 @@ function getTypeStructure()
         $liste[$i] = $resultset->getString('liste');
 	$i++;
 	}
-        return $liste;
-        
+        return $liste; 
       }
-function getTypeContrat()
+function getListTypeContrat()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listtypecontrat AS liste FROM typeContrat';
@@ -80,7 +79,7 @@ function getTypeContrat()
         return $liste;
         
       }
-function getTrancheSalaire()
+function getListTrancheSalaire()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listtranchesalaire AS liste FROM trancheSalaire';
@@ -118,6 +117,19 @@ function getTrancheSalaire()
 	$idPersonne = $resultset->getString('idPersonne');
         
         return $idPersonne;
+      }
+
+      function getIdFinDossier($idDossier)
+      {
+	$connection = Propel::getConnection();
+	$query = 'SELECT id AS idFinDossier FROM finDossier WHERE dossier_id=? ';
+	$statement = $connection->prepareStatement($query);
+        $statement->setString(1,$idDossier);
+	$resultset = $statement->executeQuery();
+	$resultset->next();
+	$idFinDossier = $resultset->getString('idFinDossier');
+        
+        return $idFinDossier;
       }
 
 }

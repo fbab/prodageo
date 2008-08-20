@@ -10,7 +10,6 @@
           <?php if (!$personne->isNew()): ?>
             &nbsp;<?php echo link_to('Delete', 'personne/delete?id='.$personne->getId(), array('post' => true, 'confirm' => 'Are you sure?')) ?>
           <?php endif; ?>
-          <input type="submit" value="Save" />
         </td>
       </tr>
     </tfoot>
@@ -156,6 +155,7 @@
         <td>
           <?php echo $form['loyer_actuel']->renderError() ?>
           <?php echo $form['loyer_actuel'] ?>
+          <label>euros</label>
         </td>
       </tr>
       <tr>
@@ -212,6 +212,7 @@
         <td>
           <?php echo $form['salaire_exact']->renderError() ?>
           <?php echo $form['salaire_exact'] ?>
+          <label>euros</label>
         </td>
       </tr>
       <tr>
@@ -219,6 +220,7 @@
         <td>
           <?php echo $form['dettes_credits']->renderError() ?>
           <?php echo $form['dettes_credits'] ?>
+          <label>euros</label>
         </td>
       </tr>
       <tr>
@@ -238,7 +240,11 @@
       </tr>
     </tbody>
   </table>
+          <input type="submit" value="Conjoint / Conjointe" name="Conjoint"/>
+          <input type="submit" value="Colocataire" name="Colocataire"/>
+          <input type="submit" value="Clôturer dossier" name="Cloturer"/>
 </form>
+          
 <a href="<?php echo url_for('personne/create/index') ?>">Conjoint / Conjointe</a>
 <a href="<?php echo url_for('personne/create/index') ?>">Colocataire</a>
-<a href="<?php echo url_for('dossier/edit?id='.$personne->getDossierId())?>">Clôturer dossier</a>
+<a href="<?php echo url_for('dossier/cloture?id='.$personne->getDossierId())?>">Clôturer dossier</a>

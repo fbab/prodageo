@@ -88,7 +88,6 @@
         <td>
           <?php echo $form['type_logement']->renderError() ?>
           <?php echo $form['type_logement'] ?>
-          <?php echo $findossier->getTypeLogement() ?></td>
         </td>
       </tr>
       <tr>

@@ -43,7 +43,7 @@ function getParc()
 	}
         return $liste; 
       }
-function getTypePropHLM()
+function getListTypePropHLM()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listtypeproprietairehlm AS liste FROM typeProprietaireHLM';
@@ -56,7 +56,7 @@ function getTypePropHLM()
 	}
         return $liste;  
       }
-function getTypePropPrive()
+function getListTypePropPrive()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listtypeproprietaireprive AS liste FROM typeProprietairePrive';
@@ -69,7 +69,7 @@ function getTypePropPrive()
 	}
         return $liste;  
       }
-function getTypePropHebTemp()
+function getListTypePropHebTemp()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listtypeproprietairehebtemp AS liste FROM typeProprietaireHebTemp';
@@ -82,7 +82,7 @@ function getTypePropHebTemp()
 	}
         return $liste;  
       }
-function getNomBailleursHLM()
+function getListNomBailleursHLM()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listnombailleurshlm AS liste FROM nomBailleursHLM';
@@ -95,7 +95,7 @@ function getNomBailleursHLM()
 	}
         return $liste;  
       }
-function getNomFJT()
+function getListNomFJT()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listnomfjt AS liste FROM nomFJT';
@@ -108,7 +108,7 @@ function getNomFJT()
 	}
         return $liste;  
       }
-function getNomCHRS()
+function getListNomCHRS()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listnomchrs AS liste FROM nomCHRS';
@@ -121,7 +121,7 @@ function getNomCHRS()
 	}
         return $liste;  
       }
-function getConditionsAcces()
+function getListConditionsAcces()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listconditionsacces AS liste FROM conditionsAcces';
@@ -134,7 +134,7 @@ function getConditionsAcces()
 	}
         return $liste;  
       }
-function getNomLocapass()
+function getListNomLocapass()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listnomlocapass AS liste FROM nomLocapass';
@@ -147,7 +147,7 @@ function getNomLocapass()
 	}
         return $liste;  
       }
-function getTypeLogements()
+function getListTypeLogements()
       {
 	$connection = Propel::getConnection();
 	$query = 'SELECT listtypelogement AS liste FROM typeLogement';

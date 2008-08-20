@@ -13,17 +13,17 @@ class BaseFindossierForm extends BaseFormPropel
   public function setup()
   {
     $findossier=$this->getObject();
-    $typeconditionacces=$findossier->getConditionsAcces();
+    $typeconditionacces=$findossier->getListConditionsAcces();
     $villes=$findossier->getVilles();
     $typeparc=$findossier->getParc();
-    $typeprophlm=$findossier->getTypePropHLM();
-    $typepropprive=$findossier->getTypePropPrive();
-    $typeprophebtemp=$findossier->getTypePropHebTemp();
-    $typelogement=$findossier->getTypeLogements();
-    $nomlocapass=$findossier->getNomLocapass();
-    $nombailleurs=$findossier->getNomBailleursHLM();
-    $nomfjt=$findossier->getNomFJT();
-    $nomchrs=$findossier->getNomCHRS();
+    $typeprophlm=$findossier->getListTypePropHLM();
+    $typepropprive=$findossier->getListTypePropPrive();
+    $typeprophebtemp=$findossier->getListTypePropHebTemp();
+    $typelogement=$findossier->getListTypeLogements();
+    $nomlocapass=$findossier->getListNomLocapass();
+    $nombailleurs=$findossier->getListNomBailleursHLM();
+    $nomfjt=$findossier->getListNomFJT();
+    $nomchrs=$findossier->getListNomCHRS();
     $resultat = array_merge( $nomfjt, $nomchrs );
 
 

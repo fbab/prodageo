@@ -14,7 +14,7 @@ propel:
     lieu_naissance:                  varchar(255)
     nationalite:                     varchar(255)
     adresse_actuelle:                varchar(255)
-    ville_actuelle:                 varchar(255)
+    ville_actuelle:                  varchar(255)
     type_logement_actuel:            varchar(255)
     categorie_logement_actuel:       varchar(255)
     origine_demande:                 varchar(255)
@@ -35,6 +35,7 @@ propel:
 
   dossier:
     id:                              ~
+    etat:                            varchar(255)
     date_ouverture_dossier:          date
     date_cloture_dossier:            date
     type_dossier:                    varchar(255)
@@ -119,5 +120,83 @@ propel:
 
   typeLogement:
     id:                              ~
-    listtypelogement:                varchar(255)          
+    listtypelogement:                varchar(255)   
+
+  listeRequetes:
+    id:                              ~
+    listrequetes:                    longvarchar 
+    titrerequetes:                   varchar(255)
+    chapitre_id:                     ~
+
+  statistiques:
+    id:                              ~
+    datestat:                        date
+    nbmenagesrecu:                   integer
+    nbadultesrecu:                   integer
+    nbenfantsrecu:                   integer
+    nbloges:                         integer
+    nblogesadultes:                  integer
+    nblogesenfants:                  integer
+    nblogesdirect:                   integer
+    nblogesdirectadultes:            integer
+    nblogesdirectenfants:            integer
+    nblogesindirect:                 integer
+    nblogesindirectadultes:          integer
+    nblogesindirectenfants:          integer
+    nbaltsousloc:                    integer
+    nbaltaltsouslocadultes:          integer
+    nbaltaltsouslocenfants:          integer
+    nbencours:                       integer
+    nbencoursadultes:                integer
+    nbencoursenfants:                integer
+    nbabandon:                       integer
+    nbabandonadultes:                integer
+    nbabandonenfants:                integer
+    sexe:                            integer
+    trancheage:                      integer
+    nationalite:                     integer
+    situationfamiliale:              integer
+    originedemande:                  integer
+    villeresidence:                  integer
+    modehebergement:                 integer
+    lieutravail:                     integer
+    typecontrat:                     integer
+    revenus:                         integer
+    sexeloges:                       integer
+    trancheageloges:                 integer
+    nationaliteloges:                integer
+    situationfamilialeloges:         integer
+    originedemandeloges:             integer
+    villeresidenceloges:             integer
+    modehebergementloges:            integer
+    lieutravailloges:                integer
+    typecontratloges:                integer
+    revenusloges:                    integer
+    typelogementtrouveloges:         integer
+    typeproprietaireloges:           integer
+    villelogementtrouveloges:        integer
+    nbrecu:                          integer
+    nbloges:                         integer
+    nbabandons:                      integer
+    nbencours:                       integer
+    
+  chapitre:
+    id:                              ~
+    anneecreation:                   integer
+    anneesupression:                 integer
+    titrechapitre:                   varchar(255)    
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
     

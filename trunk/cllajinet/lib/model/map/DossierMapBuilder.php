@@ -34,6 +34,8 @@ class DossierMapBuilder {
 
 		$tMap->addPrimaryKey('ID', 'Id', 'int', CreoleTypes::INTEGER, true, null);
 
+		$tMap->addColumn('ETAT', 'Etat', 'string', CreoleTypes::VARCHAR, false, 255);
+
 		$tMap->addColumn('DATE_OUVERTURE_DOSSIER', 'DateOuvertureDossier', 'int', CreoleTypes::DATE, false, null);
 
 		$tMap->addColumn('DATE_CLOTURE_DOSSIER', 'DateClotureDossier', 'int', CreoleTypes::DATE, false, null);
