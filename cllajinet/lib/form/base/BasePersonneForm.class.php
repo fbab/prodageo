@@ -10,21 +10,23 @@
 class BasePersonneForm extends BaseFormPropel
 {
   protected static $nbEnfants = array('','1', '2', '3','4','5','6','7','8','9','10');
-  protected static $categorieLogment = array('logement autonome', 'chez les parents', 'famille / ami','foyer / CHRS','situation précaire');
-  protected static $villes = array('','Versailles', 'Viroflay', 'Vélizy','Saint Cyr','Le Chesnay','Buc','Fontenay','Plaisir','Autre 78','Autre Ile-de-France','Province','Sans','COMMUNAUTE DE COMMUNES');
-  protected static $typeStructure = array('Mission locale','Marie','Structure d\'hébergement','Travailleurs sociaux','Connaissances','Autre');
-  protected static $typeContrat = array('CDI C','CDI P','CDD / interim','Formation / Stage','Assédic / Sans','Etudiant / Lycéen');
-  protected static $trancheSalaire = array('moins de 457','entre 457 et 761','entre 762 et 914','entre 915 et 1067','plus de 1067','Sans');
-  protected static $nationalite = array('Français(e)','Etranger(e)','Maghreb','Dom Tom','Afrique Noire','UE','Autre');
+  
   public function setup()
   {
+    $yearsEmbauche=range(date('Y') - 20, date('Y'));
+    $yearsNaissance=range(date('Y') - 30, date('Y'));
+    $dateNaissance=new sfWidgetFormDate(array('format'=>'%day%/%month%/%year%','years'=>$yearsNaissance));
+    $dateEmbauche=new sfWidgetFormDate(array('format'=>'%day%/%month%/%year%','years'=>$yearsEmbauche));
+    $dateNaissance->addOption('years', array_combine($yearsNaissance, $yearsNaissance));
+    $dateEmbauche->addOption('years', array_combine($yearsEmbauche, $yearsEmbauche));
+
     $personne=$this->getObject();
-    $nationalite=$personne->getNationalite();
-    $categorieLogment=$personne->getCatLogActuel();
-    $villes=$personne->getVilles();
-    $typeStructure=$personne->getTypeStructure();
-    $typeContrat=$personne->getTypeContrat();
-    $trancheSalaire=$personne->getTrancheSalaire();
+    $nationalite=$personne->getListNationalite();
+    $categorieLogment=$personne->getListCatLogActuel();
+    $villes=$personne->getListVilles();
+    $typeStructure=$personne->getListTypeStructure();
+    $typeContrat=$personne->getListTypeContrat();
+    $trancheSalaire=$personne->getListTrancheSalaire();
 
     $this->setWidgets(array(
       'id'                        => new sfWidgetFormInputHidden(),
@@ -33,7 +35,7 @@ class BasePersonneForm extends BaseFormPropel
       'prenom'                    => new sfWidgetFormInput(),
       'num_telephone'             => new sfWidgetFormInput(),
       'sexe'                      => new sfWidgetFormSelectRadio(array('choices' => array('0' => 'masculin', '1' => 'féminin'))),
-      'date_naissance'            => new sfWidgetFormDate(),
+      'date_naissance'            => $dateNaissance,
       'tranche_age'               => new sfWidgetFormSelectRadio(array('choices' => array('0' => '18-20', '1' => '21-25', '3' => '26-30'))),
       'statut'                    => new sfWidgetFormSelectRadio(array('choices' => array('0' => 'célibataire', '1' => 'en couple'))),
       'enfants'                   => new sfWidgetFormSelectRadio(array('choices' => array('0' => 'oui', '1' => 'non'))),
@@ -52,7 +54,7 @@ class BasePersonneForm extends BaseFormPropel
       'employeur_actuel'          => new sfWidgetFormInput(),
       'ville_employeur_actuel'    => new sfWidgetFormSelect(array('choices' => $villes)),
       'dpt_employeur_actuel'      => new sfWidgetFormInput(),
-      'date_embauche'             => new sfWidgetFormDate(),
+      'date_embauche'             => $dateEmbauche,
       'type_contrat'              => new sfWidgetFormSelectRadio(array('choices' => $typeContrat)),
       'tranche_salaire'           => new sfWidgetFormSelectRadio(array('choices' => $trancheSalaire)),
       'salaire_exact'             => new sfWidgetFormInput(),

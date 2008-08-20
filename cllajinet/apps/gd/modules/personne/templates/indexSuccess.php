@@ -1,9 +1,9 @@
-<h1>Personne List</h1>
 
+<h1>Personne List</h1>
 <table>
   <thead>
     <tr>
-      <th>Id</th>
+      <th>Id personne</th>
       <th>Dossier</th>
       <th>Nom</th>
       <th>Prenom</th>
@@ -35,10 +35,33 @@
       <th>Dettes credits</th>
       <th>Motif recherche logement</th>
       <th>Observations</th>
+      <th></th>
+      <th>Etat du dossier</th>
+      <th>Date ouverture dossier</th>
+      <th>Date cloture dossier</th>
+      <th>Type dossier</th>
+      <!--<th></th>
+      <th>Dossier</th>
+      <th>Type parc</th>
+      <th>Type proprietaire bailleur</th>
+      <th>Nom proprietaire bailleur</th>
+      <th>Type condition acces</th>
+      <th>Nom condition acces</th>
+      <th>Ville logement</th>
+      <th>Departement logement</th>
+      <th>Type logement</th>
+      <th>Superficie logement</th>
+      <th>Loyer</th>
+      <th>Edf gdf</th>
+      <th>Chauffage</th>
+      <th>Difficultes rencontrees</th>
+      <th>Categorie classement</th> -->
     </tr>
   </thead>
   <tbody>
     <?php foreach ($personneList as $personne): ?>
+    <?php $dossier = DossierPeer::retrieveByPk($personne->getDossierId());?>
+    <?php /*$findossier = FindossierPeer::retrieveByPk($personne->getIdFinDossier($personne->getDossierId()));*/?>
     <tr>
       <td><a href="<?php echo url_for('personne/show?id='.$personne->getId()) ?>"><?php echo $personne->getId() ?></a></td>
       <td><?php echo $personne->getDossierId() ?></td>
@@ -72,6 +95,12 @@
       <td><?php echo $personne->getDettesCredits() ?></td>
       <td><?php echo $personne->getMotifRechercheLogement() ?></td>
       <td><?php echo $personne->getObservations() ?></td>
+      <td></td>
+      <td><?php echo $dossier->getEtat() ?></td>
+      <td><?php echo $dossier->getDateOuvertureDossier() ?></td>
+      <td><?php echo $dossier->getDateClotureDossier() ?></td>
+      <td><?php echo $dossier->getTypeDossier() ?></td>
+      
     </tr>
     <?php endforeach; ?>
   </tbody>

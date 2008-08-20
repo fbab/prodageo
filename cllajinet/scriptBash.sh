@@ -22,5 +22,8 @@ php symfony propel:generate-crud gd nomchrs Nomchrs --with-show
 php symfony propel:generate-crud gd conditionsacces Conditionsacces --with-show
 php symfony propel:generate-crud gd nomlocapass Nomlocapass --with-show
 php symfony propel:generate-crud gd typelogement Typelogement --with-show
+php symfony propel:generate-crud gd listerequetes Listerequetes --with-show
+php symfony propel:generate-crud gd statistiques Statistiques --with-show
+php symfony propel:generate-crud gd chapitre Chapitre --with-show
 php symfony cache:clear
 

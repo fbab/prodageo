@@ -42,7 +42,11 @@ class personneActions extends sfActions
     {
       $personne = $this->form->save();
 
-      $this->redirect('personne/edit?id='.$personne->getId());
+      //$var1=$this->getRequest();
+      $tab=$request->getPostParameters();
+      if(array_key_exists("Conjoint",$tab)){$this->redirect('personne/create/index');}
+      elseif(array_key_exists("Colocataire",$tab)){$this->redirect('personne/create/index');}
+      else{$this->redirect('dossier/cloture?id='.$personne->getDossierId());}
     }
 
     $this->setTemplate('edit');
@@ -55,5 +59,23 @@ class personneActions extends sfActions
     $personne->delete();
 
     $this->redirect('personne/index');
+  }
+
+
+  public function executeSearch($request)
+  {
+
+    $c = new Criteria();
+    $c->add(PersonnePeer::NOM, $request->getParameter('nom',""));
+    $c->addAscendingOrderByColumn(PersonnePeer::NOM);
+    $this->personneList = PersonnePeer::doSelect($c);
+    $nbresultats=count($this->personneList);
+    if($nbresultats==1){
+        $this->redirect('personne/edit?id='.$this->personneList[0]->getId());
+    }
+    elseif($nbresultats==0){
+        $this->redirect('choixAction/index');
+    }
+    else{$this->setTemplate('index');}
   }
 }

@@ -13,6 +13,10 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 
 
 	
+	protected $etat;
+
+
+	
 	protected $date_ouverture_dossier;
 
 
@@ -46,6 +50,13 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 	{
 
 		return $this->id;
+	}
+
+	
+	public function getEtat()
+	{
+
+		return $this->etat;
 	}
 
 	
@@ -114,6 +125,20 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 
 	} 
 	
+	public function setEtat($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->etat !== $v) {
+			$this->etat = $v;
+			$this->modifiedColumns[] = DossierPeer::ETAT;
+		}
+
+	} 
+	
 	public function setDateOuvertureDossier($v)
 	{
 
@@ -168,17 +193,19 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 
 			$this->id = $rs->getInt($startcol + 0);
 
-			$this->date_ouverture_dossier = $rs->getDate($startcol + 1, null);
+			$this->etat = $rs->getString($startcol + 1);
 
-			$this->date_cloture_dossier = $rs->getDate($startcol + 2, null);
+			$this->date_ouverture_dossier = $rs->getDate($startcol + 2, null);
 
-			$this->type_dossier = $rs->getString($startcol + 3);
+			$this->date_cloture_dossier = $rs->getDate($startcol + 3, null);
+
+			$this->type_dossier = $rs->getString($startcol + 4);
 
 			$this->resetModified();
 
 			$this->setNew(false);
 
-						return $startcol + 4; 
+						return $startcol + 5; 
 		} catch (Exception $e) {
 			throw new PropelException("Error populating Dossier object", $e);
 		}
@@ -341,12 +368,15 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 				return $this->getId();
 				break;
 			case 1:
-				return $this->getDateOuvertureDossier();
+				return $this->getEtat();
 				break;
 			case 2:
-				return $this->getDateClotureDossier();
+				return $this->getDateOuvertureDossier();
 				break;
 			case 3:
+				return $this->getDateClotureDossier();
+				break;
+			case 4:
 				return $this->getTypeDossier();
 				break;
 			default:
@@ -360,9 +390,10 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 		$keys = DossierPeer::getFieldNames($keyType);
 		$result = array(
 			$keys[0] => $this->getId(),
-			$keys[1] => $this->getDateOuvertureDossier(),
-			$keys[2] => $this->getDateClotureDossier(),
-			$keys[3] => $this->getTypeDossier(),
+			$keys[1] => $this->getEtat(),
+			$keys[2] => $this->getDateOuvertureDossier(),
+			$keys[3] => $this->getDateClotureDossier(),
+			$keys[4] => $this->getTypeDossier(),
 		);
 		return $result;
 	}
@@ -382,12 +413,15 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 				$this->setId($value);
 				break;
 			case 1:
-				$this->setDateOuvertureDossier($value);
+				$this->setEtat($value);
 				break;
 			case 2:
-				$this->setDateClotureDossier($value);
+				$this->setDateOuvertureDossier($value);
 				break;
 			case 3:
+				$this->setDateClotureDossier($value);
+				break;
+			case 4:
 				$this->setTypeDossier($value);
 				break;
 		} 	}
@@ -398,9 +432,10 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 		$keys = DossierPeer::getFieldNames($keyType);
 
 		if (array_key_exists($keys[0], $arr)) $this->setId($arr[$keys[0]]);
-		if (array_key_exists($keys[1], $arr)) $this->setDateOuvertureDossier($arr[$keys[1]]);
-		if (array_key_exists($keys[2], $arr)) $this->setDateClotureDossier($arr[$keys[2]]);
-		if (array_key_exists($keys[3], $arr)) $this->setTypeDossier($arr[$keys[3]]);
+		if (array_key_exists($keys[1], $arr)) $this->setEtat($arr[$keys[1]]);
+		if (array_key_exists($keys[2], $arr)) $this->setDateOuvertureDossier($arr[$keys[2]]);
+		if (array_key_exists($keys[3], $arr)) $this->setDateClotureDossier($arr[$keys[3]]);
+		if (array_key_exists($keys[4], $arr)) $this->setTypeDossier($arr[$keys[4]]);
 	}
 
 	
@@ -409,6 +444,7 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 		$criteria = new Criteria(DossierPeer::DATABASE_NAME);
 
 		if ($this->isColumnModified(DossierPeer::ID)) $criteria->add(DossierPeer::ID, $this->id);
+		if ($this->isColumnModified(DossierPeer::ETAT)) $criteria->add(DossierPeer::ETAT, $this->etat);
 		if ($this->isColumnModified(DossierPeer::DATE_OUVERTURE_DOSSIER)) $criteria->add(DossierPeer::DATE_OUVERTURE_DOSSIER, $this->date_ouverture_dossier);
 		if ($this->isColumnModified(DossierPeer::DATE_CLOTURE_DOSSIER)) $criteria->add(DossierPeer::DATE_CLOTURE_DOSSIER, $this->date_cloture_dossier);
 		if ($this->isColumnModified(DossierPeer::TYPE_DOSSIER)) $criteria->add(DossierPeer::TYPE_DOSSIER, $this->type_dossier);
@@ -441,6 +477,8 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 	
 	public function copyInto($copyObj, $deepCopy = false)
 	{
+
+		$copyObj->setEtat($this->etat);
 
 		$copyObj->setDateOuvertureDossier($this->date_ouverture_dossier);
 

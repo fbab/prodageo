@@ -10,7 +10,7 @@
           <?php if (!$dossier->isNew()): ?>
             &nbsp;<?php echo link_to('Delete', 'dossier/delete?id='.$dossier->getId(), array('post' => true, 'confirm' => 'Are you sure?')) ?>
           <?php endif; ?>
-          <input type="submit" value="Save" />
+
         </td>
       </tr>
     </tfoot>
@@ -21,17 +21,25 @@
       <tr>
         <th><label>numéro de dossier :</label></th>
         <td>
-          <?php echo $dossier->getId();
-          ?>
+          <?php echo $dossier->getId();?>
         </td>
       </tr>
 
+      <tr>
+        <th><label for="dossier_etat">Etat</label></th>
+        <td>
+          <?php echo $form['etat']->renderError() ?>
+          <?php echo $form['etat'] ?>
+          <?php echo $dossier->getEtat();?>
+        </td>
+      </tr>      
 
       <tr>
         <th><label for="dossier_date_ouverture_dossier">Date ouverture dossier</label></th>
         <td>
           <?php echo $form['date_ouverture_dossier']->renderError() ?>
           <?php echo $form['date_ouverture_dossier'] ?>
+          <?php echo $dossier->getDateOuvertureDossier();?>
         </td>
       </tr>
       <tr>
@@ -39,6 +47,10 @@
         <td>
           <?php echo $form['date_cloture_dossier']->renderError() ?>
           <?php echo $form['date_cloture_dossier'] ?>
+          <?php if($dossier->getDateClotureDossier() != null){
+                  echo $dossier->getDateClotureDossier(); 
+           }
+          ?>
         </td>
       </tr>
       <tr>
@@ -46,12 +58,18 @@
         <td>
           <?php echo $form['type_dossier']->renderError() ?>
           <?php echo $form['type_dossier'] ?>
-
+          <?php switch($dossier->getTypeDossier())
+                {
+                case '0': echo "Personne seule";break;
+                case '1': echo "Couple";break;
+                case '2': echo "Colocation";break;
+                };
+          ?>
         <?php echo $form['id'] ?>
         </td>
       </tr>
     </tbody>
-  </table>
+  </table><br/>
+          <input type="submit" value="Profil Personne" name="profilPersonne" />
+          <input type="submit" value="Poursuivre clôture" name="poursuivreCloture"/>
 </form>
-<a href="<?php echo url_for('personne/create/index') ?>">Profil Personne</a>
-<a href="<?php echo url_for('findossier/create?dossier_id='.$dossier->getId()) ?>">Poursuivre clôture</a>

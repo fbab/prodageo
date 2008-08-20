@@ -16,7 +16,16 @@
   <div id="navigation" style="display:inline;float:right">
     <ul>
       <li><?php echo link_to('Liste des Personnes', 'personne/index') ?></li>
+      <li><?php echo link_to('Liste des Dossiers', 'dossier/index') ?></li>
+      <li><?php echo link_to('Liste des fins de dossiers', 'findossier/index') ?></li>
+    </ul>
+    <ul>
       <li><?php echo link_to('retour au menu choix action', 'choixAction/index') ?></li>
+    </ul>
+    <ul>
+      <li><?php echo link_to('statistiques', 'statistiques/create') ?></li>
+    </ul>
+    <ul>
       <li><?php echo link_to('zone admin', 'zoneAdmin/index') ?></li>
     </ul>
   </div>

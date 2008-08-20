@@ -10,7 +10,6 @@
           <?php if (!$dossier->isNew()): ?>
             &nbsp;<?php echo link_to('Delete', 'dossier/delete?id='.$dossier->getId(), array('post' => true, 'confirm' => 'Are you sure?')) ?>
           <?php endif; ?>
-          <input type="submit" value="Save" />
         </td>
       </tr>
     </tfoot>
@@ -25,6 +24,13 @@
         </td>
       </tr>
 
+      <tr>
+        <th><label for="dossier_etat">Etat</label></th>
+        <td>
+          <?php echo $form['etat']->renderError() ?>
+          <?php echo $form['etat'] ?>
+        </td>
+      </tr>     
 
       <tr>
         <th><label for="dossier_date_ouverture_dossier">Date ouverture dossier</label></th>
@@ -50,7 +56,8 @@
         </td>
       </tr>
     </tbody>
-  </table>
+  </table><br/>
+          <input type="submit" value="Profil Personne" name="profilPersonne" />
+          <input type="submit" value="Poursuivre clôture" name="poursuivreCloture"/>
 </form>
-<a href="<?php echo url_for('personne/create/index') ?>">Profil Personne</a>
-<a href="<?php echo url_for('findossier/create/index') ?>">Poursuivre Clôture</a>
+

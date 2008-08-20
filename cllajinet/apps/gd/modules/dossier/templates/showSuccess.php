@@ -5,6 +5,10 @@
       <td><?php echo $dossier->getId() ?></td>
     </tr>
     <tr>
+      <th>Etat:</th>
+      <td><?php echo $dossier->getEtat() ?></td>
+    </tr>
+    <tr>
       <th>Date ouverture dossier:</th>
       <td><?php echo $dossier->getDateOuvertureDossier() ?></td>
     </tr>

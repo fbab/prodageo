@@ -80,7 +80,7 @@ abstract class BaseFindossier extends BaseObject  implements Persistent {
 	
 	protected $alreadyInValidation = false;
 
-
+	
 	public function getId()
 	{
 
@@ -193,14 +193,6 @@ abstract class BaseFindossier extends BaseObject  implements Persistent {
 	}
 
 	
-        // ajout d'une fonction set pour la variable nouvellement créée  :vartypeparc
-
-        public function setVarTypeParc($value)
-        {
-               return self::$vartypeparc;
-        }
-
-
 	public function setId($v)
 	{
 
