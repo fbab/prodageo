@@ -12,28 +12,31 @@
 </head>
 <body>
 
-<div id="container" style="width:600px;margin:0 auto;border:1px solid grey;padding:10px">
-  <div id="navigation" style="display:inline;float:right">
+<div id="container">
+  <div id="containerTitle">
+     <div id="logo">
+     </div>
+     <div id="title">
+       <!--<h1><?php echo link_to('Cllajinet', '@homepage') ?></h1>-->
+       <h1>Projet Cllajinet</h1>
+     </div>
+  </div>
+  <div id="navigation">
     <ul>
-      <li><?php echo link_to('Liste des Personnes', 'personne/index') ?></li>
-      <li><?php echo link_to('Liste des Dossiers', 'dossier/index') ?></li>
-      <li><?php echo link_to('Liste des fins de dossiers', 'findossier/index') ?></li>
+      <li id="personne"><?php echo link_to('Liste des Personnes', 'personne/index') ?></li>
+      <li id="dossier"><?php echo link_to('Liste des Dossiers', 'dossier/index') ?></li>
+      <li id="dossier"><?php echo link_to('Liste des fins de dossiers', 'findossier/index') ?></li>
     </ul>
     <ul>
-      <li><?php echo link_to('retour au menu choix action', 'choixAction/index') ?></li>
+      <li id="accueil"><?php echo link_to('retour au menu choix action', 'choixAction/index') ?></li>
     </ul>
     <ul>
-      <li><?php echo link_to('statistiques', 'statistiques/create') ?></li>
+      <li id="stats"><?php echo link_to('statistiques', 'statistiques/create') ?></li>
     </ul>
     <ul>
-      <li><?php echo link_to('zone admin', 'zoneAdmin/index') ?></li>
+      <li id="admin"><?php echo link_to('zone admin', 'zoneAdmin/index') ?></li>
     </ul>
   </div>
-  <div id="title">
-    <!--<h1><?php echo link_to('Cllajinet', '@homepage') ?></h1>-->
-    <h1>Projet Cllajinet</h1>
-  </div>
- 
   <div id="content" style="clear:right">
     <?php echo $sf_data->getRaw('sf_content') ?>
   </div>

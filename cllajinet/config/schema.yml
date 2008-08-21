@@ -184,7 +184,8 @@ propel:
     id:                              ~
     anneecreation:                   integer
     anneesupression:                 integer
-    titrechapitre:                   varchar(255)    
+    titrechapitre:                   varchar(255)  
+      
 
 
 

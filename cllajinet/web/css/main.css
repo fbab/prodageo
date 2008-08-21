@@ -1,9 +1,121 @@
 
+div#container
+{
+   /*border:2px solid gray;*/
+   width:800px;
+   margin:0 auto;
+   padding:10px;
+
+}
+div#containerTitle
+{
+   /*border:2px solid gray;*/
+   height: 100px;
+   margin-left:1%;
+
+
+}
+div#title
+{
+   /*border:2px solid gray;*/
+   margin-left:30%;
+   margin-top:2%;
+   color: #0099CC; 
+}
+
+div#navigation
+{
+   /*border:2px solid gray;*/
+   padding-left:10px;
+   padding-right:10px;
+   margin-top:50px;
+   float:left;
+}
+
+div#logo
+{
+   /*border:2px solid gray;*/
+   margin-left:0%;
+   width: 100px;
+   height: 100px;
+   background-image: url(../images/cllajVersailles.gif);
+   background-repeat:no-repeat;
+   float:left;
+
+}
+div#content
+{
+   /*border:2px solid gray;*/
+   float:left;
+   margin-left:10%;
+   margin-top:10%;
+}
+
+
+}
 td.statgenerales
 {
    background-color: gray;
    color: white;
 }
+
+
+
+li#personne
+{
+   list-style-image: url(../images/personne.jpg);
+
+
+}
+li#dossier
+{
+   list-style-image: url(../images/dossier.jpg);
+}
+li#accueil
+{
+   list-style-image: url(../images/accueil.png);
+
+}
+li#stats
+{
+   list-style-image: url(../images/stats.gif);
+}
+li#admin
+{
+   list-style-image: url(../images/admin.jpg);
+}
+
+
+
+a:link
+{ 
+   color: #0099CC; 
+   text-decoration: none;
+   background-color: transparent;
+
+}
+a:hover
+{ 
+   color: #0099CC; 
+   text-decoration: none;
+   background-color: transparent;
+
+}
+a:visited
+{ 
+   color: #0099CC; 
+   text-decoration: none;
+   background-color: transparent;
+
+}
+a:active 
+{ 
+   color: #0099CC; 
+   text-decoration: none; 
+   background-color: transparent;
+
+ }
+
 
 
 
