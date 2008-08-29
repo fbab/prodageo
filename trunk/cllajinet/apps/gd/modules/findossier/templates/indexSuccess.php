@@ -31,7 +31,7 @@
     <?php $nomFJT = NomfjtPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
     <?php $nomCHRS = NomchrsPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
     <?php $nomBailleursHLM = NombailleurshlmPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
-    <?php $conditionAcces = ConditionaccesPeer::retrieveByPk($findossier->getTypeConditionAcces());?>
+    <?php $conditionsAcces = ConditionsaccesPeer::retrieveByPk($findossier->getTypeConditionAcces());?>
     <?php $nomLocaPass = NomlocapassPeer::retrieveByPk($findossier->getNomConditionAcces());?>
     <?php $villeLogement = VillePeer::retrieveByPk($findossier->getVilleLogement());?>
     <?php $typeLogement = TypelogementPeer::retrieveByPk($findossier->getTypeLogement());?>
