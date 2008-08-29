@@ -85,7 +85,7 @@
        else{echo 'inconnu';}   
 
       ?></td>
-      <td class="traitsVisibles"><?php if($conditionAcces != null){echo $conditionAcces->getListconditionsacces();}else{echo 'inconnu';}?></td>
+      <td class="traitsVisibles"><?php if($conditionsAcces != null){echo $conditionsAcces->getListconditionsacces();}else{echo 'inconnu';}?></td>
       <td class="traitsVisibles"><?php if($nomLocaPass != null){echo $nomLocaPass->getListnomlocapass();}else{echo 'inconnu';} ?></td>
       <td class="traitsVisibles"><?php if($villeLogement != null){echo $villeLogement->getListville();}else{echo 'inconnu';}?></td>
       <td class="traitsVisibles"><?php echo $findossier->getDepartementLogement() ?></td>
