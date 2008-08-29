@@ -153,7 +153,7 @@ function getListTrancheSalaire()
       {
         switch($NumStatut){
           case 0: return '';break;
-          case 1: return 'célibataire';break; 
+          case 1: return 'c&eacute;libataire';break; 
           case 2: return 'en couple';break;   
         }
       }
