@@ -26,8 +26,27 @@ class BaseFindossierForm extends BaseFormPropel
     $nomchrs=$findossier->getListNomCHRS();
     $resultat = array_merge( $nomfjt, $nomchrs );
 
+    if($findossier->getCategorieClassement()=='3'){   
+    $this->setWidgets(array(
+      'id'                         => new sfWidgetFormInputHidden(),
+      'dossier_id'                 => new sfWidgetFormInputHidden(),//sfWidgetFormPropelSelect(array('model' => 'Dossier', 'add_empty' => true)),
+      'type_parc'                  => new sfWidgetFormInputHidden(),
+      'type_proprietaire_bailleur' => new sfWidgetFormSelectRadio(array('choices' => $typeprophlm)),
+      'nom_proprietaire_bailleur'  => new sfWidgetFormSelectRadio(array('choices' => $nombailleurs)),
+      'type_condition_acces'       => new sfWidgetFormSelectRadio(array('choices' => $typeconditionacces)),
+      'nom_condition_acces'        => new sfWidgetFormSelectRadio(array('choices' => $nomlocapass)),
+      'ville_logement'             => new sfWidgetFormSelect(array('choices' => $villes)),
+      'departement_logement'       => new sfWidgetFormInput(),
+      'type_logement'              => new sfWidgetFormSelectRadio(array('choices' => $typelogement)),
+      'superficie_logement'        => new sfWidgetFormInput(),
+      'loyer'                      => new sfWidgetFormInput(),
+      'edf_gdf'                    => new sfWidgetFormInput(),
+      'chauffage'                  => new sfWidgetFormInput(),
+      'difficultes_rencontrees'    => new sfWidgetFormTextarea(),
+      'categorie_classement'       => new sfWidgetFormSelectRadio(array('choices' => self::$categorieclassement)),
+    ));}   
 
-    if($findossier->getTypeParc()=='0'){   
+    elseif($findossier->getTypeParc()=='1'){   
     $this->setWidgets(array(
       'id'                         => new sfWidgetFormInputHidden(),
       'dossier_id'                 => new sfWidgetFormInputHidden(),//sfWidgetFormPropelSelect(array('model' => 'Dossier', 'add_empty' => true)),
@@ -46,7 +65,7 @@ class BaseFindossierForm extends BaseFormPropel
       'difficultes_rencontrees'    => new sfWidgetFormTextarea(),
       'categorie_classement'       => new sfWidgetFormSelectRadio(array('choices' => self::$categorieclassement)),
     ));}
-elseif($findossier->getTypeParc()=='1'){   
+elseif($findossier->getTypeParc()=='2'){   
     $this->setWidgets(array(
       'id'                         => new sfWidgetFormInputHidden(),
       'dossier_id'                 => new sfWidgetFormInputHidden(),//sfWidgetFormPropelSelect(array('model' => 'Dossier', 'add_empty' => true)),
@@ -65,7 +84,7 @@ elseif($findossier->getTypeParc()=='1'){
       'difficultes_rencontrees'    => new sfWidgetFormTextarea(),
       'categorie_classement'       => new sfWidgetFormSelectRadio(array('choices' => self::$categorieclassement)),
     ));}
-elseif($findossier->getTypeParc()=='2'){   
+elseif($findossier->getTypeParc()=='3'){   
     $this->setWidgets(array(
       'id'                         => new sfWidgetFormInputHidden(),
       'dossier_id'                 => new sfWidgetFormInputHidden(),//sfWidgetFormPropelSelect(array('model' => 'Dossier', 'add_empty' => true)),

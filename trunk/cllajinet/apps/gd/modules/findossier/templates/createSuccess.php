@@ -10,7 +10,6 @@
           <?php if (!$findossier->isNew()): ?>
             &nbsp;<?php echo link_to('Supprimer', 'findossier/delete?id='.$findossier->getId(), array('post' => true, 'confirm' => 'Are you sure?')) ?>
           <?php endif; ?>
-          <input type="submit" value="Poursuivre fin du dossier" name="poursuivreFinDossier" />
         </td>
       </tr>
     </tfoot>
@@ -43,4 +42,6 @@
       </tr> 
     </tbody>
   </table>
+          <input type="submit" value="Poursuivre fin du dossier" name="poursuivreFinDossier" />
+          <input type="submit" value="Terminer clôture du dossier" name="terminer" />
 </form>
