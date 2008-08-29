@@ -38,6 +38,7 @@ propel:
     etat:                            varchar(255)
     date_ouverture_dossier:          date
     date_cloture_dossier:            date
+    difficultes_vie_dossier:         varchar(255)
     type_dossier:                    varchar(255)
 
   finDossier:
