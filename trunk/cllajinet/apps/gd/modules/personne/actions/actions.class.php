@@ -45,6 +45,7 @@ class personneActions extends sfActions
       //$var1=$this->getRequest();
       $tab=$request->getPostParameters();
       if(array_key_exists("Conjoint",$tab)){$this->redirect('personne/create/index');}
+      elseif(array_key_exists("Fin",$tab)){$this->redirect('personne/index');}
       elseif(array_key_exists("Colocataire",$tab)){$this->redirect('personne/create/index');}
       else{$this->redirect('dossier/cloture?id='.$personne->getDossierId());}
     }
@@ -64,18 +65,48 @@ class personneActions extends sfActions
 
   public function executeSearch($request)
   {
-
-    $c = new Criteria();
-    $c->add(PersonnePeer::NOM, $request->getParameter('nom',""));
-    $c->addAscendingOrderByColumn(PersonnePeer::NOM);
-    $this->personneList = PersonnePeer::doSelect($c);
-    $nbresultats=count($this->personneList);
-    if($nbresultats==1){
-        $this->redirect('personne/edit?id='.$this->personneList[0]->getId());
+    if($request->getParameter('nom')==""){
+       $c = new Criteria();
+       $c->add(PersonnePeer::PRENOM, $request->getParameter('prenom',""));
+       $c->addAscendingOrderByColumn(PersonnePeer::PRENOM);
+       $this->personneList = PersonnePeer::doSelect($c);
+       $nbresultats=count($this->personneList);
+       if($nbresultats==1){
+           $this->redirect('personne/edit?id='.$this->personneList[0]->getId());
+       }
+       elseif($nbresultats==0){
+           $this->redirect('choixAction/index');
+       }
+       else{$this->setTemplate('index');}
     }
-    elseif($nbresultats==0){
-        $this->redirect('choixAction/index');
+    elseif($request->getParameter('prenom')==""){
+       $c = new Criteria();
+       $c->add(PersonnePeer::NOM, $request->getParameter('nom',""));
+       $c->addAscendingOrderByColumn(PersonnePeer::NOM);
+       $this->personneList = PersonnePeer::doSelect($c);
+       $nbresultats=count($this->personneList);
+       if($nbresultats==1){
+           $this->redirect('personne/edit?id='.$this->personneList[0]->getId());
+       }
+       elseif($nbresultats==0){
+           $this->redirect('choixAction/index');
+       }
+       else{$this->setTemplate('index');}
     }
-    else{$this->setTemplate('index');}
+    elseif($request->getParameter('prenom')!="" && $request->getParameter('nom')!=""){
+       $c = new Criteria();
+       $c->add(PersonnePeer::NOM, $request->getParameter('nom',""));
+       $c->add(PersonnePeer::PRENOM, $request->getParameter('prenom',""));
+       $c->addAscendingOrderByColumn(PersonnePeer::NOM);
+       $this->personneList = PersonnePeer::doSelect($c);
+       $nbresultats=count($this->personneList);
+       if($nbresultats==1){
+           $this->redirect('personne/edit?id='.$this->personneList[0]->getId());
+       }
+       elseif($nbresultats==0){
+           $this->redirect('choixAction/index');
+       }
+       else{$this->setTemplate('index');}
+    }
   }
 }

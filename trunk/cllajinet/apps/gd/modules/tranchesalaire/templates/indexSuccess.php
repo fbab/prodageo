@@ -1,17 +1,17 @@
 <h1>Tranchesalaire List</h1>
 
-<table>
+<table class="traitsVisibles">
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Listtranchesalaire</th>
+      <th class="traitsVisibles">Id</th>
+      <th class="traitsVisibles">Listtranchesalaire</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($tranchesalaireList as $tranchesalaire): ?>
     <tr>
-      <td><a href="<?php echo url_for('tranchesalaire/show?id='.$tranchesalaire->getId()) ?>"><?php echo $tranchesalaire->getId() ?></a></td>
-      <td><?php echo $tranchesalaire->getListtranchesalaire() ?></td>
+      <td class="traitsVisibles"><a href="<?php echo url_for('tranchesalaire/show?id='.$tranchesalaire->getId()) ?>"><?php echo $tranchesalaire->getId() ?></a></td>
+      <td class="traitsVisibles"><?php echo $tranchesalaire->getListtranchesalaire() ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

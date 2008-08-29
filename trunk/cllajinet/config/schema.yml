@@ -126,66 +126,74 @@ propel:
     id:                              ~
     listrequetes:                    longvarchar 
     titrerequetes:                   varchar(255)
+    ordrerequetes:                   integer
     chapitre_id:                     ~
 
   statistiques:
     id:                              ~
     datestat:                        date
-    nbmenagesrecu:                   integer
-    nbadultesrecu:                   integer
-    nbenfantsrecu:                   integer
-    nbloges:                         integer
-    nblogesadultes:                  integer
-    nblogesenfants:                  integer
-    nblogesdirect:                   integer
-    nblogesdirectadultes:            integer
-    nblogesdirectenfants:            integer
-    nblogesindirect:                 integer
-    nblogesindirectadultes:          integer
-    nblogesindirectenfants:          integer
-    nbaltsousloc:                    integer
-    nbaltaltsouslocadultes:          integer
-    nbaltaltsouslocenfants:          integer
-    nbencours:                       integer
-    nbencoursadultes:                integer
-    nbencoursenfants:                integer
-    nbabandon:                       integer
-    nbabandonadultes:                integer
-    nbabandonenfants:                integer
-    sexe:                            integer
-    trancheage:                      integer
-    nationalite:                     integer
-    situationfamiliale:              integer
-    originedemande:                  integer
-    villeresidence:                  integer
-    modehebergement:                 integer
-    lieutravail:                     integer
-    typecontrat:                     integer
-    revenus:                         integer
-    sexeloges:                       integer
-    trancheageloges:                 integer
-    nationaliteloges:                integer
-    situationfamilialeloges:         integer
-    originedemandeloges:             integer
-    villeresidenceloges:             integer
-    modehebergementloges:            integer
-    lieutravailloges:                integer
-    typecontratloges:                integer
-    revenusloges:                    integer
-    typelogementtrouveloges:         integer
-    typeproprietaireloges:           integer
-    villelogementtrouveloges:        integer
-    nbrecu:                          integer
-    nbloges:                         integer
-    nbabandons:                      integer
-    nbencours:                       integer
+    nbmenagesrecu:                   float
+    nbadultesrecu:                   float
+    nbenfantsrecu:                   float
+    nbloges:                         float
+    nblogesadultes:                  float
+    nblogesenfants:                  float
+    nblogesdirect:                   float
+    nblogesdirectadultes:            float
+    nblogesdirectenfants:            float
+    nblogesindirect:                 float
+    nblogesindirectadultes:          float
+    nblogesindirectenfants:          float
+    nbaltsousloc:                    float
+    nbaltsouslocadultes:             float
+    nbaltsouslocenfants:             float
+    nbencours:                       float
+    nbencoursadultes:                float
+    nbencoursenfants:                float
+    nbabandon:                       float
+    nbabandonadultes:                float
+    nbabandonenfants:                float
+    sexe:                            float
+    trancheage:                      float
+    nationalite:                     float
+    situationfamiliale:              float
+    originedemande:                  float
+    villeresidence:                  float
+    modehebergement:                 float
+    lieutravail:                     float
+    typecontrat:                     float
+    revenus:                         float
+    sexeloges:                       float
+    trancheageloges:                 float
+    nationaliteloges:                float
+    situationfamilialeloges:         float
+    originedemandeloges:             float
+    villeresidenceloges:             float
+    modehebergementloges:            float
+    lieutravailloges:                float
+    typecontratloges:                float
+    revenusloges:                    float
+    typelogementtrouveloges:         float
+    typeproprietaireloges:           float
+    villelogementtrouveloges:        float
+    nbrecu:                          float
+    nbloges:                         float
+    nbabandons:                      float
+    nbencours:                       float
     
   chapitre:
     id:                              ~
     anneecreation:                   integer
     anneesupression:                 integer
-    titrechapitre:                   varchar(255)  
-      
+    titrechapitre:                   varchar(255)
+    chapitreparent:                  varchar(255) 
+
+  statTableau:
+    id:                              ~
+    statistiques_id:                 ~
+    nomstat:                         varchar(255)
+    valeaursid:                      integer
+    valeurs:                         float
 
 
 

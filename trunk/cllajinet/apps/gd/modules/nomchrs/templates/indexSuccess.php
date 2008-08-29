@@ -1,17 +1,17 @@
 <h1>Nomchrs List</h1>
 
-<table>
+<table class="traitsVisibles">
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Listnomchrs</th>
+      <th class="traitsVisibles">Id</th>
+      <th class="traitsVisibles">Listnomchrs</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($nomchrsList as $nomchrs): ?>
     <tr>
-      <td><a href="<?php echo url_for('nomchrs/show?id='.$nomchrs->getId()) ?>"><?php echo $nomchrs->getId() ?></a></td>
-      <td><?php echo $nomchrs->getListnomchrs() ?></td>
+      <td class="traitsVisibles"><a href="<?php echo url_for('nomchrs/show?id='.$nomchrs->getId()) ?>"><?php echo $nomchrs->getId() ?></a></td>
+      <td class="traitsVisibles"><?php echo $nomchrs->getListnomchrs() ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

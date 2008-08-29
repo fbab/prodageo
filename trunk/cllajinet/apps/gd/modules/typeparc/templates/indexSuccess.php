@@ -1,17 +1,17 @@
 <h1>Typeparc List</h1>
 
-<table>
+<table class="traitsVisibles">
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Listtypeparc</th>
+      <th class="traitsVisibles">Id</th>
+      <th class="traitsVisibles">Listtypeparc</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($typeparcList as $typeparc): ?>
     <tr>
-      <td><a href="<?php echo url_for('typeparc/show?id='.$typeparc->getId()) ?>"><?php echo $typeparc->getId() ?></a></td>
-      <td><?php echo $typeparc->getListtypeparc() ?></td>
+      <td class="traitsVisibles"><a href="<?php echo url_for('typeparc/show?id='.$typeparc->getId()) ?>"><?php echo $typeparc->getId() ?></a></td>
+      <td class="traitsVisibles"><?php echo $typeparc->getListtypeparc() ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

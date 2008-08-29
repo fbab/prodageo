@@ -25,5 +25,6 @@ php symfony propel:generate-crud gd typelogement Typelogement --with-show
 php symfony propel:generate-crud gd listerequetes Listerequetes --with-show
 php symfony propel:generate-crud gd statistiques Statistiques --with-show
 php symfony propel:generate-crud gd chapitre Chapitre --with-show
+php symfony propel:generate-crud gd stattableau Stattableau --with-show
 php symfony cache:clear
 

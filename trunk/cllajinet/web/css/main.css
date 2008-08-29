@@ -53,13 +53,6 @@ div#content
 
 
 }
-td.statgenerales
-{
-   background-color: gray;
-   color: white;
-}
-
-
 
 li#personne
 {
@@ -116,6 +109,24 @@ a:active
 
  }
 
+
+
+table.traitsVisibles
+{
+   border:2px solid #0099CC;
+   border-collapse: collapse
+}
+
+td.traitsVisibles,th.traitsVisibles,tr.traitsVisibles
+{
+   border:2px solid #0099CC; 
+}
+
+td.statgenerales
+{
+   background-color: gray;
+   color: white;
+}
 
 
 

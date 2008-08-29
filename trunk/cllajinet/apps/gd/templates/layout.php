@@ -23,12 +23,12 @@
   </div>
   <div id="navigation">
     <ul>
+      <li id="accueil"><?php echo link_to('Accueil', 'choixAction/index') ?></li>
+    </ul>
+    <ul>
       <li id="personne"><?php echo link_to('Liste des Personnes', 'personne/index') ?></li>
       <li id="dossier"><?php echo link_to('Liste des Dossiers', 'dossier/index') ?></li>
       <li id="dossier"><?php echo link_to('Liste des fins de dossiers', 'findossier/index') ?></li>
-    </ul>
-    <ul>
-      <li id="accueil"><?php echo link_to('retour au menu choix action', 'choixAction/index') ?></li>
     </ul>
     <ul>
       <li id="stats"><?php echo link_to('statistiques', 'statistiques/create') ?></li>

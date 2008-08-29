@@ -25,4 +25,13 @@ class Dossier extends BaseDossier
         return $max+1;
       }
 
+      function getTypeDossierTraduit($TypeDossier)
+      {
+        switch($TypeDossier){
+          case 0: return 'Personne seule';break;
+          case 1: return 'Couple';break;  
+          case 2: return 'Colocation';break;  
+        }
+      }
+
 }
