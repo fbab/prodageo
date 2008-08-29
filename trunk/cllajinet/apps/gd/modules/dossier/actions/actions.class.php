@@ -59,6 +59,7 @@ class dossierActions extends sfActions
       $var1=$this->getRequest();
       $tab=$var1->getPostParameters();
       if(array_key_exists("profilPersonne",$tab)){$this->redirect('personne/create/index');}
+      elseif(array_key_exists("modifDossier",$tab)){$this->redirect('dossier/edit?id='.$request->getParameter('id'));}
       else{$this->redirect('findossier/create?dossier_id='.$dossier->getId());}      
     }
 

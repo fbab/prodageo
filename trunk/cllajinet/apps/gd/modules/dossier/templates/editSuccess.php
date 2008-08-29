@@ -72,4 +72,5 @@
   </table><br/>
           <input type="submit" value="Profil Personne" name="profilPersonne" />
           <input type="submit" value="Poursuivre clôture" name="poursuivreCloture"/>
+          <input type="submit" value="Modifier Dossier" name="modifDossier" />
 </form>
