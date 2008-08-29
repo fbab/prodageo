@@ -47,6 +47,7 @@ class findossierActions extends sfActions
       $var1=$this->getRequest();
       $tab=$var1->getPostParameters();
       if(array_key_exists("poursuivreFinDossier",$tab)){$this->redirect('findossier/edit?id='.$findossier->getId());}
+      elseif(array_key_exists("terminer",$tab)){$this->redirect('findossier/terminer?id='.$findossier->getId());}
       else{$this->redirect('findossier/index');}      
     }
 
@@ -60,5 +61,11 @@ class findossierActions extends sfActions
     $findossier->delete();
 
     $this->redirect('findossier/index');
+  }
+
+  public function executeTerminer($request)
+  {
+    $this->form = new FindossierForm(FindossierPeer::retrieveByPk($request->getParameter('id')));
+
   }
 }

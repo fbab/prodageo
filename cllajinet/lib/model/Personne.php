@@ -126,10 +126,15 @@ function getListTrancheSalaire()
 	$statement = $connection->prepareStatement($query);
         $statement->setString(1,$idDossier);
 	$resultset = $statement->executeQuery();
-	$resultset->next();
-	$idFinDossier = $resultset->getString('idFinDossier');
+        if($resultset->getRecordCount()!=1){
+	     return -1;
+        }
+        else{
+             $resultset->next();
+	     $idFinDossier = $resultset->getInt('idFinDossier');
+             return $idFinDossier;
+        }
         
-        return $idFinDossier;
       }
 
       function getSexeTraduit($NumSexe)

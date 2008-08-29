@@ -78,7 +78,7 @@ class dossierActions extends sfActions
   {
     $dossier=DossierPeer::retrieveByPk($request->getParameter('id'));
     $this->form=new DossierForm($dossier);
-    $this->form->setDefault('etat', 'clôturé');
+    $this->form->setDefault('etat', 'cloture');
     $this->setTemplate('edit');
   }
   public function executeModification($request)
