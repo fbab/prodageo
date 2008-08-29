@@ -24,13 +24,17 @@
   <tbody>
     <?php foreach ($findossierList as $findossier): ?>
 
-    <?php $typeParc = TypeparcPeer::retrieveByPk($findossier->getTypeparc()+1);?>
-    <?php $typeProprietaireHLM = TypeproprietairehlmPeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
+    <?php $typeParc = TypeparcPeer::retrieveByPk($findossier->getTypeparc());?>
+    <?php $typeProprietaireHLM = TypeproprietairehlmPeer::retrieveByPk($findossier->getTypeProprietaireBailleur());?>
     <?php $typeProprietairePrive = TypeproprietaireprivePeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
     <?php $typeProprietaireHebTemp = TypeproprietairehebtempPeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
     <?php $nomFJT = NomfjtPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
     <?php $nomCHRS = NomchrsPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
     <?php $nomBailleursHLM = NombailleurshlmPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
+    <?php $conditionAcces = ConditionaccesPeer::retrieveByPk($findossier->getTypeConditionAcces());?>
+    <?php $nomLocaPass = NomlocapassPeer::retrieveByPk($findossier->getNomConditionAcces());?>
+    <?php $villeLogement = VillePeer::retrieveByPk($findossier->getVilleLogement());?>
+    <?php $typeLogement = TypelogementPeer::retrieveByPk($findossier->getTypeLogement());?>
  
     <tr>
       <td class="traitsVisibles"><a href="<?php echo url_for('findossier/show?id='.$findossier->getId()) ?>"><?php echo $findossier->getId() ?></a></td>
@@ -81,11 +85,11 @@
        else{echo 'inconnu';}   
 
       ?></td>
-      <td class="traitsVisibles"><?php echo $findossier->getTypeConditionAcces() ?></td>
-      <td class="traitsVisibles"><?php echo $findossier->getNomConditionAcces() ?></td>
-      <td class="traitsVisibles"><?php echo $findossier->getVilleLogement() ?></td>
+      <td class="traitsVisibles"><?php if($conditionAcces != null){echo $conditionAcces->getListconditionsacces();}else{echo 'inconnu';}?></td>
+      <td class="traitsVisibles"><?php if($nomLocaPass != null){echo $nomLocaPass->getListnomlocapass();}else{echo 'inconnu';} ?></td>
+      <td class="traitsVisibles"><?php if($villeLogement != null){echo $villeLogement->getListville();}else{echo 'inconnu';}?></td>
       <td class="traitsVisibles"><?php echo $findossier->getDepartementLogement() ?></td>
-      <td class="traitsVisibles"><?php echo $findossier->getTypeLogement() ?></td>
+      <td class="traitsVisibles"><?php if($typeLogement != null){echo $typeLogement->getListtypelogement();}else{echo 'inconnu';} ?></td>
       <td class="traitsVisibles"><?php echo $findossier->getSuperficieLogement() ?></td>
       <td class="traitsVisibles"><?php echo $findossier->getLoyer() ?></td>
       <td class="traitsVisibles"><?php echo $findossier->getEdfGdf() ?></td>
