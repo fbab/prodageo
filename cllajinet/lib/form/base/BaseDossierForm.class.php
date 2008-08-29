@@ -40,10 +40,10 @@ class BaseDossierForm extends BaseFormPropel
     else{
      $this->setWidgets(array(
       'id'                     => new sfWidgetFormInputHidden(),
-      'etat'                   => new sfWidgetFormInputHidden(),
-      'date_ouverture_dossier' => new sfWidgetFormInputHidden(),
-      'date_cloture_dossier'   => new sfWidgetFormInputHidden(),
-      'type_dossier'           => new sfWidgetFormInputHidden(),
+      'etat'                   => new sfWidgetFormInput(),
+      'date_ouverture_dossier' => $dateOuverture,
+      'date_cloture_dossier'   => $dateOuverture,
+      'type_dossier'           => new sfWidgetFormSelectRadio(array('choices' => self::$typeDossier))
     ));
     }
 

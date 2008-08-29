@@ -95,6 +95,7 @@
         <td>
           <?php echo $form['superficie_logement']->renderError() ?>
           <?php echo $form['superficie_logement'] ?>
+          <label>m²</label>
         </td>
       </tr>
       <tr>
@@ -129,11 +130,8 @@
         </td>
       </tr>
       <tr>
-        <th><label for="findossier_categorie_classement">Categorie classement</label></th>
+        <th><label for="findossier_categorie_classement"></label></th>
         <td>
-          <?php echo $form['categorie_classement']->renderError() ?>
-          <?php echo $form['categorie_classement'] ?>
-
         <?php echo $form['id'] ?>
         </td>
       </tr>

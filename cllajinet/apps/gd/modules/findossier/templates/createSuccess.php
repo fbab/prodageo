@@ -6,11 +6,11 @@
     <tfoot>
       <tr>
         <td colspan="2">
-          &nbsp;<a href="<?php echo url_for('findossier/index') ?>">Cancel</a>
+          &nbsp;<a href="<?php echo url_for('findossier/index') ?>">Annuler</a>
           <?php if (!$findossier->isNew()): ?>
-            &nbsp;<?php echo link_to('Delete', 'findossier/delete?id='.$findossier->getId(), array('post' => true, 'confirm' => 'Are you sure?')) ?>
+            &nbsp;<?php echo link_to('Supprimer', 'findossier/delete?id='.$findossier->getId(), array('post' => true, 'confirm' => 'Are you sure?')) ?>
           <?php endif; ?>
-          <input type="submit" value="Save" />
+          <input type="submit" value="Poursuivre fin du dossier" name="poursuivreFinDossier" />
         </td>
       </tr>
     </tfoot>
@@ -26,7 +26,13 @@
           ?>
         </td>
       </tr>
-
+      <tr>
+        <th><label for="findossier_categorie_classement">Categorie classement</label></th>
+        <td>
+          <?php echo $form['categorie_classement']->renderError() ?>
+          <?php echo $form['categorie_classement'] ?>
+        </td>
+      </tr>
       <tr>
         <th><label for="findossier_type_parc">Type parc</label></th>
         <td>
@@ -34,9 +40,7 @@
           <?php echo $form['type_parc'] ?>
           <?php echo $findossier->getTypeParc() ?>
         </td>
-      </tr>
-
-      
+      </tr> 
     </tbody>
   </table>
 </form>

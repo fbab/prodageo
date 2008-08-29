@@ -39,13 +39,15 @@ class findossierActions extends sfActions
     $this->forward404Unless($request->isMethod('post'));
 
     $this->form = new FindossierForm(FindossierPeer::retrieveByPk($request->getParameter('id')));
-
+    $tab=$request->getPostParameters();
     $this->form->bind($request->getParameter('findossier'));
     if ($this->form->isValid())
     {
       $findossier = $this->form->save();
-
-      $this->redirect('findossier/edit?id='.$findossier->getId());
+      $var1=$this->getRequest();
+      $tab=$var1->getPostParameters();
+      if(array_key_exists("poursuivreFinDossier",$tab)){$this->redirect('findossier/edit?id='.$findossier->getId());}
+      else{$this->redirect('findossier/index');}      
     }
 
     $this->setTemplate('edit');
