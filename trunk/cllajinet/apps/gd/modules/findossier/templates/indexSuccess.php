@@ -40,20 +40,21 @@
 	        echo $typeProprietaireHLM->getListtypeproprietairehlm();
 	     }
 	     else{echo 'inconnu';}
-	  }
-	  elseif($typeParc->getListtypeparc()=='Privé'){
+	   }
+	   elseif($typeParc->getListtypeparc()=='Privé'){
              if($typeProprietairePrive != null){
 	        echo $typeProprietairePrive->getListtypeproprietaireprive();
 	     }
 	     else{echo 'inconnu';}
-	  }
-	  else{
+	   }
+	   else{
              if($typeProprietaireHebTemp != null){
 	        echo $typeProprietaireHebTemp->getListtypeproprietairehebtemp();
 	     }
 	     else{echo 'inconnu';}
-	  }
-        else{echo 'inconnu';}
+	   }
+       }
+       else{echo 'inconnu';}      
       ?></td>
 
 

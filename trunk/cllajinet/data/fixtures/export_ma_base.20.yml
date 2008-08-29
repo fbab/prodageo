@@ -1,0 +1,2634 @@
+Nomfjt:
+  Nomfjt_1:
+    listnomfjt: ''
+  Nomfjt_2:
+    listnomfjt: 'Marcel Callo'
+  Nomfjt_3:
+    listnomfjt: 'La Clairière'
+  Nomfjt_4:
+    listnomfjt: 'Edouard Lefebvre'
+Dossier:
+  Dossier_1:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-18'
+    date_cloture_dossier: '2008-08-18'
+    type_dossier: '1'
+  Dossier_2:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-18'
+    date_cloture_dossier: '2008-06-13'
+    type_dossier: '1'
+  Dossier_3:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-18'
+    date_cloture_dossier: '2007-03-03'
+    type_dossier: '1'
+  Dossier_4:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    date_cloture_dossier: '2004-02-01'
+    type_dossier: '1'
+  Dossier_5:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '1'
+  Dossier_6:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    date_cloture_dossier: '2007-03-04'
+    type_dossier: '1'
+  Dossier_7:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    date_cloture_dossier: '2005-03-02'
+    type_dossier: '1'
+  Dossier_8:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_9:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_10:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_11:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_12:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_13:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_14:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_15:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_16:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_17:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_18:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_19:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_20:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_21:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_22:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_23:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_24:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_25:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_26:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_27:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_28:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_29:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_30:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_31:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    date_cloture_dossier: '2010-05-05'
+    type_dossier: '0'
+  Dossier_32:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_33:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_34:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_35:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_36:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_37:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_38:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_39:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_40:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_41:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_42:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    date_cloture_dossier: '2003-01-28'
+    type_dossier: '0'
+  Dossier_43:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-19'
+    date_cloture_dossier: '2003-01-29'
+    type_dossier: '0'
+  Dossier_44:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-19'
+    type_dossier: '0'
+  Dossier_45:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-20'
+    type_dossier: '1'
+  Dossier_46:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-20'
+    date_cloture_dossier: '2004-04-27'
+    type_dossier: '0'
+  Dossier_47:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-20'
+    date_cloture_dossier: '2004-04-27'
+    type_dossier: '0'
+  Dossier_48:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-20'
+    date_cloture_dossier: '2004-04-03'
+    type_dossier: '1'
+  Dossier_49:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-20'
+    type_dossier: '1'
+  Dossier_50:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-20'
+    type_dossier: '0'
+  Dossier_51:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-20'
+    type_dossier: '1'
+  Dossier_52:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-20'
+    date_cloture_dossier: '2008-08-20'
+    type_dossier: '0'
+  Dossier_53:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-20'
+    date_cloture_dossier: '2013-12-01'
+    type_dossier: '0'
+  Dossier_54:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-20'
+    date_cloture_dossier: '2009-01-01'
+    type_dossier: '0'
+  Dossier_55:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-18'
+    date_cloture_dossier: '2008-08-18'
+    type_dossier: '1'
+  Dossier_56:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-18'
+    date_cloture_dossier: '2008-06-13'
+    type_dossier: '1'
+  Dossier_57:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-18'
+    date_cloture_dossier: '2007-03-03'
+    type_dossier: '1'
+  Dossier_58:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-22'
+    type_dossier: '0'
+  Dossier_59:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-25'
+    date_cloture_dossier: '2009-05-24'
+    type_dossier: '1'
+  Dossier_60:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-28'
+    date_cloture_dossier: '2009-03-31'
+    type_dossier: '0'
+  Dossier_61:
+    etat: clôturé
+    date_ouverture_dossier: '2008-08-28'
+    type_dossier: '1'
+  Dossier_62:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-28'
+    type_dossier: '1'
+  Dossier_63:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-28'
+    type_dossier: '0'
+  Dossier_64:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-28'
+    type_dossier: '0'
+  Dossier_65:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-28'
+    type_dossier: '0'
+  Dossier_66:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-28'
+    type_dossier: '1'
+  Dossier_67:
+    etat: 'en cours'
+    date_ouverture_dossier: '2008-08-28'
+    type_dossier: '0'
+Typestructure:
+  Typestructure_1:
+    listtypestructure: ''
+  Typestructure_2:
+    listtypestructure: 'Mission locale'
+  Typestructure_3:
+    listtypestructure: Mairie
+  Typestructure_4:
+    listtypestructure: 'Structure d''hébergement'
+  Typestructure_5:
+    listtypestructure: 'Travailleurs sociaux'
+  Typestructure_6:
+    listtypestructure: Connaissances
+  Typestructure_7:
+    listtypestructure: Autre
+Chapitre:
+  Chapitre_1:
+    anneecreation: '2008'
+    titrechapitre: statgenerales
+  Chapitre_2:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: sexeStatsGenerales
+  Chapitre_3:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: ageStatsGenerales
+  Chapitre_4:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: nationaliteStatsGenerales
+  Chapitre_5:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: situationFamilialeStatsGenerales
+  Chapitre_6:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: origineDemandeStatsGenerales
+  Chapitre_7:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: villeResidenceStatsGenerales
+  Chapitre_8:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: modeHebStatsGenerales
+  Chapitre_9:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: lieuTravailStatsGenerales
+  Chapitre_10:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: typeContratStatsGenerales
+  Chapitre_11:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: revenusStatsGenerales
+  Chapitre_12:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: sexeLoges
+  Chapitre_13:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: ageLoges
+  Chapitre_14:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: nationaliteLoges
+  Chapitre_15:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: situationFamilialeLoges
+  Chapitre_16:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: origineDemandeLoges
+  Chapitre_17:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: villeResidenceLoges
+  Chapitre_18:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: modeHebLoges
+  Chapitre_19:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: lieuTravailLoges
+  Chapitre_20:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: typeContratLoges
+  Chapitre_21:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: revenusLoges
+  Chapitre_22:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: logementTrouveLoges
+  Chapitre_23:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: typePropLoges
+  Chapitre_24:
+    anneecreation: '5'
+    anneesupression: '0'
+    titrechapitre: villeLogementLoges
+Nomchrs:
+  Nomchrs_1:
+    listnomchrs: 'L''Oustal'
+  Nomchrs_2:
+    listnomchrs: 'La Marcotte'
+  Nomchrs_3:
+    listnomchrs: 'Le Bel-air'
+  Nomchrs_4:
+    listnomchrs: 'Le Béthel'
+  Nomchrs_5:
+    listnomchrs: 'Saint Yves'
+  Nomchrs_6:
+    listnomchrs: Stuart-Mill
+Tranchesalaire:
+  Tranchesalaire_1:
+    listtranchesalaire: ''
+  Tranchesalaire_2:
+    listtranchesalaire: 'moins de 457'
+  Tranchesalaire_3:
+    listtranchesalaire: 'entre 457 et 761'
+  Tranchesalaire_4:
+    listtranchesalaire: 'entre 762 et 914'
+  Tranchesalaire_5:
+    listtranchesalaire: 'entre 915 et 1067'
+  Tranchesalaire_6:
+    listtranchesalaire: 'plus de 1067'
+  Tranchesalaire_7:
+    listtranchesalaire: sans
+Nombailleurshlm:
+  Nombailleurshlm_1:
+    listnombailleurshlm: ''
+  Nombailleurshlm_2:
+    listnombailleurshlm: opievoy
+  Nombailleurshlm_3:
+    listnombailleurshlm: 3F
+  Nombailleurshlm_4:
+    listnombailleurshlm: 'Versailles habitat'
+  Nombailleurshlm_5:
+    listnombailleurshlm: 'France habitation'
+  Nombailleurshlm_6:
+    listnombailleurshlm: 'OSICA habitat'
+Typecontrat:
+  Typecontrat_1:
+    listtypecontrat: ''
+  Typecontrat_2:
+    listtypecontrat: 'CDI C'
+  Typecontrat_3:
+    listtypecontrat: 'CDI P'
+  Typecontrat_4:
+    listtypecontrat: 'CDD / interim'
+  Typecontrat_5:
+    listtypecontrat: 'Formation / stage'
+  Typecontrat_6:
+    listtypecontrat: 'Assedic / sans'
+  Typecontrat_7:
+    listtypecontrat: 'Etudiant / lycéen'
+Findossier:
+  Findossier_1:
+    dossier_id: Dossier_1
+    type_parc: '0'
+    type_proprietaire_bailleur: '1'
+    nom_proprietaire_bailleur: '1'
+    type_condition_acces: '1'
+    nom_condition_acces: ''
+    ville_logement: '3'
+    type_logement: '2'
+    difficultes_rencontrees: ''
+    categorie_classement: '0'
+  Findossier_2:
+    dossier_id: Dossier_2
+    type_parc: '0'
+    type_proprietaire_bailleur: '1'
+    nom_proprietaire_bailleur: '1'
+    type_condition_acces: '0'
+    nom_condition_acces: '1'
+    ville_logement: '3'
+    type_logement: '4'
+    difficultes_rencontrees: ''
+    categorie_classement: '3'
+  Findossier_3:
+    dossier_id: Dossier_3
+    type_parc: '1'
+    type_proprietaire_bailleur: '2'
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: '4'
+    nom_condition_acces: ''
+    ville_logement: '8'
+    type_logement: '5'
+    difficultes_rencontrees: ''
+    categorie_classement: '2'
+  Findossier_4:
+    dossier_id: Dossier_1
+    type_parc: ''
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_5:
+    dossier_id: Dossier_2
+    type_parc: '0'
+    type_proprietaire_bailleur: '2'
+    nom_proprietaire_bailleur: '3'
+    type_condition_acces: '4'
+    nom_condition_acces: ''
+    ville_logement: '0'
+    type_logement: '5'
+    difficultes_rencontrees: ''
+    categorie_classement: '3'
+  Findossier_6:
+    dossier_id: Dossier_2
+    type_parc: '0'
+    type_proprietaire_bailleur: '0'
+    nom_proprietaire_bailleur: '1'
+    type_condition_acces: '0'
+    nom_condition_acces: '0'
+    ville_logement: '0'
+    type_logement: '2'
+    difficultes_rencontrees: ''
+    categorie_classement: '3'
+  Findossier_7:
+    dossier_id: Dossier_2
+    type_parc: '1'
+    type_proprietaire_bailleur: '1'
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: '0'
+    nom_condition_acces: '0'
+    ville_logement: '3'
+    type_logement: '1'
+    difficultes_rencontrees: ''
+    categorie_classement: '2'
+  Findossier_8:
+    dossier_id: Dossier_2
+    type_parc: ''
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_9:
+    dossier_id: Dossier_55
+    type_parc: '0'
+    type_proprietaire_bailleur: '1'
+    nom_proprietaire_bailleur: '1'
+    type_condition_acces: '1'
+    nom_condition_acces: ''
+    ville_logement: '3'
+    type_logement: '2'
+    difficultes_rencontrees: ''
+    categorie_classement: '0'
+  Findossier_10:
+    dossier_id: Dossier_56
+    type_parc: '0'
+    type_proprietaire_bailleur: '1'
+    nom_proprietaire_bailleur: '1'
+    type_condition_acces: '0'
+    nom_condition_acces: '1'
+    ville_logement: '3'
+    type_logement: '4'
+    difficultes_rencontrees: ''
+    categorie_classement: '3'
+  Findossier_11:
+    dossier_id: Dossier_57
+    type_parc: '1'
+    type_proprietaire_bailleur: '2'
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: '4'
+    nom_condition_acces: ''
+    ville_logement: '8'
+    type_logement: '5'
+    difficultes_rencontrees: ''
+    categorie_classement: '2'
+  Findossier_12:
+    dossier_id: Dossier_55
+    type_parc: ''
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_13:
+    dossier_id: Dossier_56
+    type_parc: '0'
+    type_proprietaire_bailleur: '2'
+    nom_proprietaire_bailleur: '3'
+    type_condition_acces: '4'
+    nom_condition_acces: ''
+    ville_logement: '0'
+    type_logement: '5'
+    difficultes_rencontrees: ''
+    categorie_classement: '3'
+  Findossier_14:
+    dossier_id: Dossier_56
+    type_parc: '0'
+    type_proprietaire_bailleur: '0'
+    nom_proprietaire_bailleur: '1'
+    type_condition_acces: '0'
+    nom_condition_acces: '0'
+    ville_logement: '0'
+    type_logement: '2'
+    difficultes_rencontrees: ''
+    categorie_classement: '3'
+  Findossier_15:
+    dossier_id: Dossier_56
+    type_parc: '1'
+    type_proprietaire_bailleur: '1'
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: '0'
+    nom_condition_acces: '0'
+    ville_logement: '3'
+    type_logement: '1'
+    difficultes_rencontrees: ''
+    categorie_classement: '2'
+  Findossier_16:
+    dossier_id: Dossier_56
+    type_parc: ''
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_17:
+    dossier_id: Dossier_1
+    type_parc: '0'
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_18:
+    type_parc: '2'
+    type_proprietaire_bailleur: '2'
+    nom_proprietaire_bailleur: '5'
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: '0'
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_19:
+    dossier_id: Dossier_59
+    type_parc: '0'
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: '0'
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_20:
+    dossier_id: Dossier_31
+    type_parc: '3'
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_21:
+    dossier_id: Dossier_31
+    type_parc: '2'
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_22:
+    dossier_id: Dossier_31
+    type_parc: '2'
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+  Findossier_23:
+    dossier_id: Dossier_31
+    type_parc: '2'
+    type_proprietaire_bailleur: ''
+    nom_proprietaire_bailleur: ''
+    type_condition_acces: ''
+    nom_condition_acces: ''
+    ville_logement: ''
+    type_logement: ''
+    difficultes_rencontrees: ''
+    categorie_classement: ''
+Statistiques:
+  Statistiques_1:
+    datestat: '2008-08-19'
+  Statistiques_2:
+    datestat: '2008-08-22'
+Typeparc:
+  Typeparc_1:
+    listtypeparc: HLM
+  Typeparc_2:
+    listtypeparc: Privé
+  Typeparc_3:
+    listtypeparc: 'Hébergement temporaire'
+Nationalite:
+  Nationalite_1:
+    listnationalite: ''
+  Nationalite_2:
+    listnationalite: Français(e)
+  Nationalite_3:
+    listnationalite: Etranger(e)
+  Nationalite_4:
+    listnationalite: 'Afrique Noire'
+  Nationalite_5:
+    listnationalite: UE
+  Nationalite_6:
+    listnationalite: 'Dom Tom'
+  Nationalite_7:
+    listnationalite: Autre
+Nomlocapass:
+  Nomlocapass_1:
+    listnomlocapass: ''
+  Nomlocapass_2:
+    listnomlocapass: Aliance
+  Nomlocapass_3:
+    listnomlocapass: Procilia
+Typeproprietaireprive:
+  Typeproprietaireprive_1:
+    listtypeproprietaireprive: ''
+  Typeproprietaireprive_2:
+    listtypeproprietaireprive: 'Agence immobilière'
+  Typeproprietaireprive_3:
+    listtypeproprietaireprive: Propriétaire
+  Typeproprietaireprive_4:
+    listtypeproprietaireprive: UNPI
+Typeproprietairehebtemp:
+  Typeproprietairehebtemp_1:
+    listtypeproprietairehebtemp: ''
+  Typeproprietairehebtemp_2:
+    listtypeproprietairehebtemp: FJT
+  Typeproprietairehebtemp_3:
+    listtypeproprietairehebtemp: 'ALT / Sous-location'
+  Typeproprietairehebtemp_4:
+    listtypeproprietairehebtemp: CHRS
+Ville:
+  Ville_1:
+    listville: ''
+  Ville_2:
+    listville: Versailles
+  Ville_3:
+    listville: Viroflay
+  Ville_4:
+    listville: Vélizy
+  Ville_5:
+    listville: 'Saint Cyr'
+  Ville_6:
+    listville: 'Le Chesnay'
+  Ville_7:
+    listville: Buc
+  Ville_8:
+    listville: Fontenay
+  Ville_9:
+    listville: Plaisir
+  Ville_10:
+    listville: 'Autre 78'
+  Ville_11:
+    listville: 'Autre Ile-de-France'
+  Ville_12:
+    listville: Province
+  Ville_13:
+    listville: Sans
+Typeproprietairehlm:
+  Typeproprietairehlm_1:
+    listtypeproprietairehlm: ''
+  Typeproprietairehlm_2:
+    listtypeproprietairehlm: 1%
+  Typeproprietairehlm_3:
+    listtypeproprietairehlm: Préfecture
+  Typeproprietairehlm_4:
+    listtypeproprietairehlm: Mairie
+  Typeproprietairehlm_5:
+    listtypeproprietairehlm: Bailleur
+Conditionsacces:
+  Conditionsacces_1:
+    listconditionsacces: ''
+  Conditionsacces_2:
+    listconditionsacces: Loca-Pass
+  Conditionsacces_3:
+    listconditionsacces: FSL
+  Conditionsacces_4:
+    listconditionsacces: GRL
+  Conditionsacces_5:
+    listconditionsacces: 'parent / famille'
+  Conditionsacces_6:
+    listconditionsacces: sans
+Listerequetes:
+  Listerequetes_1:
+    listrequetes: 'SELECT COUNT(*) AS %s FROM dossier'
+    titrerequetes: nbMenages
+    chapitre_id: Chapitre_1
+  Listerequetes_2:
+    listrequetes: 'SELECT COUNT(*) AS %s FROM dossier WHERE id IN (SELECT dossier_id FROM finDossier WHERE categorie_classement<>2)'
+    titrerequetes: nbLoges
+    chapitre_id: Chapitre_1
+  Listerequetes_3:
+    listrequetes: 'SELECT COUNT(*) AS %s FROM personne WHERE dossier_id IN (SELECT dossier_id FROM finDossier WHERE categorie_classement==2) '
+    titrerequetes: nbAbandons
+    chapitre_id: Chapitre_1
+Personne:
+  Personne_1:
+    dossier_id: Dossier_1
+    nom: sance
+    prenom: basile
+    num_telephone: ''
+    sexe: '0'
+    date_naissance: '1985-03-01'
+    tranche_age: '0'
+    statut: '0'
+    enfants: '0'
+    nb_enfants: '4'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '3'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '0'
+    origine_demande: ''
+    type_structure: '1'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '2'
+    date_embauche: '1991-02-27'
+    type_contrat: '2'
+    tranche_salaire: '2'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_2:
+    dossier_id: Dossier_2
+    nom: dvvsd
+    prenom: vddvs
+    num_telephone: ''
+    sexe: '1'
+    tranche_age: '0'
+    statut: '0'
+    enfants: '1'
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '5'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '2'
+    origine_demande: ''
+    type_structure: '4'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '2'
+    type_contrat: '0'
+    tranche_salaire: '4'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_3:
+    dossier_id: Dossier_3
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: '0'
+    tranche_age: '3'
+    statut: '1'
+    enfants: '0'
+    nb_enfants: '9'
+    lieu_naissance: ''
+    nationalite: '4'
+    adresse_actuelle: ''
+    ville_actuelle: '10'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '3'
+    origine_demande: ''
+    type_structure: '2'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '4'
+    type_contrat: '4'
+    tranche_salaire: '3'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_4:
+    dossier_id: Dossier_3
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: '1'
+    tranche_age: '1'
+    statut: '1'
+    enfants: '0'
+    nb_enfants: '2'
+    lieu_naissance: ''
+    nationalite: '1'
+    adresse_actuelle: ''
+    ville_actuelle: '3'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '1'
+    origine_demande: ''
+    type_structure: '2'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '5'
+    type_contrat: '1'
+    tranche_salaire: '1'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_5:
+    dossier_id: Dossier_5
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: '1'
+    tranche_age: '1'
+    statut: '1'
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '2'
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: '1'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_6:
+    dossier_id: Dossier_6
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: '1'
+    tranche_age: '1'
+    statut: '1'
+    enfants: '0'
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: '3'
+    tranche_salaire: '3'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_7:
+    dossier_id: Dossier_7
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    tranche_age: '3'
+    statut: '1'
+    enfants: '1'
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: '5'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: '2'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_8:
+    dossier_id: Dossier_7
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    tranche_salaire: '1'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_9:
+    dossier_id: Dossier_8
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: '1'
+    tranche_age: '1'
+    statut: ''
+    enfants: '0'
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '3'
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_10:
+    dossier_id: Dossier_9
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: '2'
+    tranche_salaire: '1'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_11:
+    dossier_id: Dossier_10
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    tranche_age: '1'
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: '1'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_12:
+    dossier_id: Dossier_12
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '5'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_13:
+    dossier_id: Dossier_13
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_14:
+    dossier_id: Dossier_15
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_15:
+    dossier_id: Dossier_16
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_16:
+    dossier_id: Dossier_17
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_17:
+    dossier_id: Dossier_18
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_18:
+    dossier_id: Dossier_19
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_19:
+    dossier_id: Dossier_20
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_20:
+    dossier_id: Dossier_21
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_21:
+    dossier_id: Dossier_23
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_22:
+    dossier_id: Dossier_24
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_23:
+    dossier_id: Dossier_25
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_24:
+    dossier_id: Dossier_26
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_25:
+    dossier_id: Dossier_27
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_26:
+    dossier_id: Dossier_28
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_27:
+    dossier_id: Dossier_29
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_28:
+    dossier_id: Dossier_30
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_29:
+    dossier_id: Dossier_31
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_30:
+    dossier_id: Dossier_32
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_31:
+    dossier_id: Dossier_33
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_32:
+    dossier_id: Dossier_33
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_33:
+    dossier_id: Dossier_33
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_34:
+    dossier_id: Dossier_34
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_35:
+    dossier_id: Dossier_36
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_36:
+    dossier_id: Dossier_38
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_37:
+    dossier_id: Dossier_39
+    nom: mickey
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_38:
+    dossier_id: Dossier_39
+    nom: Disney
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_39:
+    dossier_id: Dossier_39
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_40:
+    dossier_id: Dossier_40
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_41:
+    dossier_id: Dossier_41
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_42:
+    dossier_id: Dossier_41
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_43:
+    dossier_id: Dossier_42
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_44:
+    dossier_id: Dossier_43
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_45:
+    dossier_id: Dossier_45
+    nom: ''
+    prenom: '3514135'
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_46:
+    dossier_id: Dossier_46
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    tranche_salaire: '3'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_47:
+    dossier_id: Dossier_47
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    tranche_salaire: '4'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_48:
+    dossier_id: Dossier_48
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_49:
+    dossier_id: Dossier_48
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_50:
+    dossier_id: Dossier_49
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_51:
+    dossier_id: Dossier_50
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_52:
+    dossier_id: Dossier_51
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_53:
+    dossier_id: Dossier_52
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_54:
+    dossier_id: Dossier_53
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_55:
+    dossier_id: Dossier_54
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_56:
+    dossier_id: Dossier_55
+    nom: sance
+    prenom: basile
+    num_telephone: ''
+    sexe: '0'
+    date_naissance: '1985-03-01'
+    tranche_age: '0'
+    statut: '0'
+    enfants: '0'
+    nb_enfants: '4'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '3'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '0'
+    origine_demande: ''
+    type_structure: '1'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '2'
+    date_embauche: '1991-02-27'
+    type_contrat: '2'
+    tranche_salaire: '2'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_57:
+    dossier_id: Dossier_56
+    nom: dvvsd
+    prenom: vddvs
+    num_telephone: ''
+    sexe: '1'
+    tranche_age: '0'
+    statut: '0'
+    enfants: '1'
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '3'
+    adresse_actuelle: ''
+    ville_actuelle: '5'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '2'
+    origine_demande: ''
+    type_structure: '4'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '2'
+    type_contrat: '0'
+    tranche_salaire: '4'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_58:
+    dossier_id: Dossier_57
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: '0'
+    tranche_age: '3'
+    statut: '1'
+    enfants: '0'
+    nb_enfants: '9'
+    lieu_naissance: ''
+    nationalite: '4'
+    adresse_actuelle: ''
+    ville_actuelle: '10'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '3'
+    origine_demande: ''
+    type_structure: '2'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '4'
+    type_contrat: '4'
+    tranche_salaire: '3'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_59:
+    dossier_id: Dossier_57
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: '1'
+    tranche_age: '1'
+    statut: '1'
+    enfants: '0'
+    nb_enfants: '2'
+    lieu_naissance: ''
+    nationalite: '1'
+    adresse_actuelle: ''
+    ville_actuelle: '3'
+    type_logement_actuel: ''
+    categorie_logement_actuel: '1'
+    origine_demande: ''
+    type_structure: '2'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '5'
+    type_contrat: '1'
+    tranche_salaire: '1'
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_60:
+    dossier_id: Dossier_58
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_61:
+    dossier_id: Dossier_59
+    nom: ''
+    prenom: ''
+    num_telephone: ''
+    sexe: ''
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: ''
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_62:
+    dossier_id: Dossier_60
+    nom: sance
+    prenom: pierre
+    num_telephone: ''
+    sexe: '1'
+    tranche_age: '2'
+    statut: ''
+    enfants: ''
+    nb_enfants: '0'
+    lieu_naissance: ''
+    nationalite: '0'
+    adresse_actuelle: ''
+    ville_actuelle: '0'
+    type_logement_actuel: ''
+    categorie_logement_actuel: ''
+    origine_demande: ''
+    type_structure: '4'
+    referent: ''
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '0'
+    type_contrat: ''
+    motif_recherche_logement: ''
+    observations: ''
+  Personne_63:
+    dossier_id: Dossier_61
+    nom: ABESSON
+    prenom: Hasnaa
+    num_telephone: '0629382870'
+    sexe: '2'
+    date_naissance: '1983-07-31'
+    tranche_age: '2'
+    statut: '2'
+    enfants: '1'
+    nb_enfants: '1'
+    lieu_naissance: Versailles
+    nationalite: '1'
+    adresse_actuelle: '10 rue du Béarn'
+    ville_actuelle: '1'
+    type_logement_actuel: T4
+    categorie_logement_actuel: '2'
+    origine_demande: connaissances
+    type_structure: '5'
+    referent: ''
+    loyer_actuel: '0'
+    profession_actuelle: sans
+    employeur_actuel: ''
+    ville_employeur_actuel: '12'
+    type_contrat: '5'
+    tranche_salaire: '4'
+    salaire_exact: '950'
+    dettes_credits: '0'
+    motif_recherche_logement: 'lgt autonome, vie couple, conflit parents'
+    observations: 'RAS ne veut pas Mantes la Jolie'
+  Personne_64:
+    dossier_id: Dossier_61
+    nom: ABESSON
+    prenom: Cédric
+    num_telephone: '0620753412'
+    sexe: '1'
+    date_naissance: '1981-09-29'
+    tranche_age: '3'
+    statut: '2'
+    enfants: '1'
+    nb_enfants: '1'
+    lieu_naissance: Clamart
+    nationalite: '1'
+    adresse_actuelle: '10 rue du Béarn'
+    ville_actuelle: '1'
+    type_logement_actuel: T4
+    categorie_logement_actuel: '2'
+    origine_demande: connaissances
+    type_structure: '5'
+    referent: ''
+    loyer_actuel: '0'
+    profession_actuelle: 'technicien itinérant'
+    employeur_actuel: Sikatel
+    ville_employeur_actuel: '10'
+    dpt_employeur_actuel: '93'
+    date_embauche: '2005-05-01'
+    type_contrat: '1'
+    tranche_salaire: '5'
+    salaire_exact: '1350'
+    dettes_credits: '0'
+    motif_recherche_logement: 'idem mme'
+    observations: RAS
+  Personne_65:
+    dossier_id: Dossier_62
+    nom: ABIDELA
+    prenom: Michaêl
+    num_telephone: '0613064227'
+    sexe: '1'
+    date_naissance: '1981-12-22'
+    tranche_age: '3'
+    statut: '2'
+    enfants: '1'
+    nb_enfants: '1'
+    lieu_naissance: Rochefort
+    nationalite: '1'
+    adresse_actuelle: '7 impasse René Mouchotte'
+    ville_actuelle: '5'
+    type_logement_actuel: FJT
+    categorie_logement_actuel: '4'
+    origine_demande: 'FJT '
+    type_structure: '3'
+    referent: Rodolphe
+    loyer_actuel: '400'
+    profession_actuelle: ravitailleur
+    employeur_actuel: 'Aéroport d''Orly'
+    ville_employeur_actuel: '10'
+    dpt_employeur_actuel: '95'
+    date_embauche: '2006-05-29'
+    type_contrat: '3'
+    tranche_salaire: '5'
+    salaire_exact: '2000'
+    dettes_credits: '0'
+    motif_recherche_logement: 'Vie couple, fin hébergement Mr'
+    observations: ''
+  Personne_66:
+    dossier_id: Dossier_62
+    nom: ABIDELA
+    prenom: Mariame
+    num_telephone: '0613064227'
+    sexe: '2'
+    date_naissance: '1987-05-16'
+    tranche_age: '2'
+    statut: '2'
+    enfants: '1'
+    nb_enfants: '1'
+    lieu_naissance: 'Côte d''Ivoire'
+    nationalite: '3'
+    adresse_actuelle: ''
+    ville_actuelle: '10'
+    type_logement_actuel: T5
+    categorie_logement_actuel: '2'
+    origine_demande: 'FJT La Clairière'
+    type_structure: '3'
+    referent: Rodolphe
+    loyer_actuel: '0'
+    profession_actuelle: sans
+    employeur_actuel: ''
+    ville_employeur_actuel: '12'
+    type_contrat: '5'
+    tranche_salaire: '1'
+    salaire_exact: '0'
+    dettes_credits: '0'
+    motif_recherche_logement: 'idem Mr'
+    observations: ''
+  Personne_67:
+    dossier_id: Dossier_65
+    nom: AHAMADA
+    prenom: Fatima
+    num_telephone: '0664351459'
+    sexe: '2'
+    date_naissance: '1981-03-23'
+    tranche_age: '3'
+    statut: '1'
+    enfants: '2'
+    nb_enfants: '0'
+    lieu_naissance: 'Ile de la Réunion '
+    nationalite: '5'
+    adresse_actuelle: '11 rue César Franck'
+    ville_actuelle: '7'
+    type_logement_actuel: T2
+    categorie_logement_actuel: '1'
+    origine_demande: 'mairie de Fontenay'
+    type_structure: '2'
+    referent: 'MMe RUCH'
+    loyer_actuel: '602'
+    profession_actuelle: surveillante
+    employeur_actuel: rectorat
+    ville_employeur_actuel: '10'
+    dpt_employeur_actuel: '75'
+    date_embauche: '2005-06-01'
+    type_contrat: '3'
+    tranche_salaire: '5'
+    salaire_exact: '1080'
+    dettes_credits: '0'
+    motif_recherche_logement: 'loyer lgt actuel trop élevé'
+    observations: RAS
+  Personne_68:
+    dossier_id: Dossier_66
+    nom: AMRI
+    prenom: Tahar
+    num_telephone: '0613905950'
+    sexe: '1'
+    date_naissance: '1985-08-24'
+    tranche_age: '2'
+    statut: '2'
+    enfants: '1'
+    nb_enfants: '1'
+    lieu_naissance: Tunisie
+    nationalite: '2'
+    adresse_actuelle: '32 Lorée de Marly'
+    ville_actuelle: '9'
+    type_logement_actuel: studio
+    categorie_logement_actuel: '1'
+    origine_demande: AS
+    type_structure: '4'
+    referent: ''
+    loyer_actuel: '390'
+    profession_actuelle: ''
+    employeur_actuel: ''
+    ville_employeur_actuel: '12'
+    type_contrat: '5'
+    tranche_salaire: '1'
+    salaire_exact: '0'
+    dettes_credits: '15000'
+    motif_recherche_logement: 'lgt plus grand car naissance prévue'
+    observations: 'hors monde'
+  Personne_69:
+    dossier_id: Dossier_66
+    nom: AMRI
+    prenom: Bérengère
+    num_telephone: '0631518936'
+    sexe: '2'
+    date_naissance: '1987-09-07'
+    tranche_age: '2'
+    statut: '2'
+    enfants: '1'
+    nb_enfants: '1'
+    lieu_naissance: Bagneux
+    nationalite: '1'
+    adresse_actuelle: '32 Lorée de Marly'
+    ville_actuelle: '9'
+    type_logement_actuel: studio
+    categorie_logement_actuel: '1'
+    origine_demande: AS
+    type_structure: '4'
+    referent: ''
+    loyer_actuel: '1050'
+    profession_actuelle: caissière
+    employeur_actuel: Sodiroi
+    ville_employeur_actuel: '7'
+    dpt_employeur_actuel: '78'
+    date_embauche: '2008-02-27'
+    type_contrat: '1'
+    tranche_salaire: '4'
+    salaire_exact: '1050'
+    dettes_credits: '15000'
+    motif_recherche_logement: 'lgt plus grand, naissance'
+    observations: RAS
+  Personne_70:
+    dossier_id: Dossier_67
+    nom: ANTOINE
+    prenom: Marie-Ange
+    num_telephone: '0618705294'
+    sexe: '2'
+    date_naissance: '1985-02-10'
+    tranche_age: '2'
+    statut: '1'
+    enfants: '1'
+    nb_enfants: '1'
+    lieu_naissance: Versailles
+    nationalite: '1'
+    adresse_actuelle: '21 rue de la Pourivoie'
+    ville_actuelle: '1'
+    type_logement_actuel: 'studio passerrelle'
+    categorie_logement_actuel: '4'
+    origine_demande: 'CLLAJ Elancourt'
+    type_structure: '6'
+    referent: ''
+    loyer_actuel: '670'
+    profession_actuelle: 'hôtesse d''accueil'
+    employeur_actuel: Pénélope
+    ville_employeur_actuel: '9'
+    dpt_employeur_actuel: '78'
+    date_embauche: '2008-03-21'
+    type_contrat: '1'
+    tranche_salaire: '4'
+    salaire_exact: '950'
+    dettes_credits: '0'
+    motif_recherche_logement: 'fin hébergement'
+    observations: RAS
+Categorielogementactuel:
+  Categorielogementactuel_1:
+    listcategorielogementactuel: ''
+  Categorielogementactuel_2:
+    listcategorielogementactuel: 'Logement autonome'
+  Categorielogementactuel_3:
+    listcategorielogementactuel: 'Chez les parents'
+  Categorielogementactuel_4:
+    listcategorielogementactuel: 'famille / ami'
+  Categorielogementactuel_5:
+    listcategorielogementactuel: 'Foyer / CHRS'
+  Categorielogementactuel_6:
+    listcategorielogementactuel: 'Situation précaire'
+Typelogement:
+  Typelogement_1:
+    listtypelogement: ''
+  Typelogement_2:
+    listtypelogement: Chambre
+  Typelogement_3:
+    listtypelogement: Studette
+  Typelogement_4:
+    listtypelogement: Studio
+  Typelogement_5:
+    listtypelogement: T2
+  Typelogement_6:
+    listtypelogement: T3
+  Typelogement_7:
+    listtypelogement: T4
+  Typelogement_8:
+    listtypelogement: Autre

@@ -81,5 +81,11 @@ class dossierActions extends sfActions
     $this->form->setDefault('etat', 'clôturé');
     $this->setTemplate('edit');
   }
+  public function executeModification($request)
+  {
+    $dossier=DossierPeer::retrieveByPk($request->getParameter('id'));
+    $this->form=new DossierForm($dossier);
+    $this->setTemplate('edit');
+  }
 
 }
