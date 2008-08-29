@@ -28,7 +28,10 @@
     <?php $typeProprietaireHLM = TypeproprietairehlmPeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
     <?php $typeProprietairePrive = TypeproprietaireprivePeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
     <?php $typeProprietaireHebTemp = TypeproprietairehebtempPeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
-
+    <?php $nomFJT = NomfjtPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
+    <?php $nomCHRS = NomchrsPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
+    <?php $nomBailleursHLM = NombailleurshlmPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
+ 
     <tr>
       <td class="traitsVisibles"><a href="<?php echo url_for('findossier/show?id='.$findossier->getId()) ?>"><?php echo $findossier->getId() ?></a></td>
       <td class="traitsVisibles"><?php echo $findossier->getDossierId() ?></td>
@@ -56,9 +59,28 @@
        }
        else{echo 'inconnu';}      
       ?></td>
+ 
+      <td class="traitsVisibles"><?php 
+      if($typeParc != null){
+           if($typeParc->getListtypeparc()=='HLM'){ 
+	     if($nomBailleursHLM != null){
+	        echo $nomBailleursHLM->getListnombailleurshlm();
+	     }
+	     else{echo 'inconnu';}
+	   }
+	   elseif($typeParc->getListtypeparc()=='Privé'){
+             echo '';
+	   }
+	   else{
+             if($nomFJT != null){
+	        echo $nomFJT->getListnomfjt();
+	     }
+	     else{echo 'inconnu';}
+	   }
+       }
+       else{echo 'inconnu';}   
 
-
-      <td class="traitsVisibles"><?php echo $findossier->getNomProprietaireBailleur() ?></td>
+      ?></td>
       <td class="traitsVisibles"><?php echo $findossier->getTypeConditionAcces() ?></td>
       <td class="traitsVisibles"><?php echo $findossier->getNomConditionAcces() ?></td>
       <td class="traitsVisibles"><?php echo $findossier->getVilleLogement() ?></td>
