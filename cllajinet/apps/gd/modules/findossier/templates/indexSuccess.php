@@ -26,8 +26,8 @@
 
     <?php $typeParc = TypeparcPeer::retrieveByPk($findossier->getTypeparc());?>
     <?php $typeProprietaireHLM = TypeproprietairehlmPeer::retrieveByPk($findossier->getTypeProprietaireBailleur());?>
-    <?php $typeProprietairePrive = TypeproprietaireprivePeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
-    <?php $typeProprietaireHebTemp = TypeproprietairehebtempPeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
+    <?php $typeProprietairePrive = TypeproprietaireprivePeer::retrieveByPk($findossier->getTypeProprietaireBailleur());?>
+    <?php $typeProprietaireHebTemp = TypeproprietairehebtempPeer::retrieveByPk($findossier->getTypeProprietaireBailleur());?>
     <?php $nomFJT = NomfjtPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
     <?php $nomCHRS = NomchrsPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
     <?php $nomBailleursHLM = NombailleurshlmPeer::retrieveByPk($findossier->getNomProprietaireBailleur());?>
