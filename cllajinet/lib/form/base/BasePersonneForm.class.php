@@ -13,8 +13,8 @@ class BasePersonneForm extends BaseFormPropel
   
   public function setup()
   {
-    $yearsEmbauche=range(date('Y') - 20, date('Y'));
-    $yearsNaissance=range(date('Y') - 30, date('Y'));
+    $yearsEmbauche=range(date('Y') - 30, date('Y'));
+    $yearsNaissance=range(date('Y') -38, date('Y'));
     $dateNaissance=new sfWidgetFormDate(array('format'=>'%day%/%month%/%year%','years'=>$yearsNaissance));
     $dateEmbauche=new sfWidgetFormDate(array('format'=>'%day%/%month%/%year%','years'=>$yearsEmbauche));
     $dateNaissance->addOption('years', array_combine($yearsNaissance, $yearsNaissance));
@@ -34,11 +34,11 @@ class BasePersonneForm extends BaseFormPropel
       'nom'                       => new sfWidgetFormInput(),
       'prenom'                    => new sfWidgetFormInput(),
       'num_telephone'             => new sfWidgetFormInput(),
-      'sexe'                      => new sfWidgetFormSelectRadio(array('choices' => array('0' => 'masculin', '1' => 'féminin'))),
+      'sexe'                      => new sfWidgetFormSelectRadio(array('choices' => array('0' => '','1' => 'masculin', '2' => 'féminin'))),
       'date_naissance'            => $dateNaissance,
-      'tranche_age'               => new sfWidgetFormSelectRadio(array('choices' => array('0' => '18-20', '1' => '21-25', '3' => '26-30'))),
-      'statut'                    => new sfWidgetFormSelectRadio(array('choices' => array('0' => 'célibataire', '1' => 'en couple'))),
-      'enfants'                   => new sfWidgetFormSelectRadio(array('choices' => array('0' => 'oui', '1' => 'non'))),
+      'tranche_age'               => new sfWidgetFormSelectRadio(array('choices' => array('0' => '','1' => '18-20', '2' => '21-25', '3' => '26-30'))),
+      'statut'                    => new sfWidgetFormSelectRadio(array('choices' => array('0' => '','1' => 'célibataire', '2' => 'en couple'))),
+      'enfants'                   => new sfWidgetFormSelectRadio(array('choices' => array('0' => '','1' => 'oui', '2' => 'non'))),
       'nb_enfants'                => new sfWidgetFormSelect(array('choices' => self::$nbEnfants)),
       'lieu_naissance'            => new sfWidgetFormInput(),
       'nationalite'               => new sfWidgetFormSelect(array('choices' => $nationalite)),
@@ -66,8 +66,8 @@ class BasePersonneForm extends BaseFormPropel
     $this->setValidators(array(
       'id'                        => new sfValidatorPropelChoice(array('model' => 'Personne', 'column' => 'id', 'required' => false)),
       'dossier_id'                => new sfValidatorPropelChoice(array('model' => 'Dossier', 'column' => 'id', 'required' => false)),
-      'nom'                       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'prenom'                    => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'nom'                       => new sfValidatorString(array('max_length' => 255, 'required' => true)),
+      'prenom'                    => new sfValidatorString(array('max_length' => 255, 'required' => true)),
       'num_telephone'             => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'sexe'                      => new sfValidatorString(array('max_length' => 255, 'required' => false)),
       'date_naissance'            => new sfValidatorDate(array('required' => false)),

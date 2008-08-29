@@ -1,17 +1,17 @@
 <h1>Typelogement List</h1>
 
-<table>
+<table class="traitsVisibles">
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Listtypelogement</th>
+      <th class="traitsVisibles">Id</th>
+      <th class="traitsVisibles">Listtypelogement</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($typelogementList as $typelogement): ?>
     <tr>
-      <td><a href="<?php echo url_for('typelogement/show?id='.$typelogement->getId()) ?>"><?php echo $typelogement->getId() ?></a></td>
-      <td><?php echo $typelogement->getListtypelogement() ?></td>
+      <td class="traitsVisibles"><a href="<?php echo url_for('typelogement/show?id='.$typelogement->getId()) ?>"><?php echo $typelogement->getId() ?></a></td>
+      <td class="traitsVisibles"><?php echo $typelogement->getListtypelogement() ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

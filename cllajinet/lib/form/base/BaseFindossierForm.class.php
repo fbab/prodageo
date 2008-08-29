@@ -9,7 +9,7 @@
  */
 class BaseFindossierForm extends BaseFormPropel
 {
-  protected static $categorieclassement = array('logé en direct','logé en indirect','abandon','ALT / Sous-location');
+  protected static $categorieclassement = array('','logé en direct','logé en indirect','abandon','ALT / Sous-location');
   public function setup()
   {
     $findossier=$this->getObject();

@@ -14,6 +14,6 @@
 <a href="<?php echo url_for('typeproprietaireprive/index') ?>">typeproprietaireprive</a><br/>
 <a href="<?php echo url_for('typestructure/index') ?>">typestructure</a><br/>
 <a href="<?php echo url_for('ville/index')?>">ville</a><br/>
-<a href="<?php echo url_for('chapitre/index')?>">chapitre</a><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<a href="<?php echo url_for('chapitre/index')?>">chapitre</a><br/><br/><br/>
 <a href="<?php echo url_for('listerequetes/index')?>">listes de requêtes</a><br\>
 

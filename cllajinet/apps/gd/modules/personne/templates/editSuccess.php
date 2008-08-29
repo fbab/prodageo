@@ -6,9 +6,9 @@
     <tfoot>
       <tr>
         <td colspan="2">
-          &nbsp;<a href="<?php echo url_for('personne/index') ?>">Cancel</a>
+          &nbsp;<a href="<?php echo url_for('personne/index') ?>">Annuler</a>
           <?php if (!$personne->isNew()): ?>
-            &nbsp;<?php echo link_to('Delete', 'personne/delete?id='.$personne->getId(), array('post' => true, 'confirm' => 'Are you sure?')) ?>
+            &nbsp;<?php echo link_to('Supprimer', 'personne/delete?id='.$personne->getId(), array('post' => true, 'confirm' => 'Are you sure?')) ?>
           <?php endif; ?>
 
         </td>
@@ -17,7 +17,7 @@
     <tbody>
       <?php echo $form->renderGlobalErrors() ?>
       <tr>
-        <th><label for="personne_dossier_id">Dossier id</label></th>
+        <th><label for="personne_dossier_id">Numero de dossier</label></th>
         <td>
           <?php echo $form['dossier_id']->renderError();
                 echo $form['dossier_id']; 
@@ -39,7 +39,7 @@
         </td>
       </tr>
       <tr>
-        <th><label for="personne_num_telephone">Num telephone</label></th>
+        <th><label for="personne_num_telephone">Numero de telephone</label></th>
         <td>
           <?php echo $form['num_telephone']->renderError() ?>
           <?php echo $form['num_telephone'] ?>
@@ -52,15 +52,16 @@
           <?php echo $form['sexe'] ?>
         </td>
       </tr>
+
       <tr>
-        <th><label for="personne_date_naissance">Date naissance</label></th>
+        <th><label for="personne_date_naissance">Date de naissance</label></th>
         <td>
           <?php echo $form['date_naissance']->renderError() ?>
           <?php echo $form['date_naissance'] ?>
         </td>
       </tr>
       <tr>
-        <th><label for="personne_tranche_age">Tranche age</label></th>
+        <th><label for="personne_tranche_age">Tranche d'age</label></th>
         <td>
           <?php echo $form['tranche_age']->renderError() ?>
           <?php echo $form['tranche_age'] ?>
@@ -81,14 +82,14 @@
         </td>
       </tr>
       <tr>
-        <th><label for="personne_nb_enfants">Nb enfants</label></th>
+        <th><label for="personne_nb_enfants">Nombre d'enfants</label></th>
         <td>
           <?php echo $form['nb_enfants']->renderError() ?>
           <?php echo $form['nb_enfants'] ?>
         </td>
       </tr>
       <tr>
-        <th><label for="personne_lieu_naissance">Lieu naissance</label></th>
+        <th><label for="personne_lieu_naissance">Lieu de naissance</label></th>
         <td>
           <?php echo $form['lieu_naissance']->renderError() ?>
           <?php echo $form['lieu_naissance'] ?>
@@ -99,7 +100,6 @@
         <td>
           <?php echo $form['nationalite']->renderError() ?>
           <?php echo $form['nationalite'] ?>
-          <?php echo $personne->getNationalite()?>
         </td>
       </tr>
       <tr>
@@ -117,28 +117,28 @@
         </td>
       </tr>
       <tr>
-        <th><label for="personne_type_logement_actuel">Type logement actuel</label></th>
+        <th><label for="personne_type_logement_actuel">Type de logement actuel</label></th>
         <td>
           <?php echo $form['type_logement_actuel']->renderError() ?>
           <?php echo $form['type_logement_actuel'] ?>
         </td>
       </tr>
       <tr>
-        <th><label for="personne_categorie_logement_actuel">Categorie logement actuel</label></th>
+        <th><label for="personne_categorie_logement_actuel">Categorie de logement actuel</label></th>
         <td>
           <?php echo $form['categorie_logement_actuel']->renderError() ?>
           <?php echo $form['categorie_logement_actuel'] ?>
         </td>
       </tr>
       <tr>
-        <th><label for="personne_origine_demande">Origine demande</label></th>
+        <th><label for="personne_origine_demande">Origine de la demande</label></th>
         <td>
           <?php echo $form['origine_demande']->renderError() ?>
           <?php echo $form['origine_demande'] ?>
         </td>
       </tr>
       <tr>
-        <th><label for="personne_type_structure">Type structure</label></th>
+        <th><label for="personne_type_structure">Type de structure</label></th>
         <td>
           <?php echo $form['type_structure']->renderError() ?>
           <?php echo $form['type_structure'] ?>
@@ -156,6 +156,7 @@
         <td>
           <?php echo $form['loyer_actuel']->renderError() ?>
           <?php echo $form['loyer_actuel'] ?>
+          <label>euros</label>
         </td>
       </tr>
       <tr>
@@ -173,28 +174,28 @@
         </td>
       </tr>
       <tr>
-        <th><label for="personne_ville_employeur_actuel">Ville employeur actuel</label></th>
+        <th><label for="personne_ville_employeur_actuel">Ville de l'employeur actuel</label></th>
         <td>
           <?php echo $form['ville_employeur_actuel']->renderError() ?>
           <?php echo $form['ville_employeur_actuel'] ?>
         </td>
       </tr>
       <tr>
-        <th><label for="personne_dpt_employeur_actuel">Dpt employeur actuel</label></th>
+        <th><label for="personne_dpt_employeur_actuel">Dpt de l'employeur actuel</label></th>
         <td>
           <?php echo $form['dpt_employeur_actuel']->renderError() ?>
           <?php echo $form['dpt_employeur_actuel'] ?>
         </td>
       </tr>
       <tr>
-        <th><label for="personne_date_embauche">Date embauche</label></th>
+        <th><label for="personne_date_embauche">Date d'embauche</label></th>
         <td>
           <?php echo $form['date_embauche']->renderError() ?>
           <?php echo $form['date_embauche'] ?>
         </td>
       </tr>
       <tr>
-        <th><label for="personne_type_contrat">Type contrat</label></th>
+        <th><label for="personne_type_contrat">Type de contrat</label></th>
         <td>
           <?php echo $form['type_contrat']->renderError() ?>
           <?php echo $form['type_contrat'] ?>
@@ -212,17 +213,19 @@
         <td>
           <?php echo $form['salaire_exact']->renderError() ?>
           <?php echo $form['salaire_exact'] ?>
+          <label>euros</label>
         </td>
       </tr>
       <tr>
-        <th><label for="personne_dettes_credits">Dettes credits</label></th>
+        <th><label for="personne_dettes_credits">Dettes / credits</label></th>
         <td>
           <?php echo $form['dettes_credits']->renderError() ?>
           <?php echo $form['dettes_credits'] ?>
+          <label>euros</label>
         </td>
       </tr>
       <tr>
-        <th><label for="personne_motif_recherche_logement">Motif recherche logement</label></th>
+        <th><label for="personne_motif_recherche_logement">Motif de recherche de logement</label></th>
         <td>
           <?php echo $form['motif_recherche_logement']->renderError() ?>
           <?php echo $form['motif_recherche_logement'] ?>
@@ -241,7 +244,5 @@
           <input type="submit" value="Conjoint / Conjointe" name="Conjoint"/>
           <input type="submit" value="Colocataire" name="Colocataire"/>
           <input type="submit" value="Clôturer dossier" name="Cloturer"/>
+          <input type="submit" value="fin saisie" name="Fin"/>
 </form>
-<a href="<?php echo url_for('personne/create/index') ?>">Conjoint / Conjointe</a>
-<a href="<?php echo url_for('personne/create/index') ?>">Colocataire</a>
-<a href="<?php echo url_for('dossier/cloture?id='.$personne->getDossierId())?>">Clôturer dossier</a>

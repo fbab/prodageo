@@ -1,17 +1,17 @@
 <h1>Typestructure List</h1>
 
-<table>
+<table class="traitsVisibles">
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Listtypestructure</th>
+      <th class="traitsVisibles">Id</th>
+      <th class="traitsVisibles">Listtypestructure</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($typestructureList as $typestructure): ?>
     <tr>
-      <td><a href="<?php echo url_for('typestructure/show?id='.$typestructure->getId()) ?>"><?php echo $typestructure->getId() ?></a></td>
-      <td><?php echo $typestructure->getListtypestructure() ?></td>
+      <td class="traitsVisibles"><a href="<?php echo url_for('typestructure/show?id='.$typestructure->getId()) ?>"><?php echo $typestructure->getId() ?></a></td>
+      <td class="traitsVisibles"><?php echo $typestructure->getListtypestructure() ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

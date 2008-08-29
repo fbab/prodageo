@@ -1,44 +1,74 @@
+
 <h1>Findossier List</h1>
-<table>
+<table class="traitsVisibles">
   <thead>
     <tr>
-      <th>Id</th>
-      <th>Dossier</th>
-      <th>Type parc</th>
-      <th>Type proprietaire bailleur</th>
-      <th>Nom proprietaire bailleur</th>
-      <th>Type condition acces</th>
-      <th>Nom condition acces</th>
-      <th>Ville logement</th>
-      <th>Departement logement</th>
-      <th>Type logement</th>
-      <th>Superficie logement</th>
-      <th>Loyer</th>
-      <th>Edf gdf</th>
-      <th>Chauffage</th>
-      <th>Difficultes rencontrees</th>
-      <th>Categorie classement</th>
+      <th class="traitsVisibles">Id</th>
+      <th class="traitsVisibles">Dossier</th>
+      <th class="traitsVisibles">Type parc</th>
+      <th class="traitsVisibles">Type proprietaire bailleur</th>
+      <th class="traitsVisibles">Nom proprietaire bailleur</th>
+      <th class="traitsVisibles">Type condition acces</th>
+      <th class="traitsVisibles">Nom condition acces</th>
+      <th class="traitsVisibles">Ville logement</th>
+      <th class="traitsVisibles">Departement logement</th>
+      <th class="traitsVisibles">Type logement</th>
+      <th class="traitsVisibles">Superficie logement</th>
+      <th class="traitsVisibles">Loyer</th>
+      <th class="traitsVisibles">Edf gdf</th>
+      <th class="traitsVisibles">Chauffage</th>
+      <th class="traitsVisibles">Difficultes rencontrees</th>
+      <th class="traitsVisibles">Categorie classement</th>
     </tr>
   </thead>
   <tbody>
     <?php foreach ($findossierList as $findossier): ?>
+
+    <?php $typeParc = TypeparcPeer::retrieveByPk($findossier->getTypeparc()+1);?>
+    <?php $typeProprietaireHLM = TypeproprietairehlmPeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
+    <?php $typeProprietairePrive = TypeproprietaireprivePeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
+    <?php $typeProprietaireHebTemp = TypeproprietairehebtempPeer::retrieveByPk($findossier->getTypeProprietaireBailleur()+1);?>
+
     <tr>
-      <td><a href="<?php echo url_for('findossier/show?id='.$findossier->getId()) ?>"><?php echo $findossier->getId() ?></a></td>
-      <td><?php echo $findossier->getDossierId() ?></td>
-      <td><?php echo $findossier->getTypeParc() ?></td>
-      <td><?php echo $findossier->getTypeProprietaireBailleur() ?></td>
-      <td><?php echo $findossier->getNomProprietaireBailleur() ?></td>
-      <td><?php echo $findossier->getTypeConditionAcces() ?></td>
-      <td><?php echo $findossier->getNomConditionAcces() ?></td>
-      <td><?php echo $findossier->getVilleLogement() ?></td>
-      <td><?php echo $findossier->getDepartementLogement() ?></td>
-      <td><?php echo $findossier->getTypeLogement() ?></td>
-      <td><?php echo $findossier->getSuperficieLogement() ?></td>
-      <td><?php echo $findossier->getLoyer() ?></td>
-      <td><?php echo $findossier->getEdfGdf() ?></td>
-      <td><?php echo $findossier->getChauffage() ?></td>
-      <td><?php echo $findossier->getDifficultesRencontrees() ?></td>
-      <td><?php echo $findossier->getCategorieClassement() ?></td>
+      <td class="traitsVisibles"><a href="<?php echo url_for('findossier/show?id='.$findossier->getId()) ?>"><?php echo $findossier->getId() ?></a></td>
+      <td class="traitsVisibles"><?php echo $findossier->getDossierId() ?></td>
+      <td class="traitsVisibles"><?php if($typeParc != null){echo $typeParc->getListtypeparc();}else{echo 'inconnu';}?></td>
+      <td class="traitsVisibles"><?php
+	if($typeParc != null){
+           if($typeParc->getListtypeparc()=='HLM'){ 
+	     if($typeProprietaireHLM != null){
+	        echo $typeProprietaireHLM->getListtypeproprietairehlm();
+	     }
+	     else{echo 'inconnu';}
+	  }
+	  elseif($typeParc->getListtypeparc()=='Privé'){
+             if($typeProprietairePrive != null){
+	        echo $typeProprietairePrive->getListtypeproprietaireprive();
+	     }
+	     else{echo 'inconnu';}
+	  }
+	  else{
+             if($typeProprietaireHebTemp != null){
+	        echo $typeProprietaireHebTemp->getListtypeproprietairehebtemp();
+	     }
+	     else{echo 'inconnu';}
+	  }
+        else{echo 'inconnu';}
+      ?></td>
+
+
+      <td class="traitsVisibles"><?php echo $findossier->getNomProprietaireBailleur() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getTypeConditionAcces() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getNomConditionAcces() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getVilleLogement() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getDepartementLogement() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getTypeLogement() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getSuperficieLogement() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getLoyer() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getEdfGdf() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getChauffage() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getDifficultesRencontrees() ?></td>
+      <td class="traitsVisibles"><?php echo $findossier->getCategorieClassement() ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

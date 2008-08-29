@@ -132,4 +132,39 @@ function getListTrancheSalaire()
         return $idFinDossier;
       }
 
+      function getSexeTraduit($NumSexe)
+      {
+        switch($NumSexe){
+          case 0: return '';break;
+          case 1: return 'masculin';break; 
+          case 2: return 'feminin';break; 
+        }
+      }
+      function getTrancheAgeTraduit($NumTrancheAge)
+      {
+        switch($NumTrancheAge){
+          case 0: return '';break;
+          case 1: return '18-20';break; 
+          case 2: return '21-25';break; 
+          case 3: return '26-30';break;
+        }
+      }
+      function getStatutTraduit($NumStatut)
+      {
+        switch($NumStatut){
+          case 0: return '';break;
+          case 1: return 'célibataire';break; 
+          case 2: return 'en couple';break;   
+        }
+      }
+      function getEnfantsTraduit($NumEnfants)
+      {
+        switch($NumEnfants){
+          case 0: return '';break;
+          case 1: return 'oui';break;  
+          case 2: return 'non';break;  
+        }
+      }
+
 }
+
