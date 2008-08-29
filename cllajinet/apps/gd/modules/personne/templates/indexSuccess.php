@@ -62,8 +62,9 @@
     <?php foreach ($personneList as $personne): ?>
 
     <?php $dossier = DossierPeer::retrieveByPk($personne->getDossierId());?>
+    <?php $findossier = FindossierPeer::retrieveByPk($personne->getIdFinDossier($personne->getDossierId()));?>
     <?php $typeStructure = TypestructurePeer::retrieveByPk($personne->getTypeStructure()+1);?>
-    <?php $nationalite = NationalitePeer::retrieveByPk($personne->getNationalite()+1);?>
+    <?php $nationalite = NationalitePeer::retrieveByPk($personne->getNationalite());?>
     <?php $villeActuelle = VillePeer::retrieveByPk($personne->getVilleActuelle()+1);?>
     <?php $catLogement = CategorielogementactuelPeer::retrieveByPk($personne->getCategorielogementactuel()+1);?>
     <?php $villeEmployeur = VillePeer::retrieveByPk($personne->getVilleEmployeurActuel()+1);?>
@@ -108,7 +109,8 @@
       <td class="traitsVisibles"><?php echo $personne->getDettesCredits() ?></td>
       <td class="traitsVisibles"><?php echo $personne->getMotifRechercheLogement() ?></td>
       <td class="traitsVisibles"><?php echo $personne->getObservations() ?></td>
-      
+      <?php if()?>
+      <?php endif;?>
     </tr>
     <?php endforeach; ?>
   </tbody>
