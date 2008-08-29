@@ -62,14 +62,13 @@
     <?php foreach ($personneList as $personne): ?>
 
     <?php $dossier = DossierPeer::retrieveByPk($personne->getDossierId());?>
-    <?php $findossier = FindossierPeer::retrieveByPk($personne->getIdFinDossier($personne->getDossierId()));?>
-    <?php $typeStructure = TypestructurePeer::retrieveByPk($personne->getTypeStructure()+1);?>
+    <?php $typeStructure = TypestructurePeer::retrieveByPk($personne->getTypeStructure());?>
     <?php $nationalite = NationalitePeer::retrieveByPk($personne->getNationalite());?>
-    <?php $villeActuelle = VillePeer::retrieveByPk($personne->getVilleActuelle()+1);?>
-    <?php $catLogement = CategorielogementactuelPeer::retrieveByPk($personne->getCategorielogementactuel()+1);?>
-    <?php $villeEmployeur = VillePeer::retrieveByPk($personne->getVilleEmployeurActuel()+1);?>
-    <?php $typeContrat = TypecontratPeer::retrieveByPk($personne->getTypecontrat()+1);?>
-    <?php $trancheSalaire = TranchesalairePeer::retrieveByPk($personne->getTranchesalaire()+1);?>
+    <?php $villeActuelle = VillePeer::retrieveByPk($personne->getVilleActuelle());?>
+    <?php $catLogement = CategorielogementactuelPeer::retrieveByPk($personne->getCategorielogementactuel());?>
+    <?php $villeEmployeur = VillePeer::retrieveByPk($personne->getVilleEmployeurActuel());?>
+    <?php $typeContrat = TypecontratPeer::retrieveByPk($personne->getTypecontrat());?>
+    <?php $trancheSalaire = TranchesalairePeer::retrieveByPk($personne->getTranchesalaire());?>
 
     <tr>
       <td class="traitsVisibles"><a href="<?php echo url_for('personne/show?id='.$personne->getId()) ?>"><?php echo $personne->getId() ?></a></td>
@@ -109,8 +108,7 @@
       <td class="traitsVisibles"><?php echo $personne->getDettesCredits() ?></td>
       <td class="traitsVisibles"><?php echo $personne->getMotifRechercheLogement() ?></td>
       <td class="traitsVisibles"><?php echo $personne->getObservations() ?></td>
-      <?php if()?>
-      <?php endif;?>
+
     </tr>
     <?php endforeach; ?>
   </tbody>
