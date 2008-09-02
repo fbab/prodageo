@@ -15,6 +15,21 @@ class Findossier extends BaseFindossier
       	return $this->id;
       }
 
+function getNomDossier()
+	{
+		$connection = Propel::getConnection();
+		$query = 'SELECT nom AS nom FROM personne WHERE personne.dossier_id = CONVERT ( ' . $this->getDossierId() . ' , CHAR ) ' ; 
+
+	$statement = $connection->prepareStatement($query);
+	$resultset = $statement->executeQuery();
+        $i=0;
+	$nom = "" ;
+	while($resultset->next()){
+        $nom = $nom + "-" + $resultset->getString('nom');
+	}
+        return $nom ;
+	}
+
 function getVilles()
       {
 	$connection = Propel::getConnection();

@@ -25,6 +25,10 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 
 
 	
+	protected $difficultes_vie_dossier;
+
+
+	
 	protected $type_dossier;
 
 	
@@ -104,6 +108,13 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 	}
 
 	
+	public function getDifficultesVieDossier()
+	{
+
+		return $this->difficultes_vie_dossier;
+	}
+
+	
 	public function getTypeDossier()
 	{
 
@@ -173,6 +184,20 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 
 	} 
 	
+	public function setDifficultesVieDossier($v)
+	{
+
+						if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->difficultes_vie_dossier !== $v) {
+			$this->difficultes_vie_dossier = $v;
+			$this->modifiedColumns[] = DossierPeer::DIFFICULTES_VIE_DOSSIER;
+		}
+
+	} 
+	
 	public function setTypeDossier($v)
 	{
 
@@ -199,13 +224,15 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 
 			$this->date_cloture_dossier = $rs->getDate($startcol + 3, null);
 
-			$this->type_dossier = $rs->getString($startcol + 4);
+			$this->difficultes_vie_dossier = $rs->getString($startcol + 4);
+
+			$this->type_dossier = $rs->getString($startcol + 5);
 
 			$this->resetModified();
 
 			$this->setNew(false);
 
-						return $startcol + 5; 
+						return $startcol + 6; 
 		} catch (Exception $e) {
 			throw new PropelException("Error populating Dossier object", $e);
 		}
@@ -377,6 +404,9 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 				return $this->getDateClotureDossier();
 				break;
 			case 4:
+				return $this->getDifficultesVieDossier();
+				break;
+			case 5:
 				return $this->getTypeDossier();
 				break;
 			default:
@@ -393,7 +423,8 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 			$keys[1] => $this->getEtat(),
 			$keys[2] => $this->getDateOuvertureDossier(),
 			$keys[3] => $this->getDateClotureDossier(),
-			$keys[4] => $this->getTypeDossier(),
+			$keys[4] => $this->getDifficultesVieDossier(),
+			$keys[5] => $this->getTypeDossier(),
 		);
 		return $result;
 	}
@@ -422,6 +453,9 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 				$this->setDateClotureDossier($value);
 				break;
 			case 4:
+				$this->setDifficultesVieDossier($value);
+				break;
+			case 5:
 				$this->setTypeDossier($value);
 				break;
 		} 	}
@@ -435,7 +469,8 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 		if (array_key_exists($keys[1], $arr)) $this->setEtat($arr[$keys[1]]);
 		if (array_key_exists($keys[2], $arr)) $this->setDateOuvertureDossier($arr[$keys[2]]);
 		if (array_key_exists($keys[3], $arr)) $this->setDateClotureDossier($arr[$keys[3]]);
-		if (array_key_exists($keys[4], $arr)) $this->setTypeDossier($arr[$keys[4]]);
+		if (array_key_exists($keys[4], $arr)) $this->setDifficultesVieDossier($arr[$keys[4]]);
+		if (array_key_exists($keys[5], $arr)) $this->setTypeDossier($arr[$keys[5]]);
 	}
 
 	
@@ -447,6 +482,7 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 		if ($this->isColumnModified(DossierPeer::ETAT)) $criteria->add(DossierPeer::ETAT, $this->etat);
 		if ($this->isColumnModified(DossierPeer::DATE_OUVERTURE_DOSSIER)) $criteria->add(DossierPeer::DATE_OUVERTURE_DOSSIER, $this->date_ouverture_dossier);
 		if ($this->isColumnModified(DossierPeer::DATE_CLOTURE_DOSSIER)) $criteria->add(DossierPeer::DATE_CLOTURE_DOSSIER, $this->date_cloture_dossier);
+		if ($this->isColumnModified(DossierPeer::DIFFICULTES_VIE_DOSSIER)) $criteria->add(DossierPeer::DIFFICULTES_VIE_DOSSIER, $this->difficultes_vie_dossier);
 		if ($this->isColumnModified(DossierPeer::TYPE_DOSSIER)) $criteria->add(DossierPeer::TYPE_DOSSIER, $this->type_dossier);
 
 		return $criteria;
@@ -483,6 +519,8 @@ abstract class BaseDossier extends BaseObject  implements Persistent {
 		$copyObj->setDateOuvertureDossier($this->date_ouverture_dossier);
 
 		$copyObj->setDateClotureDossier($this->date_cloture_dossier);
+
+		$copyObj->setDifficultesVieDossier($this->difficultes_vie_dossier);
 
 		$copyObj->setTypeDossier($this->type_dossier);
 
