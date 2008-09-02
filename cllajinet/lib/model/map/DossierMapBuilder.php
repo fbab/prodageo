@@ -40,6 +40,8 @@ class DossierMapBuilder {
 
 		$tMap->addColumn('DATE_CLOTURE_DOSSIER', 'DateClotureDossier', 'int', CreoleTypes::DATE, false, null);
 
+		$tMap->addColumn('DIFFICULTES_VIE_DOSSIER', 'DifficultesVieDossier', 'string', CreoleTypes::VARCHAR, false, 255);
+
 		$tMap->addColumn('TYPE_DOSSIER', 'TypeDossier', 'string', CreoleTypes::VARCHAR, false, 255);
 
 	} 

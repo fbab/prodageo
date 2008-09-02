@@ -13,7 +13,7 @@ abstract class BaseDossierPeer {
 	const CLASS_DEFAULT = 'lib.model.Dossier';
 
 	
-	const NUM_COLUMNS = 5;
+	const NUM_COLUMNS = 6;
 
 	
 	const NUM_LAZY_LOAD_COLUMNS = 0;
@@ -32,6 +32,9 @@ abstract class BaseDossierPeer {
 	const DATE_CLOTURE_DOSSIER = 'dossier.DATE_CLOTURE_DOSSIER';
 
 	
+	const DIFFICULTES_VIE_DOSSIER = 'dossier.DIFFICULTES_VIE_DOSSIER';
+
+	
 	const TYPE_DOSSIER = 'dossier.TYPE_DOSSIER';
 
 	
@@ -40,18 +43,18 @@ abstract class BaseDossierPeer {
 
 	
 	private static $fieldNames = array (
-		BasePeer::TYPE_PHPNAME => array ('Id', 'Etat', 'DateOuvertureDossier', 'DateClotureDossier', 'TypeDossier', ),
-		BasePeer::TYPE_COLNAME => array (DossierPeer::ID, DossierPeer::ETAT, DossierPeer::DATE_OUVERTURE_DOSSIER, DossierPeer::DATE_CLOTURE_DOSSIER, DossierPeer::TYPE_DOSSIER, ),
-		BasePeer::TYPE_FIELDNAME => array ('id', 'etat', 'date_ouverture_dossier', 'date_cloture_dossier', 'type_dossier', ),
-		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, )
+		BasePeer::TYPE_PHPNAME => array ('Id', 'Etat', 'DateOuvertureDossier', 'DateClotureDossier', 'DifficultesVieDossier', 'TypeDossier', ),
+		BasePeer::TYPE_COLNAME => array (DossierPeer::ID, DossierPeer::ETAT, DossierPeer::DATE_OUVERTURE_DOSSIER, DossierPeer::DATE_CLOTURE_DOSSIER, DossierPeer::DIFFICULTES_VIE_DOSSIER, DossierPeer::TYPE_DOSSIER, ),
+		BasePeer::TYPE_FIELDNAME => array ('id', 'etat', 'date_ouverture_dossier', 'date_cloture_dossier', 'difficultes_vie_dossier', 'type_dossier', ),
+		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, )
 	);
 
 	
 	private static $fieldKeys = array (
-		BasePeer::TYPE_PHPNAME => array ('Id' => 0, 'Etat' => 1, 'DateOuvertureDossier' => 2, 'DateClotureDossier' => 3, 'TypeDossier' => 4, ),
-		BasePeer::TYPE_COLNAME => array (DossierPeer::ID => 0, DossierPeer::ETAT => 1, DossierPeer::DATE_OUVERTURE_DOSSIER => 2, DossierPeer::DATE_CLOTURE_DOSSIER => 3, DossierPeer::TYPE_DOSSIER => 4, ),
-		BasePeer::TYPE_FIELDNAME => array ('id' => 0, 'etat' => 1, 'date_ouverture_dossier' => 2, 'date_cloture_dossier' => 3, 'type_dossier' => 4, ),
-		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, )
+		BasePeer::TYPE_PHPNAME => array ('Id' => 0, 'Etat' => 1, 'DateOuvertureDossier' => 2, 'DateClotureDossier' => 3, 'DifficultesVieDossier' => 4, 'TypeDossier' => 5, ),
+		BasePeer::TYPE_COLNAME => array (DossierPeer::ID => 0, DossierPeer::ETAT => 1, DossierPeer::DATE_OUVERTURE_DOSSIER => 2, DossierPeer::DATE_CLOTURE_DOSSIER => 3, DossierPeer::DIFFICULTES_VIE_DOSSIER => 4, DossierPeer::TYPE_DOSSIER => 5, ),
+		BasePeer::TYPE_FIELDNAME => array ('id' => 0, 'etat' => 1, 'date_ouverture_dossier' => 2, 'date_cloture_dossier' => 3, 'difficultes_vie_dossier' => 4, 'type_dossier' => 5, ),
+		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, )
 	);
 
 	
@@ -111,6 +114,8 @@ abstract class BaseDossierPeer {
 		$criteria->addSelectColumn(DossierPeer::DATE_OUVERTURE_DOSSIER);
 
 		$criteria->addSelectColumn(DossierPeer::DATE_CLOTURE_DOSSIER);
+
+		$criteria->addSelectColumn(DossierPeer::DIFFICULTES_VIE_DOSSIER);
 
 		$criteria->addSelectColumn(DossierPeer::TYPE_DOSSIER);
 
