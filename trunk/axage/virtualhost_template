@@ -1,0 +1,33 @@
+<VirtualHost *>
+    ServerName app8
+    DocumentRoot /var/trac/app8
+    <Location />
+        SetHandler mod_python
+        PythonHandler trac.web.modpython_frontend
+        PythonOption TracEnv /var/trac/app8
+        PythonOption TracUriRoot /
+        PythonPath "sys.path + ['/var/trac/app8']"
+    </Location>
+
+    ErrorLog  /var/log/apache2/app8.error.log
+    CustomLog /var/log/apache2/app8.access.log common
+    
+    <Location /svn>
+        DAV svn
+        SVNPath /var/svn/app8
+        AuthType Basic
+        AuthName "app8 Subversion repository"
+        AuthUserFile /etc/apache2/dav_svn.passwd
+        <LimitExcept GET PROPFIND OPTIONS REPORT> 
+            Require valid-user
+        </LimitExcept>
+    </Location>
+    
+    <Location "/login">
+        AuthType Basic
+        AuthName "Trac login"
+        AuthUserFile /etc/apache2/dav_svn.passwd
+        Require valid-user
+    </Location>
+
+</VirtualHost>
