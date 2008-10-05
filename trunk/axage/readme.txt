@@ -7,6 +7,10 @@ trac, libapache2-mod-python, subversion, libapache2-svn
 Installation
 Copier les fichiers dans /opt/axage
 
+Usage
+> /opt/axage/create_rouage_project.sh monzouliprojet
+> le portail projet Trac est accessible par l'URL http://monzouliprojet
+
 Troubleshooting
 
 E: Emplacement des fichiers de config de mzp
