@@ -10,6 +10,8 @@ Copier les fichiers dans /opt/axage
 Usage
 > /opt/axage/create_rouage_project.sh monzouliprojet
 > le portail projet Trac est accessible par l'URL http://monzouliprojet
+* recommandations
+** pas de point dans le nom du projet (OK : monprojet, NOK : mon.projet)
 
 Troubleshooting
 
