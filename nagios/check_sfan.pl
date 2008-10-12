@@ -38,7 +38,7 @@
 
 use strict;
 use lib "/opt/plugins/";
-
+use lib "/usr/lib/nagios/plugins/";
 use Net::SNMP;
 use utils qw ($TIMEOUT %ERRORS &print_revision &support);
 use Switch;
