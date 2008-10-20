@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="lister_modules" targetNamespace="http://j2ee.netbeans.org/wsdl/lister_modules"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://j2ee.netbeans.org/wsdl/lister_modules" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <types/>
+    <message name="lister_modulesOperationRequest">
+        <part name="etablissement" type="xsd:string"/>
+        <part name="numero" type="xsd:positiveInteger"/>
+    </message>
+    <message name="lister_modulesOperationResponse">
+        <part name="part1" type="xsd:string"/>
+    </message>
+    <portType name="lister_modulesPortType">
+        <operation name="lister_modulesOperation">
+            <input name="input1" message="tns:lister_modulesOperationRequest"/>
+            <output name="output1" message="tns:lister_modulesOperationResponse"/>
+        </operation>
+    </portType>
+    <binding name="lister_modules_Binding" type="tns:lister_modulesPortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="lister_modulesOperation">
+            <soap:operation/>
+            <input name="input1">
+                <soap:body use="encoded" namespace="http://j2ee.netbeans.org/wsdl/lister_modules"/>
+            </input>
+            <output name="output1">
+                <soap:body use="encoded" namespace="http://j2ee.netbeans.org/wsdl/lister_modules"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="lister_modules_Service">
+        <port name="lister_modules_Port" binding="tns:lister_modules_Binding">
+            <soap:address location="http://localhost:${HttpDefaultPort}/lister_modules_Service/lister_modules_Port"/>
+        </port>
+    </service>
+    <plnk:partnerLinkType name="lister_modules">
+        <!-- A partner link type is automatically generated when a new port type is added. Partner link types are used by BPEL processes. 
+In a BPEL process, a partner link represents the interaction between the BPEL process and a partner service. Each partner link is associated with a partner link type.
+A partner link type characterizes the conversational relationship between two services. The partner link type can have one or two roles.-->
+        <plnk:role name="lister_modulesPortTypeRole" portType="tns:lister_modulesPortType"/>
+    </plnk:partnerLinkType>
+</definitions>

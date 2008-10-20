@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="lister_profs" targetNamespace="http://ws.prodageo.org/wsdl/lister_profs"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://ws.prodageo.org/wsdl/lister_profs" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <types/>
+    <message name="lister_profsOperationRequest">
+        <part name="etablissement" type="xsd:string"/>
+        <part name="numero" type="xsd:integer"/>
+    </message>
+    <message name="lister_profsOperationResponse">
+        <part name="nom" type="xsd:string"/>
+    </message>
+    <portType name="lister_profsPortType">
+        <operation name="lister_profsOperation">
+            <input name="input1" message="tns:lister_profsOperationRequest"/>
+            <output name="output1" message="tns:lister_profsOperationResponse"/>
+        </operation>
+    </portType>
+    <binding name="lister_profsBinding" type="tns:lister_profsPortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="lister_profsOperation">
+            <soap:operation/>
+            <input name="input1">
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.prodageo.org/wsdl/lister_profs"/>
+            </input>
+            <output name="output1">
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.prodageo.org/wsdl/lister_profs"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="lister_profs_Service">
+        <port name="lister_profsPort" binding="tns:lister_profsBinding">
+            <soap:address location="http://localhost:${HttpDefaultPort}/lister_profs_Service/lister_profsPort"/>
+        </port>
+    </service>
+    <plnk:partnerLinkType name="lister_profs">
+
+        <plnk:role name="lister_profsPortTypeRole" portType="tns:lister_profsPortType"/>
+    </plnk:partnerLinkType>
+</definitions>

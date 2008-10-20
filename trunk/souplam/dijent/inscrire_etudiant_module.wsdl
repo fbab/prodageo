@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="inscrire_etudiant_module" targetNamespace="http://j2ee.netbeans.org/wsdl/inscrire_etudiant_module"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://j2ee.netbeans.org/wsdl/inscrire_etudiant_module" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <types/>
+    <message name="inscrire_etudiant_moduleOperationRequest">
+        <part name="nom_etudiant" type="xsd:string"/>
+        <part name="part2" type="xsd:string"/>
+    </message>
+    <message name="inscrire_etudiant_moduleOperationResponse">
+        <part name="success" type="xsd:boolean"/>
+    </message>
+    <portType name="inscrire_etudiant_modulePortType">
+        <operation name="inscrire_etudiant_moduleOperation">
+            <input name="input1" message="tns:inscrire_etudiant_moduleOperationRequest"/>
+            <output name="output1" message="tns:inscrire_etudiant_moduleOperationResponse"/>
+        </operation>
+    </portType>
+    <binding name="inscrire_etudiant_moduleBinding" type="tns:inscrire_etudiant_modulePortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="inscrire_etudiant_moduleOperation">
+            <soap:operation/>
+            <input name="input1">
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://j2ee.netbeans.org/wsdl/inscrire_etudiant_module"/>
+            </input>
+            <output name="output1">
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://j2ee.netbeans.org/wsdl/inscrire_etudiant_module"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="inscrire_etudiant_moduleService">
+        <port name="inscrire_etudiant_modulePort" binding="tns:inscrire_etudiant_moduleBinding">
+            <soap:address location="http://localhost:${HttpDefaultPort}/inscrire_etudiant_moduleService/inscrire_etudiant_modulePort"/>
+        </port>
+    </service>
+    <plnk:partnerLinkType name="inscrire_etudiant_module">
+        <!-- A partner link type is automatically generated when a new port type is added. Partner link types are used by BPEL processes. 
+In a BPEL process, a partner link represents the interaction between the BPEL process and a partner service. Each partner link is associated with a partner link type.
+A partner link type characterizes the conversational relationship between two services. The partner link type can have one or two roles.-->
+        <plnk:role name="inscrire_etudiant_modulePortTypeRole" portType="tns:inscrire_etudiant_modulePortType"/>
+    </plnk:partnerLinkType>
+</definitions>
