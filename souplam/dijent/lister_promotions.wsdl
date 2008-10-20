@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions name="lister_promotions_" targetNamespace="http://j2ee.netbeans.org/wsdl/lister_promotions_"
+    xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://j2ee.netbeans.org/wsdl/lister_promotions_" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+    <types/>
+    <message name="lister_promotions_OperationRequest">
+        <part name="departement" type="xsd:string"/>
+        <part name="annee_de_rentree" type="xsd:string"/>
+        <part name="numero" type="xsd:string"/>
+    </message>
+    <message name="lister_promotions_OperationResponse">
+        <part name="part1" type="xsd:string"/>
+    </message>
+    <portType name="lister_promotions_PortType">
+        <operation name="lister_promotions_Operation">
+            <input name="input1" message="tns:lister_promotions_OperationRequest"/>
+            <output name="output1" message="tns:lister_promotions_OperationResponse"/>
+        </operation>
+    </portType>
+    <binding name="lister_promotions_Binding" type="tns:lister_promotions_PortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="lister_promotions_Operation">
+            <soap:operation/>
+            <input name="input1">
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://j2ee.netbeans.org/wsdl/lister_promotions_"/>
+            </input>
+            <output name="output1">
+                <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://j2ee.netbeans.org/wsdl/lister_promotions_"/>
+            </output>
+        </operation>
+    </binding>
+    <service name="lister_promotions_Service">
+        <port name="lister_promotions_Port" binding="tns:lister_promotions_Binding">
+            <soap:address location="http://localhost:${HttpDefaultPort}/lister_promotions_Service/lister_promotions_Port"/>
+        </port>
+    </service>
+    <plnk:partnerLinkType name="lister_promotions_">
+        <!-- A partner link type is automatically generated when a new port type is added. Partner link types are used by BPEL processes. 
+In a BPEL process, a partner link represents the interaction between the BPEL process and a partner service. Each partner link is associated with a partner link type.
+A partner link type characterizes the conversational relationship between two services. The partner link type can have one or two roles.-->
+        <plnk:role name="lister_promotions_PortTypeRole" portType="tns:lister_promotions_PortType"/>
+    </plnk:partnerLinkType>
+</definitions>
