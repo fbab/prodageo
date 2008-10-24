@@ -1,6 +1,9 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Fichier issu de l'exemple
+ * http://www.restlet.org/documentation/1.0/firstSteps
+ * Il a été amendé :
+ * le recours aux Variant a été retiré
+ * pour ne pas polluer le débat à ce stade du développement
  */
 
 package firstSteps;
@@ -12,8 +15,7 @@ import org.restlet.data.Response;
 import org.restlet.resource.Representation;
 import org.restlet.resource.Resource;
 import org.restlet.resource.StringRepresentation;
-import org.restlet.resource.Variant;
-
+// import org.restlet.resource.Variant;
 
 /**
  *
@@ -31,10 +33,6 @@ public class HelloWorldResource extends Resource {
       super(context, request, response);
    }
 
-   /**
-    * Returns a full representation for a given variant.
-    */
-   
    
    @Override
    public void handleGet ( ) 
