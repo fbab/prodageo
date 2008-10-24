@@ -1,6 +1,14 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Fichier issu de l'exemple
+ * http://www.restlet.org/documentation/1.0/firstSteps
+ * Assure le routage de la requete vers la ressource
+ * associé à l'URL
+ * Dans ce fork de l'exemple a été ajouté une ressource (HelloKitty)
+ * chargée de saluer le nom qui sera sur l'URL derrière Hello
+ * http://localhost/hellorest/hello/{kitty}
+ * Toutes les autres URL sont routées
+ * vers la ressource HelloWorldResource
+ * (route par défaut)
  */
 
 package firstSteps;
@@ -14,8 +22,6 @@ import org.restlet.Application;
 import org.restlet.Context;
 import org.restlet.Restlet;
 import org.restlet.Router;
-import org.restlet.data.Request;
-import org.restlet.data.Response;
 
 public class FirstStepsApplication extends Application {
 
@@ -44,11 +50,4 @@ public class FirstStepsApplication extends Application {
       return router;
    }
 
-   /*
-   @Override
-   public void handle (Request request, Response response)
-   {
-        
-   }
-    */
 }
