@@ -1,6 +1,9 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * Ce fichier est nouveau par rapport a l'exemple
+ * http://www.restlet.org/documentation/1.0/firstSteps
+ * Il s'agit d'une nouvelle ressource qui est derrière les
+ * URL du type : http://localhost/hellorest/hello/{kitty}
+ * La représentation renvoyée sera Hello {kitty}
  */
 
 package firstSteps;
@@ -17,7 +20,7 @@ import org.restlet.data.Response;
 import org.restlet.resource.Representation;
 import org.restlet.resource.Resource;
 import org.restlet.resource.StringRepresentation;
-import org.restlet.resource.Variant;
+
 
 
 
