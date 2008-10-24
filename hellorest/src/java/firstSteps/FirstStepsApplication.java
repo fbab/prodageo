@@ -9,6 +9,14 @@
  * Toutes les autres URL sont routées
  * vers la ressource HelloWorldResource
  * (route par défaut)
+ * ASTUCE POUR AJOUTER LES LIBRAIRIES EN UNE SEULE MANIP SOUS NETBEANS
+ * Supposons que Restlet a éte installé dans /opt/restlet
+ * L'idee est de copier tous les jar et de les reunir dans un seul répertoire
+ * (par exemple : /opt/restletjars)
+ * au moyen de la commande find
+ * > find /opt/restlet -name *.jar -exec cp {} /opt/restletjars/. \;
+ * (je sais, c'est barbare, mais il suffit d'avoir la syntaxe sous la main
+ * c'est pratique quand même ;)
  */
 
 package firstSteps;
