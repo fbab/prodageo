@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<config>
+ <log>
+  <ident>propel-bookstore</ident>
+  <level>7</level>
+ </log>
+ <propel>
+  <datasources default="bookstore">
+   <datasource id="bookstore">
+    <!-- the Propel adapter will usually be the same as phptype of
+connection DSN -->
+    <adapter>mysql</adapter>
+    <connection>
+    <dsn>mysql:dbname=ormfbaucher;host=localhost</dsn>
+    <user>root</user>
+     <password></password>
+</connection>
+   </datasource>
+  </datasources>
+ </propel>
+</config>
+
