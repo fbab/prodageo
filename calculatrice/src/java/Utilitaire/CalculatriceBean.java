@@ -15,7 +15,7 @@ import javax.ejb.Stateless;
 public class CalculatriceBean implements CalculatriceRemote, CalculatriceLocal {
 
     public int additionner(int a, int b) {
-        return 0;
+        return a + b ;
     }
     
     // Add business logic below. (Right-click in editor and choose
