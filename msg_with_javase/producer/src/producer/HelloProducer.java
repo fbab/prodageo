@@ -1,11 +1,12 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * sur une idee de 
+ * http://blogs.sun.com/openmessagequeue/entry/jms_101
  */
 
 package producer;
 
 import javax.jms.*;
+import com.sun.messaging.ConnectionConfiguration;
 
 /**
  *
@@ -28,10 +29,33 @@ public class HelloProducer {
      */
     public HelloProducer() {
         try {
-            // creating a connection factory
-            // we are cheating here by not using jdni
-            ConnectionFactory cf= new com.sun.messaging.ConnectionFactory();
+  
+                    
+            ConnectionFactory cf= new com.sun.messaging.ConnectionFactory ( ) ;
+            
+            // astuce pour 
+            com.sun.messaging.ConnectionFactory scf = (com.sun.messaging.ConnectionFactory) cf ;
+            
+            // valeur par defaut de la machine
+            // scf.setProperty( ConnectionConfiguration.imqBrokerHostName , "localhost" ) ; // OK        
+            scf.setProperty( ConnectionConfiguration.imqBrokerHostName , "172.30.6.38" ) ;  // OK          
+            
+            // scf.setProperty( ConnectionConfiguration.imqBrokerHostName , "trac.insa-rouen.fr" ) ;
+            // scf.setProperty( ConnectionConfiguration.imqBrokerHostName , "172.30.4.103" ) ;            
 
+            // valeur par defaut du port
+            // scf.setProperty( ConnectionConfiguration.imqBrokerHostPort , "7676" ) ;                        
+            scf.setProperty( ConnectionConfiguration.imqBrokerHostPort , "8080" ) ;   // OK sur localhost et .36         
+           
+            
+            // autre paramètres de connection
+            // cf.createConnection(username, password)
+             /*
+             public Connection createConnection(String userName, String password) throws JMSException
+              Creates a connection with the specified user identity. The connection is created in stopped mode. 
+              No messages will be delivered until the Connection.start method is explicitly called.
+*/
+            
             // create a connection
             Connection connection = cf.createConnection();
            
