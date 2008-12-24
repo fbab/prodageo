@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : sun-acc.xml
+    Created on : 24 décembre 2008, 02:06
+    Author     : root
+    Description:
+        Purpose of the document follows.
+-->
+
+<!DOCTYPE client-container PUBLIC '-//Sun Microsystems, Inc.//DTD Application Server 8.1 Application Client Container //EN' 'http://www.sun.com/software/dtd/appserver/sun-application-client-container_1_2.dtd'>
+<client-container>
+<target-server name="bouake" address="192.168.1.12" port="3700"/>
+</client-container>
