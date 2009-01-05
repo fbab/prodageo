@@ -1,5 +1,7 @@
 <?php
 require_once 'PHPUnit/Framework.php';
+// un changement pour amorcer xinc
+// (cf http://www.toosweettobesour.com/2008/05/15/automating-the-development-workflow/)
  
 class ArrayTest extends PHPUnit_Framework_TestCase
 {
