@@ -4,6 +4,7 @@ require_once 'PHPUnit/Framework.php';
 // (cf http://www.toosweettobesour.com/2008/05/15/automating-the-development-workflow/)
 // encore un autre
 // encore un autre
+// encore un autre a 22h37
  
 class ArrayTest extends PHPUnit_Framework_TestCase
 {
