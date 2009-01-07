@@ -1,13 +1,5 @@
 <?php
 
-/**
- *
- *
- * @version $Id$
- * @copyright 2009
- */
-
-
 class Etudiant
 {
 	private $_numEtu;
@@ -40,9 +32,6 @@ class Etudiant
 	{
 		$this->_nom = $nom;
 	}
-
-
-
 
 }
 ?>
