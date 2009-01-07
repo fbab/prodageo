@@ -3,19 +3,7 @@ require_once 'PHPUnit/Framework.php';
 // un changement pour amorcer xinc
 // (cf http://www.toosweettobesour.com/2008/05/15/automating-the-development-workflow/)
 // encore un autre
-// encore un autre
-// encore un autre a 22h37
-// encore un autre a 22h56
-// encore un autre a 23h03
-// encore un autre a 23h13
-// encore un autre a 23h32
-// encore un autre a 23h40
-// encore un autre a 00h27
-// encore un autre a 00h45
-// encore un autre a 00h53
-// encore un autre a 00h59
-// encore un autre a 01h30
-// encore un autre a 01h40
+// no more on the 7th
  
 class ArrayTest extends PHPUnit_Framework_TestCase
 {
