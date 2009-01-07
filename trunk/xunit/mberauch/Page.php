@@ -5,7 +5,7 @@ class Page
 
     public function __construct()
     {
-        $this->output = '<h1>Page output</h1>';
+        $this->output = '<h1>Page output1</h1>';
     }
 
     public function getOutput()
