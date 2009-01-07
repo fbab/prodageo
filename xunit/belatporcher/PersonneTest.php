@@ -4,7 +4,7 @@
 require_once 'Personne.php';
 require_once 'PHPUnit/Framework.php';
 
-class PersonneTest extends PHPUnit_Framwork_TestCase
+class PersonneTest extends PHPUnit_Framework_TestCase
 {
     private $_personne;
 
