@@ -1,5 +1,4 @@
 <?php
-
 class Etudiant
 {
 	private $_numEtu;
