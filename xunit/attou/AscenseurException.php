@@ -1,11 +1,8 @@
 <?php
-
-class AscenseurException {
-
-public function __construct()
-{
-
-}
-
+class AscenseurException  extends Exception {
+ 
+    public function __construct($msg) {
+        parent :: __construct($msg);
+    }    
 }
 ?>
