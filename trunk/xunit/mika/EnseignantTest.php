@@ -20,14 +20,14 @@ class EnseignantTest extends PHPUnit_Framework_TestCase
 
     public function testEnsignantSetNom()
     {
-        $this->_personne->setNom('Thomas');
-        $this->assertEquals('Thomas',$this->_personne->getNom());
+        $this->_personne->setNom('Dupont');
+        $this->assertEquals('Dupont',$this->_personne->getNom());
     }
     
     public function testEnsignantSetPrenom()
     {
-        $this->_personne->setNom('Dupont');
-        $this->assertEquals('Dupont',$this->_personne->getPrenom());
+        $this->_personne->setPrenom('Thomas');
+        $this->assertEquals('Thomas',$this->_personne->getPrenom());
     }
 }
 ?>
