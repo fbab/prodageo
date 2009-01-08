@@ -13,7 +13,7 @@ class Enchere
 	public function __construct($price,$personne){
 		$this->_currentPrice = $price;
 		$this->_currentPersonne = $personne;
-		$this->_count = 1;
+		$this->_count = 0;
 		$this->_enchereSum = 0;
 	}
 
@@ -27,7 +27,7 @@ class Enchere
 
 	public function encherir($price,$personne){
 		//echo $price." ".$this->_currentPrice;
-		if ($price < $this->_currentPrice){
+		if ($price > $this->_currentPrice){
 			$this->enchereSum += $price-$this->_currentPrice; 
 			$this->_currentPrice = $price;
 			$this->_currentPersonne = $personne;
@@ -42,6 +42,6 @@ class Enchere
 	}
 
 	public function getAverage(){
-		return $this->enchereSum/$this->$this->_count;
+		return ($this->enchereSum/$this->_count);
 	}
 }
