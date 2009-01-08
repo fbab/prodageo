@@ -1,7 +1,7 @@
 <!--Tests de la classe Enseignant du projet LogIFIPS-->
 
 <?php
-require_once '../library/Personne.php';
+require_once './Enseignant.php';
 
 class EnseignantTest extends PHPUnit_Framework_TestCase
 {
