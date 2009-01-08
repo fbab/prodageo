@@ -46,7 +46,7 @@ class EnchereTest extends PHPUnit_Framework_TestCase
 		$this->enchere->encherir(15,new Personne("Julien"));
 		$this->enchere->encherir(16,new Personne("Pierrick"));
 
-		$this->assertEquals(7,$this->enchere->getCount());
+		$this->assertEquals(6,$this->enchere->getCount());
 	}
 
 	public function testEnchereAverage(){
