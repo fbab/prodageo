@@ -12,8 +12,8 @@ class Utilisateur
 	public function __construct($nom)
 	{
 		$this->_nom = $nom;
-		$this->_aime = new array();
-		$this->_deteste = new array();
+		$this->_aime =  array();
+		$this->_deteste =  array();
 	}
 	
 	//renvois le nom de l'utilisateur
@@ -56,13 +56,13 @@ class Utilisateur
 	
 	//renvois les informations de l'utilisateur sous forme d'une chaine à afficher	
 	public function __tostring(){
-			$tmp = $this->_nom." aime ";
+			$tmp= $this->_nom." aime ";
 			if(sizeof($this->_aime)<=0)
 				$tmp.= "tout ";
 			else
 				for($i=0; $i<sizeof($this->_aime); $i++)
 					$tmp.= $this->_aime[$i].", ";		
-			$tmp. = "et deteste ";
+			$tmp.= "et deteste ";
 			if(sizeof($this->_deteste)<=0)
 				$tmp.= "rien ";
 			else
