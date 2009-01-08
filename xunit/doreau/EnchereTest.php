@@ -34,7 +34,7 @@ class EnchereTest extends PHPUnit_Framework_TestCase
 
 	public function testSousEncherir(){
 		//Une exception EnchereException doit être retournée
-		$this->setExpectedException("EcnhereException");
+		$this->setExpectedException("EnchereException");
 		$this->enchere->encherir(9,new Personne("Fred"));
 	}
 
@@ -52,10 +52,10 @@ class EnchereTest extends PHPUnit_Framework_TestCase
 	public function testEnchereAverage(){
 		$this->enchere->encherir(12,new Personne("Frederic"));
 		$this->enchere->encherir(14,new Personne("Pierrick"));
-		//$this->enchere->encherir(16,new Personne("Julien"));
-		//$this->enchere->encherir(18,new Personne("Fred"));
-		//$this->enchere->encherir(20,new Personne("Julien"));
-		//$this->enchere->encherir(22,new Personne("Pierrick"));
+		$this->enchere->encherir(16,new Personne("Julien"));
+		$this->enchere->encherir(18,new Personne("Fred"));
+		$this->enchere->encherir(20,new Personne("Julien"));
+		$this->enchere->encherir(22,new Personne("Pierrick"));
 
 		//Le montant de la surEnchere moyenne est-il correct ?
 		$this->assertEquals(2,$this->enchere->getAverage());
