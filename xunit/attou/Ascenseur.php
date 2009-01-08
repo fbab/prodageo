@@ -1,6 +1,7 @@
 <?php
 require_once 'AscenseurException.php';
 
+//cette classe.
 class Ascenseur
 {
     const MAX_ETAGES  = 50;
