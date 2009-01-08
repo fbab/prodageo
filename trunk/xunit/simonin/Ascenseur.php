@@ -6,7 +6,7 @@ class Ascenseur implements Countable , IteratorAggregate
 {
     const MAX_ETAGES  = 50;
     const CHARGE_MAXI = 5;
-        
+	
     private $_nom;
     private $_etage;
     private $_personnes;
@@ -79,7 +79,7 @@ class Ascenseur implements Countable , IteratorAggregate
     {
         return $this->_etage;
     }
-        
+	
     public function count()
     {
         return count($this->_personnes);
