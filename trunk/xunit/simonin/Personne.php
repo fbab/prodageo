@@ -25,7 +25,7 @@ class Personne
     {
         return $this->_nom;
     }
-        
+	
     public function __toString()
     {
         return $this->getName();
