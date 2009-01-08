@@ -9,13 +9,14 @@ class _EtudiantTest extends PHPUnit_Framework_TestCase
 
 	protected function setUp()
 	{
-		$this->_etudiant = new Etudiant('0258962', 'belat', 'aurélie', '05/01/86');
+		$this->_etudiant = new Etudiant('15642', 'dub', 'tom', '01/02/03');
 	}
 
 	public function testPersonneInitialisee()
 	{
-		$this->assertEquals('belat',$this->_etudiant->getName());
+		$this->assertEquals('dub',$this->_etudiant->getName());
 		$this->assertEquals($this->_etudiant->getName(),(string)$this->_etudiant);
+		$this->assertEquals('15642',$this->_etudiant->getNumEtu());
 	}
 
 	public function testUpdatename()
