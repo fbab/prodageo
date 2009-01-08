@@ -1,10 +1,18 @@
 <?php
 require_once 'AscenseurException.php';
 
-//cette classe.
+/**
+Cette classe permet quelque chose
+des fois.
+@category 
+@package 
+@author 
+@license 
+@link
+*/
 class Ascenseur
 {
-    const MAX_ETAGES  = 50;
+    const MAX_ETAGES = 50;
 	
     private $_nom;
     private $_etage;
