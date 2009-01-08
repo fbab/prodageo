@@ -23,7 +23,7 @@ class Ascenseur
     {
         $a_l_etage = abs((int)$a_l_etage);
         if ($a_l_etage > self::MAX_ETAGES || $a_l_etage < 0) {
-           throw new AscenseurException('Etage invalide');
+           throw new AscenseurException();
         }	    
         $this->_etage = $a_l_etage;
     }

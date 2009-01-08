@@ -1,5 +1,5 @@
 <?php
-require_once '../library/Ascenseur.php';
+require_once 'Ascenseur.php';
 
 class AscenseurTest extends PHPUnit_Framework_TestCase
 {
