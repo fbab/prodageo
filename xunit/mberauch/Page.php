@@ -1,5 +1,5 @@
 <?php
-class Page
+ class Page
 { 
     private $output;
 
