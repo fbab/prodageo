@@ -3,12 +3,6 @@
 <html>
 <head>
  
- 
- 
- <script type="text/javascript">
- (function(){function a(){this.t={};this.tick=function(c){this.t[c]=(new Date).getTime()};this.tick("start")}var b=new a;window.jstiming={Timer:a,load:b};if(window.external&&window.external.pageT)window.jstiming.pt=window.external.pageT;})();
- </script>
- 
  <title>
  prodageo -
  
@@ -35,7 +29,7 @@
  | <a href="/u/bruno.miralles/">Profile</a>
  | <a href="/hosting/settings">Settings</a>
  | <a href="/p/support/">Help</a>
- | <a href="http://www.google.com/accounts/Logout?continue=http%3A%2F%2Fcode.google.com%2Fp%2Fprodageo%2Fsource%2Fbrowse%2Ftrunk%2Fxunit%2Fdoreau%2FPersonne.php">Sign out</a>
+ | <a href="http://www.google.com/accounts/Logout?continue=http%3A%2F%2Fcode.google.com%2Fp%2Fprodageo%2Fsource%2Fbrowse%2Ftrunk%2Fxunit%2Fdoreau%2FAscenseurFinal.php">Sign out</a>
  
  </font> 
 
@@ -215,7 +209,7 @@
  <span id="crumb_root">
  
  <a href="/p/prodageo/source/browse/?r=127">svn</a>/&nbsp;</span>
- <span id="crumb_links" class="ifClosed"><a href="/p/prodageo/source/browse/trunk/?r=127">trunk</a><span class="sp">/&nbsp;</span><a href="/p/prodageo/source/browse/trunk/xunit/?r=127">xunit</a><span class="sp">/&nbsp;</span><a href="/p/prodageo/source/browse/trunk/xunit/doreau/?r=127">doreau</a><span class="sp">/&nbsp;</span>Personne.php</span>
+ <span id="crumb_links" class="ifClosed"><a href="/p/prodageo/source/browse/trunk/?r=127">trunk</a><span class="sp">/&nbsp;</span><a href="/p/prodageo/source/browse/trunk/xunit/?r=127">xunit</a><span class="sp">/&nbsp;</span><a href="/p/prodageo/source/browse/trunk/xunit/doreau/?r=127">doreau</a><span class="sp">/&nbsp;</span>AscenseurFinal.php</span>
  
  </div>
  
@@ -319,6 +313,64 @@
 ><tr id="gr_svn127_32"><td id="32"><a href="#32">32</a></td></tr
 ><tr id="gr_svn127_33"><td id="33"><a href="#33">33</a></td></tr
 ><tr id="gr_svn127_34"><td id="34"><a href="#34">34</a></td></tr
+><tr id="gr_svn127_35"><td id="35"><a href="#35">35</a></td></tr
+><tr id="gr_svn127_36"><td id="36"><a href="#36">36</a></td></tr
+><tr id="gr_svn127_37"><td id="37"><a href="#37">37</a></td></tr
+><tr id="gr_svn127_38"><td id="38"><a href="#38">38</a></td></tr
+><tr id="gr_svn127_39"><td id="39"><a href="#39">39</a></td></tr
+><tr id="gr_svn127_40"><td id="40"><a href="#40">40</a></td></tr
+><tr id="gr_svn127_41"><td id="41"><a href="#41">41</a></td></tr
+><tr id="gr_svn127_42"><td id="42"><a href="#42">42</a></td></tr
+><tr id="gr_svn127_43"><td id="43"><a href="#43">43</a></td></tr
+><tr id="gr_svn127_44"><td id="44"><a href="#44">44</a></td></tr
+><tr id="gr_svn127_45"><td id="45"><a href="#45">45</a></td></tr
+><tr id="gr_svn127_46"><td id="46"><a href="#46">46</a></td></tr
+><tr id="gr_svn127_47"><td id="47"><a href="#47">47</a></td></tr
+><tr id="gr_svn127_48"><td id="48"><a href="#48">48</a></td></tr
+><tr id="gr_svn127_49"><td id="49"><a href="#49">49</a></td></tr
+><tr id="gr_svn127_50"><td id="50"><a href="#50">50</a></td></tr
+><tr id="gr_svn127_51"><td id="51"><a href="#51">51</a></td></tr
+><tr id="gr_svn127_52"><td id="52"><a href="#52">52</a></td></tr
+><tr id="gr_svn127_53"><td id="53"><a href="#53">53</a></td></tr
+><tr id="gr_svn127_54"><td id="54"><a href="#54">54</a></td></tr
+><tr id="gr_svn127_55"><td id="55"><a href="#55">55</a></td></tr
+><tr id="gr_svn127_56"><td id="56"><a href="#56">56</a></td></tr
+><tr id="gr_svn127_57"><td id="57"><a href="#57">57</a></td></tr
+><tr id="gr_svn127_58"><td id="58"><a href="#58">58</a></td></tr
+><tr id="gr_svn127_59"><td id="59"><a href="#59">59</a></td></tr
+><tr id="gr_svn127_60"><td id="60"><a href="#60">60</a></td></tr
+><tr id="gr_svn127_61"><td id="61"><a href="#61">61</a></td></tr
+><tr id="gr_svn127_62"><td id="62"><a href="#62">62</a></td></tr
+><tr id="gr_svn127_63"><td id="63"><a href="#63">63</a></td></tr
+><tr id="gr_svn127_64"><td id="64"><a href="#64">64</a></td></tr
+><tr id="gr_svn127_65"><td id="65"><a href="#65">65</a></td></tr
+><tr id="gr_svn127_66"><td id="66"><a href="#66">66</a></td></tr
+><tr id="gr_svn127_67"><td id="67"><a href="#67">67</a></td></tr
+><tr id="gr_svn127_68"><td id="68"><a href="#68">68</a></td></tr
+><tr id="gr_svn127_69"><td id="69"><a href="#69">69</a></td></tr
+><tr id="gr_svn127_70"><td id="70"><a href="#70">70</a></td></tr
+><tr id="gr_svn127_71"><td id="71"><a href="#71">71</a></td></tr
+><tr id="gr_svn127_72"><td id="72"><a href="#72">72</a></td></tr
+><tr id="gr_svn127_73"><td id="73"><a href="#73">73</a></td></tr
+><tr id="gr_svn127_74"><td id="74"><a href="#74">74</a></td></tr
+><tr id="gr_svn127_75"><td id="75"><a href="#75">75</a></td></tr
+><tr id="gr_svn127_76"><td id="76"><a href="#76">76</a></td></tr
+><tr id="gr_svn127_77"><td id="77"><a href="#77">77</a></td></tr
+><tr id="gr_svn127_78"><td id="78"><a href="#78">78</a></td></tr
+><tr id="gr_svn127_79"><td id="79"><a href="#79">79</a></td></tr
+><tr id="gr_svn127_80"><td id="80"><a href="#80">80</a></td></tr
+><tr id="gr_svn127_81"><td id="81"><a href="#81">81</a></td></tr
+><tr id="gr_svn127_82"><td id="82"><a href="#82">82</a></td></tr
+><tr id="gr_svn127_83"><td id="83"><a href="#83">83</a></td></tr
+><tr id="gr_svn127_84"><td id="84"><a href="#84">84</a></td></tr
+><tr id="gr_svn127_85"><td id="85"><a href="#85">85</a></td></tr
+><tr id="gr_svn127_86"><td id="86"><a href="#86">86</a></td></tr
+><tr id="gr_svn127_87"><td id="87"><a href="#87">87</a></td></tr
+><tr id="gr_svn127_88"><td id="88"><a href="#88">88</a></td></tr
+><tr id="gr_svn127_89"><td id="89"><a href="#89">89</a></td></tr
+><tr id="gr_svn127_90"><td id="90"><a href="#90">90</a></td></tr
+><tr id="gr_svn127_91"><td id="91"><a href="#91">91</a></td></tr
+><tr id="gr_svn127_92"><td id="92"><a href="#92">92</a></td></tr
 ></table></pre>
 
 <pre><table width="100%"><tr class="nocursor"><td></td></tr></table></pre>
@@ -329,71 +381,187 @@
 <pre class="prettyprint "><table><tr
 id=sl_svn127_1><td>&lt;?php<br></td></tr
 ><tr
-id=sl_svn127_2><td>class Personne<br></td></tr
+id=sl_svn127_2><td>require_once &#39;Personne.php&#39;;<br></td></tr
 ><tr
-id=sl_svn127_3><td>{<br></td></tr
+id=sl_svn127_3><td>require_once &#39;AscenseurException.php&#39;;<br></td></tr
 ><tr
-id=sl_svn127_4><td>    private $_nom;<br></td></tr
+id=sl_svn127_4><td><br></td></tr
 ><tr
-id=sl_svn127_5><td>    private $_etage;<br></td></tr
+id=sl_svn127_5><td>class Ascenseur implements Countable , IteratorAggregate <br></td></tr
 ><tr
-id=sl_svn127_6><td><br></td></tr
+id=sl_svn127_6><td>{<br></td></tr
 ><tr
-id=sl_svn127_7><td>    public function __construct($nom)<br></td></tr
+id=sl_svn127_7><td>    const MAX_ETAGES  = 50;<br></td></tr
 ><tr
-id=sl_svn127_8><td>    {<br></td></tr
+id=sl_svn127_8><td>    const CHARGE_MAXI = 5;<br></td></tr
 ><tr
-id=sl_svn127_9><td>        $this-&gt;_nom = $nom;<br></td></tr
+id=sl_svn127_9><td>	<br></td></tr
 ><tr
-id=sl_svn127_10><td>        $this-&gt;_etage = 0;<br></td></tr
+id=sl_svn127_10><td>    private $_nom;<br></td></tr
 ><tr
-id=sl_svn127_11><td>    }<br></td></tr
+id=sl_svn127_11><td>    private $_etage;<br></td></tr
 ><tr
-id=sl_svn127_12><td><br></td></tr
+id=sl_svn127_12><td>    private $_personnes;<br></td></tr
 ><tr
-id=sl_svn127_13><td>    public function setEtage($etage)<br></td></tr
+id=sl_svn127_13><td><br></td></tr
 ><tr
-id=sl_svn127_14><td>    {<br></td></tr
+id=sl_svn127_14><td>    public function __construct($nom, $etage)<br></td></tr
 ><tr
-id=sl_svn127_15><td>        $this-&gt;_etage = abs((int)$etage);<br></td></tr
+id=sl_svn127_15><td>    {<br></td></tr
 ><tr
-id=sl_svn127_16><td>        return $this;<br></td></tr
+id=sl_svn127_16><td>        $this-&gt;_nom       = $nom;<br></td></tr
 ><tr
-id=sl_svn127_17><td>    }<br></td></tr
+id=sl_svn127_17><td>        $this-&gt;_personnes = new SplObjectStorage;<br></td></tr
 ><tr
-id=sl_svn127_18><td><br></td></tr
+id=sl_svn127_18><td>        $this-&gt;go($etage);<br></td></tr
 ><tr
-id=sl_svn127_19><td>    public function getEtage()<br></td></tr
+id=sl_svn127_19><td>    }<br></td></tr
 ><tr
-id=sl_svn127_20><td>    {<br></td></tr
+id=sl_svn127_20><td><br></td></tr
 ><tr
-id=sl_svn127_21><td>        return $this-&gt;_etage;<br></td></tr
+id=sl_svn127_21><td>    protected function _searchPersonne(Personne $p)<br></td></tr
 ><tr
-id=sl_svn127_22><td>    }<br></td></tr
+id=sl_svn127_22><td>    {<br></td></tr
 ><tr
-id=sl_svn127_23><td><br></td></tr
+id=sl_svn127_23><td>        return $this-&gt;_personnes-&gt;contains($p);<br></td></tr
 ><tr
-id=sl_svn127_24><td>    public function getName()<br></td></tr
+id=sl_svn127_24><td>    }<br></td></tr
 ><tr
-id=sl_svn127_25><td>    {<br></td></tr
+id=sl_svn127_25><td>    <br></td></tr
 ><tr
-id=sl_svn127_26><td>        return $this-&gt;_nom;<br></td></tr
+id=sl_svn127_26><td>    public function charger(Personne $p)<br></td></tr
 ><tr
-id=sl_svn127_27><td>    }<br></td></tr
+id=sl_svn127_27><td>    {<br></td></tr
 ><tr
-id=sl_svn127_28><td>	<br></td></tr
+id=sl_svn127_28><td>        if($p-&gt;getEtage() != $this-&gt;getEtage()) {<br></td></tr
 ><tr
-id=sl_svn127_29><td>    public function __toString()<br></td></tr
+id=sl_svn127_29><td>            throw new AscenseurException(&#39;La personne &#39;.$p-&gt;getName().&#39; n\&#39;est pas à l\&#39;étage &#39;.$this-&gt;getEtage());<br></td></tr
 ><tr
-id=sl_svn127_30><td>    {<br></td></tr
+id=sl_svn127_30><td>        }<br></td></tr
 ><tr
-id=sl_svn127_31><td>        return $this-&gt;getName();<br></td></tr
+id=sl_svn127_31><td>        if($this-&gt;_searchPersonne($p)) {<br></td></tr
 ><tr
-id=sl_svn127_32><td>    }<br></td></tr
+id=sl_svn127_32><td>            throw new AscenseurException($p-&gt;getName() . &#39; existe déjà&#39;);           <br></td></tr
 ><tr
-id=sl_svn127_33><td>}<br></td></tr
+id=sl_svn127_33><td>        }<br></td></tr
 ><tr
-id=sl_svn127_34><td>?&gt;<br></td></tr
+id=sl_svn127_34><td>        if (count($this) == self::CHARGE_MAXI) {<br></td></tr
+><tr
+id=sl_svn127_35><td>            throw new AscenseurException(&#39;Surcharge&#39;);<br></td></tr
+><tr
+id=sl_svn127_36><td>        }<br></td></tr
+><tr
+id=sl_svn127_37><td>        $this-&gt;_personnes-&gt;attach($p);<br></td></tr
+><tr
+id=sl_svn127_38><td>        return $this;<br></td></tr
+><tr
+id=sl_svn127_39><td>    }<br></td></tr
+><tr
+id=sl_svn127_40><td><br></td></tr
+><tr
+id=sl_svn127_41><td>    public function decharger(Personne $p)<br></td></tr
+><tr
+id=sl_svn127_42><td>    {<br></td></tr
+><tr
+id=sl_svn127_43><td>        $this-&gt;_personnes-&gt;detach($p);<br></td></tr
+><tr
+id=sl_svn127_44><td>        return $this;<br></td></tr
+><tr
+id=sl_svn127_45><td>    }<br></td></tr
+><tr
+id=sl_svn127_46><td>    <br></td></tr
+><tr
+id=sl_svn127_47><td>    public function getPersonne(Personne $p)<br></td></tr
+><tr
+id=sl_svn127_48><td>    {<br></td></tr
+><tr
+id=sl_svn127_49><td>        if($this-&gt;_searchPersonne($p)) {<br></td></tr
+><tr
+id=sl_svn127_50><td>            return $p;<br></td></tr
+><tr
+id=sl_svn127_51><td>        }<br></td></tr
+><tr
+id=sl_svn127_52><td>        throw new AscenseurException(&#39;Cette personne n\&#39;est pas dans l\&#39;ascenseur&#39;);<br></td></tr
+><tr
+id=sl_svn127_53><td>    }<br></td></tr
+><tr
+id=sl_svn127_54><td>    <br></td></tr
+><tr
+id=sl_svn127_55><td>    public function isEmpty()<br></td></tr
+><tr
+id=sl_svn127_56><td>    {<br></td></tr
+><tr
+id=sl_svn127_57><td>        return count($this) == 0;<br></td></tr
+><tr
+id=sl_svn127_58><td>    }<br></td></tr
+><tr
+id=sl_svn127_59><td><br></td></tr
+><tr
+id=sl_svn127_60><td>    public function go($a_l_etage)<br></td></tr
+><tr
+id=sl_svn127_61><td>    {<br></td></tr
+><tr
+id=sl_svn127_62><td>        $a_l_etage = abs((int)$a_l_etage);<br></td></tr
+><tr
+id=sl_svn127_63><td>        if ($a_l_etage &gt; self::MAX_ETAGES || $a_l_etage &lt; 0) {<br></td></tr
+><tr
+id=sl_svn127_64><td>            throw new AscenseurException(&#39;Etage invalide&#39;);<br></td></tr
+><tr
+id=sl_svn127_65><td>        }<br></td></tr
+><tr
+id=sl_svn127_66><td>        foreach ($this as $personne) {<br></td></tr
+><tr
+id=sl_svn127_67><td>            $personne-&gt;setEtage($a_l_etage);<br></td></tr
+><tr
+id=sl_svn127_68><td>        }    <br></td></tr
+><tr
+id=sl_svn127_69><td>        $this-&gt;_etage = $a_l_etage;<br></td></tr
+><tr
+id=sl_svn127_70><td>        return $this;<br></td></tr
+><tr
+id=sl_svn127_71><td>    }<br></td></tr
+><tr
+id=sl_svn127_72><td><br></td></tr
+><tr
+id=sl_svn127_73><td>    public function getName()<br></td></tr
+><tr
+id=sl_svn127_74><td>    {<br></td></tr
+><tr
+id=sl_svn127_75><td>        return $this-&gt;_nom;<br></td></tr
+><tr
+id=sl_svn127_76><td>    }<br></td></tr
+><tr
+id=sl_svn127_77><td><br></td></tr
+><tr
+id=sl_svn127_78><td>    public function getEtage()<br></td></tr
+><tr
+id=sl_svn127_79><td>    {<br></td></tr
+><tr
+id=sl_svn127_80><td>        return $this-&gt;_etage;<br></td></tr
+><tr
+id=sl_svn127_81><td>    }<br></td></tr
+><tr
+id=sl_svn127_82><td>	<br></td></tr
+><tr
+id=sl_svn127_83><td>    public function count()<br></td></tr
+><tr
+id=sl_svn127_84><td>    {<br></td></tr
+><tr
+id=sl_svn127_85><td>        return count($this-&gt;_personnes);<br></td></tr
+><tr
+id=sl_svn127_86><td>    }<br></td></tr
+><tr
+id=sl_svn127_87><td>    <br></td></tr
+><tr
+id=sl_svn127_88><td>    public function getIterator()<br></td></tr
+><tr
+id=sl_svn127_89><td>    {<br></td></tr
+><tr
+id=sl_svn127_90><td>        return $this-&gt;_personnes;<br></td></tr
+><tr
+id=sl_svn127_91><td>    }<br></td></tr
+><tr
+id=sl_svn127_92><td>}<br></td></tr
 ></table></pre>
 
 <pre class="prettyprint"><table width="100%"><tr class="cursor_hidden"><td></td></tr></table></pre>
@@ -419,8 +587,8 @@ id=sl_svn127_34><td>?&gt;<br></td></tr
  <div>
  <a href="/p/prodageo/source/detail?spec=svn130&r=127">r127</a>
  by pdoreau
- on Today (14 minutes ago)
- &nbsp; <a href="/p/prodageo/source/diff?spec=svn130&r=127&amp;format=side&amp;path=/trunk/xunit/doreau/Personne.php&amp;old_path=/trunk/xunit/doreau/Personne.php&amp;old=0">Diff</a>
+ on Today (15 minutes ago)
+ &nbsp; <a href="/p/prodageo/source/diff?spec=svn130&r=127&amp;format=side&amp;path=/trunk/xunit/doreau/AscenseurFinal.php&amp;old_path=/trunk/xunit/doreau/AscenseurFinal.php&amp;old=0">Diff</a>
  </div>
  <pre>version buggée</pre>
  </div>
@@ -464,6 +632,8 @@ id=sl_svn127_34><td>?&gt;<br></td></tr
  changed_paths.push('/trunk/xunit/doreau/AscenseurFinal.php');
  changed_urls.push('/p/prodageo/source/browse/trunk/xunit/doreau/AscenseurFinal.php?r=127&spec=svn130');
  
+ var selected_path = '/trunk/xunit/doreau/AscenseurFinal.php';
+ 
  
  changed_paths.push('/trunk/xunit/doreau/AscenseurTest.php');
  changed_urls.push('/p/prodageo/source/browse/trunk/xunit/doreau/AscenseurTest.php?r=127&spec=svn130');
@@ -479,8 +649,6 @@ id=sl_svn127_34><td>?&gt;<br></td></tr
  
  changed_paths.push('/trunk/xunit/doreau/Personne.php');
  changed_urls.push('/p/prodageo/source/browse/trunk/xunit/doreau/Personne.php?r=127&spec=svn130');
- 
- var selected_path = '/trunk/xunit/doreau/Personne.php';
  
  
  changed_paths.push('/trunk/xunit/doreau/PersonneTest.php');
@@ -572,7 +740,7 @@ id=sl_svn127_34><td>?&gt;<br></td></tr
  >...it/doreau/AscenseurException.php</option>
  
  <option value="/p/prodageo/source/browse/trunk/xunit/doreau/AscenseurFinal.php?r=127&amp;spec=svn130"
- 
+ selected="selected"
  >.../xunit/doreau/AscenseurFinal.php</option>
  
  <option value="/p/prodageo/source/browse/trunk/xunit/doreau/AscenseurTest.php?r=127&amp;spec=svn130"
@@ -588,7 +756,7 @@ id=sl_svn127_34><td>?&gt;<br></td></tr
  >/trunk/xunit/doreau/EnchereTest.php</option>
  
  <option value="/p/prodageo/source/browse/trunk/xunit/doreau/Personne.php?r=127&amp;spec=svn130"
- selected="selected"
+ 
  >/trunk/xunit/doreau/Personne.php</option>
  
  <option value="/p/prodageo/source/browse/trunk/xunit/doreau/PersonneTest.php?r=127&amp;spec=svn130"
@@ -621,7 +789,7 @@ id=sl_svn127_34><td>?&gt;<br></td></tr
  <div id="older_bubble">
  <p>Older revisions</p>
  
- <a href="/p/prodageo/source/list?path=/trunk/xunit/doreau/Personne.php&start=127">All revisions of this file</a>
+ <a href="/p/prodageo/source/list?path=/trunk/xunit/doreau/AscenseurFinal.php&start=127">All revisions of this file</a>
  </div>
  </div>
  <div class="round1"></div>
@@ -636,10 +804,10 @@ id=sl_svn127_34><td>?&gt;<br></td></tr
  <div id="fileinfo_bubble">
  <p>File info</p>
  
- <div>Size: 513 bytes,
- 34 lines</div>
+ <div>Size: 2203 bytes,
+ 92 lines</div>
  
- <div><a href="http://prodageo.googlecode.com/svn/trunk/xunit/doreau/Personne.php">View raw file</a></div>
+ <div><a href="http://prodageo.googlecode.com/svn/trunk/xunit/doreau/AscenseurFinal.php">View raw file</a></div>
  </div>
  
  </div>
@@ -817,7 +985,7 @@ id=sl_svn127_34><td>?&gt;<br></td></tr
  }
  function revsOnLoadHandler() {
  // register our source container with the commenting code
- _setup('prodageo', 'svn130', '/trunk/xunit/doreau/Personne.php', '7e7e02ad341b695b8df8c1ad2e25022b',
+ _setup('prodageo', 'svn130', '/trunk/xunit/doreau/AscenseurFinal.php', '7e7e02ad341b695b8df8c1ad2e25022b',
  CR_BrowseIntegrationFactory);
  // register our hidden ui elements with the code commenting code ui builder.
  CR_registerLayoutElement('form', form);
@@ -895,9 +1063,6 @@ function _CS_reportAnalytics() {
  
 
 
- 
- 
- <script type="text/javascript">_CS_reportToCsi();</script>
  
  </body>
 </html>
