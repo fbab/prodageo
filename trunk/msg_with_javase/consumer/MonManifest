@@ -1,0 +1,3 @@
+Main-Class: consumer.HelloConsumer
+Class-Path: /usr/share/lib/imq.jar /usr/share/lib/jms.jar
+

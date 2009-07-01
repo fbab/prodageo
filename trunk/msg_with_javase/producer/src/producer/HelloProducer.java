@@ -33,22 +33,20 @@ public class HelloProducer {
                     
             ConnectionFactory cf= new com.sun.messaging.ConnectionFactory ( ) ;
             
-            // astuce pour 
-            com.sun.messaging.ConnectionFactory scf = (com.sun.messaging.ConnectionFactory) cf ;
+            // astuce pour une connection sur un message broker distant
+	    // Le code ci-dessous suppose que le broker est sur 10.5.1.167 sur le port 7676 
+/*
+		com.sun.messaging.ConnectionFactory scf = (com.sun.messaging.ConnectionFactory) cf ;
             
             // valeur par defaut de la machine
-            // scf.setProperty( ConnectionConfiguration.imqBrokerHostName , "localhost" ) ; // OK        
-            scf.setProperty( ConnectionConfiguration.imqBrokerHostName , "172.30.6.38" ) ;  // OK          
+            scf.setProperty( ConnectionConfiguration.imqBrokerHostName , "10.5.1.167" ) ;  // OK          
             
-            // scf.setProperty( ConnectionConfiguration.imqBrokerHostName , "trac.insa-rouen.fr" ) ;
-            // scf.setProperty( ConnectionConfiguration.imqBrokerHostName , "172.30.4.103" ) ;            
-
             // valeur par defaut du port
-            // scf.setProperty( ConnectionConfiguration.imqBrokerHostPort , "7676" ) ;                        
-            scf.setProperty( ConnectionConfiguration.imqBrokerHostPort , "8080" ) ;   // OK sur localhost et .36         
-           
+            scf.setProperty( ConnectionConfiguration.imqBrokerHostPort , "7676" ) ;                       
+ 
+*/
             
-            // autre paramètres de connection
+            // autre parametres de connection
             // cf.createConnection(username, password)
              /*
              public Connection createConnection(String userName, String password) throws JMSException
