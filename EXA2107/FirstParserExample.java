@@ -147,11 +147,11 @@ public class FirstParserExample {
 	 */
 	private void printData(){
 		
-		System.out.println("No of Employees '" + myEmpls.size() + "'.");
-		
 		Iterator it = myEmpls.iterator();
+		Employee c ;
 		while(it.hasNext()) {
-			System.out.println(it.next().toString());
+		  c = (Employee) it.next() ;
+			System.out.println(c.getName().toString());
 		}
 	}
 
