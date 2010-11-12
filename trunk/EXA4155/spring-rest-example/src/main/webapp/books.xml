@@ -1,0 +1,81 @@
+<books>
+	<book>
+		<isbn>0596009208</isbn>
+		<title>Head First Java</title>
+		<edition>2</edition>
+		<pages>688</pages>
+		<published>May 11, 2009</published>
+		<authors>
+			<author>
+				<authorId>1</authorId>
+				<name>Kathy Sierra</name>
+				<email>ksierra@somedomain.com</email>
+			</author>
+			<author>
+				<authorId>2</authorId>
+				<name>Bert Bates</name>
+				<email>bbates@somedomain.com</email>
+			</author>
+		</authors>
+		<publisher>
+			<name>O'Reilly Media</name>
+			<address>
+				<address>1005 Gravenstein Highway North</address>
+				<city>Sebastopol</city>
+				<state>CA</state>
+				<zip>95472</zip>
+			</address>
+		</publisher>
+	</book>
+	<book>
+		<isbn>0321349601</isbn>
+		<title>Java Concurrency in Practice</title>
+		<edition>1</edition>
+		<pages>384</pages>
+		<published>May 19, 2006</published>
+		<authors>
+			<author>
+				<authorId>3</authorId>
+				<name>Brian Goetz</name>
+				<email>bgoetz@anotherdomain.com</email>
+			</author>
+			<author>
+				<authorId>4</authorId>
+				<name>Joshua Bloch</name>
+				<email>jbloch@anotherdomain.com</email>
+			</author>
+		</authors>
+		<publisher>
+			<name>Addison-Wesley Professional</name>
+			<address>
+				<address>1234 Main St</address>
+				<city>Boston</city>
+				<state>MA</state>
+				<zip>02103</zip>
+			</address>
+		</publisher>
+	</book>
+	<book>
+		<isbn>0321356683</isbn>
+		<title>Effective Java</title>
+		<edition>2</edition>
+		<pages>384</pages>
+		<published>May 28, 2008</published>
+		<authors>
+			<author>
+				<authorId>4</authorId>
+				<name>Joshua Bloch</name>
+				<email>jbloch@anotherdomain.com</email>
+			</author>
+		</authors>
+		<publisher>
+			<name>Prentice Hall PTR</name>
+			<address>
+				<address>P.O. Box 2500</address>
+				<city>Lebanon</city>
+				<state>IN</state>
+				<zip>46052</zip>
+			</address>
+		</publisher>
+	</book>
+</books>
