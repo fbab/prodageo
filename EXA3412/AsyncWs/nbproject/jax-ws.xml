@@ -4,9 +4,6 @@
     <service name="AsyncTestImpl">
       <implementation-class>org.prodageo.AsyncTestImpl</implementation-class>
     </service>
-    <service name="AsyncTestResponseImpl">
-      <implementation-class>org.prodageo.AsyncTestResponseImpl</implementation-class>
-    </service>
   </services>
   <clients/>
 </jax-ws>
