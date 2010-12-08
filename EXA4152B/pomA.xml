@@ -1,0 +1,21 @@
+<build>
+<plugins>
+  <plugin>
+     <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <configuration>
+        <archive>
+          <manifest>
+            <mainClass>org.prodageo.Main</mainClass>
+            <packageName>org.prodageo</packageName>
+          </manifest>
+        </archive>
+          </configuration>
+   </plugin>
+  </plugin>
+</plugins>
+</build>
+
+
+  
