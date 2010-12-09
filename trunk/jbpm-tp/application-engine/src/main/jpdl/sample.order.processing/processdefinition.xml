@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns=""  name="sample.order.processing">
+
+
+	<start-state name="start-state1">
+		<transition to="node1"></transition>
+	</start-state>
+
+
+	<task-node name="task-node1">
+		<transition to="end-state1"></transition>
+	</task-node>
+
+	<node name="node1">
+		<action expression=""></action>
+		<transition to="task-node1"></transition>
+	</node>
+
+
+	<end-state name="end-state1"></end-state>
+
+
+</process-definition>

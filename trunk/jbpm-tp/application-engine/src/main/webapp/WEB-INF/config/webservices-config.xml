@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+           "
+           default-lazy-init="true">
+
+<!--  	<import resource="classpath:META-INF/cxf/cxf.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
+	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
+
+	<bean id="businessInterface" class="fr.neuf.thd.oss.goracc.services.web.impl.GoraccWebServicesImpl" >
+		<property name="goraccService" ref="goraccService" />
+		<property name="userManagementService" ref="userManagementService" />
+		<property name="businessService" ref="businessService"></property>
+	</bean>
+	
+
+	<jaxws:endpoint 
+	  id="goraccWebServices" 
+	  implementor="#businessInterface" 
+	  address="/goraccWebServices" implementorClass="fr.neuf.thd.oss.goracc.services.web.impl.GoraccWebServicesImpl" />
+
+	<bean id="flowInterface" class="fr.neuf.thd.oss.goracc.services.web.impl.WorkflowWebServiceImpl" >
+		<property name="userManagementService" ref="userManagementService" />
+		<property name="workflowService" ref="workflowService" />
+	</bean>
+	
+
+	<jaxws:endpoint 
+	  id="flowWebServices" 
+	  implementor="#flowInterface" 
+	  address="/flowWebServices" implementorClass="fr.neuf.thd.oss.goracc.services.web.impl.WorkflowWebServiceImpl" />
+-->
+</beans>
