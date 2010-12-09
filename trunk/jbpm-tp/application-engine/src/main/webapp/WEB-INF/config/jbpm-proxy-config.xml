@@ -12,6 +12,7 @@
            http://www.springframework.org/schema/security
            http://www.springframework.org/schema/security/spring-security-2.0.xsd">
 
+	<!-- définition de la session factory (les mappings viennent de la session factory de la console partagée via jndi -->
  	<bean id="hibernateSessionFactory"
 		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
 		<property name="configLocation" value="classpath:hibernate.cfg.xml"/>
@@ -32,9 +33,20 @@
 		<property name="schemaUpdate" value="true" />
 	</bean>
 	
+	<!-- ajout de la définition du process témoin -->
+	<bean id="process-temoin"
+		class="org.springmodules.workflow.jbpm31.definition.ProcessDefinitionFactoryBean">
+		<property name="definitionLocation" value="classpath:/processes/sample/order/processing/processdefinition.xml" />
+	</bean>
+	
 	<bean id="jbpmConfiguration"
 		class="org.springmodules.workflow.jbpm31.LocalJbpmConfigurationFactoryBean">
-		<property name="configuration" value="classpath:org/jbpm/default.jbpm.cfg.xml" />
+		<property name="configuration" value="classpath:jbpm.cfg.xml" />
+		<property name="processDefinitions">
+			<list>
+				<ref local="process-temoin" />
+			</list>
+		</property>
 	</bean>
 
 	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
@@ -43,6 +55,7 @@
 	
 	<bean id="jbpmTemplate" class="org.springmodules.workflow.jbpm31.JbpmTemplate">
 		<constructor-arg index="0" ref="jbpmConfiguration" />
+		<constructor-arg index="1" ref="process-temoin" />
 		<property name="hibernateTemplate" ref="hibernateTemplate" />
 	</bean>
 

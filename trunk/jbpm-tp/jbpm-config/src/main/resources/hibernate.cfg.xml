@@ -20,7 +20,7 @@
     <property name="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</property>
     
     <!-- DataSource properties (begin) -->
-    <property name="hibernate.connection.datasource">java:comp/env/jdbc/JbpmDataSource</property>
+    <property name="hibernate.connection.datasource">java:JbpmDS</property>
     <!-- DataSource properties (end) -->
 		
     <!-- JTA transaction properties (begin) -->
