@@ -11,7 +11,7 @@ public class helloworld extends HttpServlet
 	{
 		PrintWriter out = res.getWriter () ;
 		
-		out.println ( "Hello, world, manière GET" ) ;
+		out.println ( "Bonjour le monde !" ) ;
 		out.close() ;
 	}
 }
