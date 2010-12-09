@@ -7,7 +7,7 @@ import javax.servlet.* ;
 public class helloworld extends HttpServlet
 {
 	public void doGet (HttpServletRequest req, HttpServletResponse res)
-		throw ServletException, IOException
+		throws ServletException, IOException
 	{
 		PrintWriter out = res.getWriter () ;
 		
