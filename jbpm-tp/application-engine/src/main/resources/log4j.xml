@@ -82,11 +82,6 @@
 		<priority value="debug" />
 	</category>
 
-	<logger name="fr.neuf.thd.oss">
-		<level value="debug" />
-		<appender-ref ref="fonctionnal" />
-	</logger>
-
 	<!-- Root Logger -->
 	<root>
 		<priority value="info" />
