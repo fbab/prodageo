@@ -104,7 +104,12 @@
 				</configuration>
 			</plugin>-->
 		</plugins>
-
+		<resources>
+     		<resource>
+       			<directory>src/main/jpdl</directory>
+     		</resource>
+   		</resources>
+		
 	</build>
 
 	<repositories>
