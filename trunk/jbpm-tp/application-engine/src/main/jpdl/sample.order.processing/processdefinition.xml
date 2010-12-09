@@ -3,22 +3,51 @@
 <process-definition  xmlns=""  name="sample.order.processing">
 
 
-	<start-state name="start-state1">
-		<transition to="node1"></transition>
+	<swimlane name="defaut-pool">
+		<assignment actor-id="user"></assignment>
+	</swimlane>
+
+
+	<start-state name="receive-cmd">
+		<description>
+			receive a command for a product
+		</description>
+		<task name="receive-cmd-task" swimlane="default-pool">
+			<description>
+				assign command variables like product, customer informations, ... to the process
+In this case, business and flow information is mixed that is not a good practice !!!
+This is just for sample purpose
+			</description>
+			<controller>
+				<variable access="read,write,required" name="produit1" mapped-name="produit1"></variable>
+				<variable access="read,write" name="produit2" mapped-name="produit2"></variable>
+				<variable access="read,write,required" name="customer-email" mapped-name="customer-email"></variable>
+				<variable access="read,write,required" name="customer-name" mapped-name="customer-name"></variable>
+				<variable access="read,write,required" name="customer-adress" mapped-name="customer-adress"></variable>
+				<variable access="read,write,required" name="paiement-method" mapped-name="paiement-method"></variable>
+			</controller>
+		</task>
+		<transition to="check-cmd"></transition>
 	</start-state>
 
 
-	<task-node name="task-node1">
-		<transition to="end-state1"></transition>
+	<task-node name="user-check-cmd">
+		<description>
+			a back-end user check the command and if the is some errors, the command is suspended a notification is sent to the customer
+		</description>
+		<transition to="default-end"></transition>
+		<transition to="mail-node1" name="to mail-node1"></transition>
 	</task-node>
 
-	<node name="node1">
+	<node name="check-cmd">
 		<action expression=""></action>
-		<transition to="task-node1"></transition>
+		<transition to="user-check-cmd"></transition>
 	</node>
 
+	<mail-node name="mail-node1"></mail-node>
 
-	<end-state name="end-state1"></end-state>
+
+	<end-state name="default-end"></end-state>
 
 
 </process-definition>
