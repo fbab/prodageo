@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+
+	<!-- Deploys a in-memory "booking" datasource populated -->
+	<!--<bean id="jbpmDataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@nr0u0723:1525:RGMI01P0" />
+		<property name="username" value="THD_SAD_JBPM" />
+		<property name="password" value="5jHu90KE" />
+	</bean>
+
+	<bean id="businessDataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@nr0u0723:1525:RGMI01P0" />
+		<property name="username" value="THD_SAD_BIZ" />
+		<property name="password" value="gH6hiHZf" />
+	</bean>
+
+	<bean id="businessSessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+
+		<property name="dataSource" ref="businessDataSource" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle9Dialect
+				</prop>
+				--><!--
+					<prop key="hibernate.cache.use_query_cache">true</prop> <prop
+					key="hibernate.cache.use_second_level_cache">true</prop> <prop
+					key="org.hibernate.cache">info</prop>
+				--><!--
+				<prop key="hibernate.default_batch_fetch_size">30</prop>
+				<prop key="hibernate.jdbc.fetch_size">20</prop>
+
+				<prop key="org.hibernate.transaction">debug</prop>
+				<prop key="hibernate.jdbc.batch_size">20</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.use_sql_comments">true</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.Oracle9iDialect
+				</prop>
+				<prop key="hibernate.max_fetch_depth">3</prop>
+				<prop key="hibernate.default_batch_fetch_size">20</prop>
+				<prop key="hibernate.jdbc.batch_versioned_data">true</prop>
+				--><!--
+					<prop
+					key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>
+				-->
+			<!--</props>
+		</property>
+		<property name="annotatedClasses">
+			<list>
+				--><!--
+					<value>fr.neuf.thd.oss.goracc.dao.model.business.AdressBean</value>
+					<value>fr.neuf.thd.oss.goracc.dao.model.business.GoraccAdress</value>
+					<value>fr.neuf.thd.oss.goracc.dao.model.business.GoraccAdressCommand</value>
+					<value>fr.neuf.thd.oss.goracc.dao.model.business.SiteClient</value>
+					<value>fr.neuf.thd.oss.goracc.dao.model.business.SiteClient</value>
+				-->
+				<!--<value>fr.neuf.thd.oss.goracc.dao.model.identities.User</value>
+				<value>fr.neuf.thd.oss.goracc.dao.model.identities.Role</value>
+			</list>
+		</property>
+		<property name="schemaUpdate" value="true" />
+	</bean>
+
+
+	<bean id="businessDaoTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="businessSessionFactory" />
+	</bean>
+
+	<bean id="businessDao" class="fr.neuf.thd.oss.goracc.dao.BusinessDao">
+		<property name="businessTemplate" ref="businessDaoTemplate" />
+	</bean>
+
+--></beans>

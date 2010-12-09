@@ -1,0 +1,406 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>fr.insa.rouen.bpm.tp</groupId>
+		<artifactId>jbpm-parent-project</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>fr.insa.rouen.bpm.tp</groupId>
+	<artifactId>application-engine</artifactId>
+	<packaging>war</packaging>
+	<name>application-engine</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<description>Web application for workflow engine with jbpm</description>
+
+	<!-- Gestion des plateformes -->
+	<profiles>
+		<profile>
+			<id>appserverConfig-dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<env>dev</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>appserverConfig-prep</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>prep</value>
+				</property>
+			</activation>
+		</profile>
+		<profile>
+			<id>appserverConfig-prod</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>prod</value>
+				</property>
+			</activation>
+		</profile>
+	</profiles>
+
+	<properties>
+		<spring.version>2.5.5</spring.version>
+		<jbpm.version>3.2.3</jbpm.version>
+		<cxf.version>2.1.2</cxf.version>
+		<hibernate.version>3.3.0.ga</hibernate.version>
+	</properties>
+
+	<build>
+		<finalName>application-engine</finalName>
+		<plugins>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+			<!--<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>hibernate3-maven-plugin</artifactId>
+				<version>2.0-alpha-2</version>
+				<configuration>
+					<components>
+						<component>
+							<name>hbm2ddl</name>
+							<implementation>jdbcconfiguration</implementation>
+						</component>
+						<component>
+							<name>hbm2hbmxml</name>
+							<outputDirectory>src/main/resources</outputDirectory>
+						</component>
+					</components>
+					<componentProperties>
+						<drop>true</drop>
+						<configurationfile>/src/main/resources/hibernate.cfg.xml</configurationfile>
+					</componentProperties>
+				</configuration>
+			</plugin>-->
+		</plugins>
+
+	</build>
+
+	<repositories>
+		<repository>
+			<id>apache-snapshots</id>
+			<name>Apache SNAPSHOT Repository</name>
+			<url>http://people.apache.org/repo/m2-snapshot-repository/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>apache-incubating</id>
+			<name>Apache Incubating Repository</name>
+			<url>http://people.apache.org/repo/m2-incubating-repository/</url>
+		</repository>
+		<!-- for jaxb-impl -->
+		<repository>
+			<id>java.net</id>
+			<url>http://download.java.net/maven/1/</url>
+			<layout>legacy</layout>
+		</repository>
+
+
+		<repository>
+			<snapshots>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+			<url>http://repository.jboss.com/maven2/</url>
+			<id>jboss</id>
+		</repository>
+
+
+		<repository>
+
+			<url>http://codecafe.dev-hda.com/repository/</url>
+			<id>joshlong</id>
+		</repository>
+		<repository>
+			<snapshots>
+				<updatePolicy>never</updatePolicy>
+				<checksumPolicy>ignore</checksumPolicy>
+			</snapshots>
+			<url>http://repo1.maven.org/maven2</url>
+			<id>central2</id>
+		</repository>
+
+		<repository>
+
+			<snapshots>
+				<updatePolicy>never</updatePolicy>
+				<checksumPolicy>ignore</checksumPolicy>
+			</snapshots>
+
+			<id>apache-repo</id>
+			<name>apache-repo</name>
+			<url>http://myfaces.zones.apache.org/dist/maven-repository</url>
+		</repository>
+		<repository>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<updatePolicy>never</updatePolicy>
+				<checksumPolicy>ignore</checksumPolicy>
+			</snapshots>
+			<url>http://download.java.net/maven/2</url>
+			<id>java.net</id>
+		</repository>
+
+		<repository>
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<updatePolicy>never</updatePolicy>
+				<checksumPolicy>ignore</checksumPolicy>
+			</snapshots>
+			<url>http://springframework.cvs.sourceforge.net/springframework/</url>
+			<id>springframework</id>
+		</repository>
+
+
+
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>apache-plugin-snapshots</id>
+			<name>Apache Maven Plugin Snapshots</name>
+			<url>http://people.apache.org/repo/m2-snapshot-repository</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+
+	<dependencies>
+
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springmodules</groupId>
+			<artifactId>spring-modules-jbpm31</artifactId>
+			<version>0.8a</version>
+			<exclusions>
+				<exclusion>
+					<groupId>jboss</groupId>
+					<artifactId>jbpm</artifactId>
+				</exclusion>
+				<exclusion>
+					<artifactId>ehcache</artifactId>
+					<groupId>ehcache</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>dom4j</artifactId>
+					<groupId>dom4j</groupId>
+				</exclusion>
+				<exclusion>
+					<groupId>geronimo-spec</groupId>
+					<artifactId>geronimo-spec-jta</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.webflow</groupId>
+			<artifactId>org.springframework.webflow</artifactId>
+			<version>2.0.3.RELEASE</version>
+		</dependency>
+
+
+		<!-- JBPM -->
+		<dependency>
+			<groupId>org.jbpm</groupId>
+			<artifactId>jbpm-jpdl</artifactId>
+			<version>${jbpm.version}</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.jbpm.jbpm3</groupId>
+			<artifactId>jbpm-identity</artifactId>
+			<version>3.2.4.GA</version>
+			<type>jar</type>
+			<exclusions>
+				<exclusion>
+					<groupId>org.jbpm.jbpm3</groupId>
+					<artifactId>jbpm-jpdl</artifactId>
+				</exclusion>
+			</exclusions>
+			<optional>true</optional>
+		</dependency>
+		
+		<!-- Web -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tiles</groupId>
+			<artifactId>tiles-jsp</artifactId>
+			<version>2.0.5</version>
+		</dependency>
+		<dependency>
+			<artifactId>servlet-api</artifactId>
+			<groupId>javax.servlet</groupId>
+			<version>2.3</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>ognl</groupId>
+			<artifactId>ognl</artifactId>
+			<version>2.6.9</version>
+		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.1.2</version>
+		</dependency>
+
+
+
+		<!-- Webservices -->
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+			<version>${cxf.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>geronimo-spec</groupId>
+					<artifactId>geronimo-jta_1.1_spec</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+
+		<!-- Dao  -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate</artifactId>
+			<version>3.2.7.ga</version>
+			<optional>true</optional>
+			<exclusions>
+				<exclusion>
+					<groupId>asm</groupId>
+					<artifactId>asm</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>asm</groupId>
+					<artifactId>asm-attrs</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>cglib</groupId>
+					<artifactId>cglib</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.transaction</groupId>
+					<artifactId>jta</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>dom4j</groupId>
+					<artifactId>dom4j</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.3.0.ga</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>3.3.0.ga</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>fr.insa.rouen.bpm.tp</groupId>
+			<artifactId>jbpm-config</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+			<optional>true</optional>
+		</dependency>
+		<!-- Pour jpdl 3.2 -->
+		<dependency>
+			<groupId>javax.jcr</groupId>
+			<artifactId>jcr</artifactId>
+			<version>1.0</version>
+			<!--			<optional>true</optional>-->
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging-api</artifactId>
+			<version>1.1</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+			<optional>true</optional>	
+    	</dependency>
+		
+		<!-- Tests -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>

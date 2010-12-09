@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<process-definition  xmlns="urn:jbpm.org:jpdl-3.2"  name="goraccsc">
+
+
+	<swimlane name="deploiement">
+		<assignment pooled-actors="ROLE_DEPLOIEMENT" />
+	</swimlane>
+
+	<swimlane name="referentiel">
+		<assignment pooled-actors="ROLE_REFERENTIEL"/>
+	</swimlane>
+
+
+	<start-state name="receive-sc">
+		<task swimlane="deploiement" name="sc-recept">
+			<controller>
+				<variable access="read,write,required" name="SC" mapped-name="SC"></variable>
+				<variable access="read,write,required" name="TECHNO" mapped-name="TECHNO"></variable>
+			</controller>
+		</task>
+		<transition to="validation-referentiel"></transition>
+	</start-state>
+
+
+	<task-node name="validation-referentiel">
+		<task name="validation-sc" swimlane="referentiel">
+			<controller>
+				<variable access="read,required" name="SC" mapped-name="SC"></variable>
+			</controller>
+		</task>
+		<transition to="sro-reaffectation" name="to sro-reaffectation"></transition>
+		<transition to="testProvisionningautomatique" name="to testProvisionningautomatique"></transition>
+	</task-node>
+
+	<task-node name="sro-reaffectation">
+		<task name="change-sro" swimlane="referentiel">
+			<controller>
+				<variable access="read,write,required" name="sroName" mapped-name="sroName"></variable>
+			</controller>
+		</task>
+		<transition to="validation-referentiel"></transition>
+	</task-node>
+
+	<task-node name="testProvisionningautomatique">
+		<task name="TesterProvisionningAuto" swimlane="referentiel">
+			<controller>
+				<variable access="read,write,required" name="provisionning_ok" mapped-name="provisionning_ok"></variable>
+			</controller>
+		</task>
+		<transition to="Echec-Goracc" name="to Echec-Goracc"></transition>
+		<transition to="continue-f-techno" name="to continue-f-techno"></transition>
+	</task-node>
+
+	<decision name="continue-f-techno">
+		<transition to="option-vabf" name="to option-vabf">
+			<condition expression="${TECHNO}"></condition>
+		</transition>
+		<transition to="bilan-goracc" name="to bilan-goracc">
+			<condition expression="${TECHNO}"></condition>
+		</transition>
+	</decision>
+
+	<task-node name="option-vabf">
+		<task name="Flag-optionVABF" swimlane="deploiement">
+			<controller>
+				<variable access="read,write,required" name="vabf_ok" mapped-name="vabf_ok"></variable>
+			</controller>
+		</task>
+		<transition to="bilan-goracc" name="to bilan-goracc"></transition>
+		<transition to="Echec-Goracc" name="to Echec-Goracc"></transition>
+	</task-node>
+
+	<task-node name="bilan-goracc">
+		<task name="bilanGoracc" swimlane="deploiement">
+			<controller>
+				<variable access="read,required" name="sroName" mapped-name="sroName"></variable>
+				<variable access="read" name="CapaGPON" mapped-name="CapaGPON"></variable>
+				<variable access="read,required" name="CapaIPNro" mapped-name="CapaIPNro"></variable>
+			</controller>
+		</task>
+		<transition to="maia-populate" name="to maia-populate"></transition>
+	</task-node>
+
+	<task-node name="maia-populate">
+		<task name="maiapopulate">
+			<controller>
+				<variable access="read,write,required" name="maiaOK"></variable>
+			</controller>
+		</task>
+		<transition to="sucess-goracc"></transition>
+	</task-node>
+
+
+	<end-state name="Echec-Goracc"></end-state>
+
+	<end-state name="sucess-goracc"></end-state>
+
+
+	<event type="process-start"></event>
+
+
+</process-definition>

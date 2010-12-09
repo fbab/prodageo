@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: ldcg14965
+Build-Jdk: 1.5.0_15
+Class-Path: APP-INF/lib/jbpm-config-0.0.1-SNAPSHOT.jar APP-INF/lib/jbpm-enterprise-beans-3.2.4
+ .GA.jar APP-INF/lib/jbpm-identity-3.2.4.GA.jar APP-INF/lib/jbpm-jpdl-3.2.3.jar APP-INF/lib/commons-loggin
+ g-1.0.4.jar APP-INF/lib/hibernate-3.2.5.ga.jar APP-INF/lib/ehcache-1.2.3.jar APP-INF/lib/commons-collecti
+ ons-2.1.1.jar APP-INF/lib/jta-1.0.1B.jar APP-INF/lib/asm-attrs-1.5.3.jar APP-INF/lib/dom4j-1.6.1.jar antl
+ r-2.7.6.jar APP-INF/lib/cglib-2.1_3.jar 
+
