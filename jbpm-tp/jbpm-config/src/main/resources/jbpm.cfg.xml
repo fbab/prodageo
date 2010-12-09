@@ -15,7 +15,7 @@
 						<string value="java:jbpm/HibernateSessionFactory" />
 					</field>
 					<field name="dataSourceJndiName">
-						<string value="java:comp/env/jdbc/JbpmDataSource" />
+						<string value="java:JbpmDS" />
 					</field>
 				</bean>
 			</factory>
