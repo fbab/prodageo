@@ -21,9 +21,8 @@
 	<!-- Gestionnaire du mapping vers Jbpm -->
 	<import resource="jbpm-proxy-config.xml" /> 
 	<!-- Gestionnaire du mapping vers le business -->
-	<!-- <import resource="business-config.xml" />--> 
+	<import resource="business-config.xml" />
 	<!-- Gestionnaire de webservices -->
-	<!--
 	<import resource="webservices-config.xml"/>
 
---></beans>
+</beans>

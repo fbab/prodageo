@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<root-container name="sample.order.processing" width="781" height="360">
+<root-container name="sample.order.processing" width="730" height="506">
   <node name="receive-cmd" x="194" y="31" width="132" height="36">
     <edge>
       <label x="5" y="-10"/>
@@ -20,6 +20,6 @@
       <label x="5" y="-10"/>
     </edge>
   </node>
-  <node name="default-end" x="194" y="323" width="132" height="36"/>
   <node name="mail-node1" x="426" y="232" width="132" height="36"/>
+  <node name="default-end" x="194" y="323" width="132" height="36"/>
 </root-container>

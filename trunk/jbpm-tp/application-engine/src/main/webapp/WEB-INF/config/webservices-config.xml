@@ -8,31 +8,19 @@
            "
            default-lazy-init="true">
 
-<!--  	<import resource="classpath:META-INF/cxf/cxf.xml" />
+  	<import resource="classpath:META-INF/cxf/cxf.xml" />
 	<import resource="classpath:META-INF/cxf/cxf-extension-soap.xml" />
 	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
 
-	<bean id="businessInterface" class="fr.neuf.thd.oss.goracc.services.web.impl.GoraccWebServicesImpl" >
-		<property name="goraccService" ref="goraccService" />
-		<property name="userManagementService" ref="userManagementService" />
-		<property name="businessService" ref="businessService"></property>
+	<bean id="businessInterface" class="fr.insa.rouen.bpm.webservices.impl.MyApplicationWebServicesImpl" >
+		<property name="myApplicationService" ref="myApplicationService" />
+		<property name="webserviceBusinessTranslaterService" ref="webserviceBusinessTranslaterService" />
 	</bean>
 	
 
 	<jaxws:endpoint 
-	  id="goraccWebServices" 
+	  id="myApplicationWebservices" 
 	  implementor="#businessInterface" 
-	  address="/goraccWebServices" implementorClass="fr.neuf.thd.oss.goracc.services.web.impl.GoraccWebServicesImpl" />
+	  address="/myApplicationWebservices" implementorClass="fr.insa.rouen.bpm.webservices.impl.MyApplicationWebServicesImpl" />
 
-	<bean id="flowInterface" class="fr.neuf.thd.oss.goracc.services.web.impl.WorkflowWebServiceImpl" >
-		<property name="userManagementService" ref="userManagementService" />
-		<property name="workflowService" ref="workflowService" />
-	</bean>
-	
-
-	<jaxws:endpoint 
-	  id="flowWebServices" 
-	  implementor="#flowInterface" 
-	  address="/flowWebServices" implementorClass="fr.neuf.thd.oss.goracc.services.web.impl.WorkflowWebServiceImpl" />
--->
 </beans>
