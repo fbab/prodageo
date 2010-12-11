@@ -13,7 +13,7 @@ public class HelloClientImpl implements HelloService {
 
 		((BindingProvider) mHelloService).getRequestContext().put(
 				BindingProvider.ENDPOINT_ADDRESS_PROPERTY,
-				"http://localhost:8080/HelloService");
+				"http://localhost:8080/WebServiceFournisseur/HelloService");
 		// To set Basic Authentification
 		// ((BindingProvider)
 		// mHelloService).getRequestContext().put(BindingProvider.USERNAME_PROPERTY,
