@@ -13,7 +13,7 @@
           class="org.springframework.ws.wsdl.wsdl11.DefaultWsdl11Definition">
         <property name="schema" ref="schema"/>
         <property name="portTypeName" value="HumanResource"/>
-        <property name="locationUri" value="http:/prodageo.appspot.com/holidayservice/"/>
+        <property name="locationUri" value="http://prodageo.appspot.com/holidayservice/"/>
         <property name="targetNamespace"
                   value="http://mycompany.com/hr/schemas"/>
     </bean>
