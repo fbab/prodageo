@@ -1,1 +1,0 @@
-<p id="footer">&copy; Copyright Olivier Laporte pour TP INSA Rouen 10/12/2010 </p>
