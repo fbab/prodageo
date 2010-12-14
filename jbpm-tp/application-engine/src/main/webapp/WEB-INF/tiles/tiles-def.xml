@@ -1,0 +1,23 @@
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<!-- template principal une marge à gauche, un header, un footer et une zooned centrale   -->
+	<definition name="main" template="/WEB-INF/layout/main.jsp">
+		<put-attribute name="header" value="/WEB-INF/jsp/bandeau/principal.jsp"/>
+		<put-attribute name="menu" value="/WEB-INF/jsp/menus/guest.jsp" />
+		<put-attribute name="corpsPage" value="/WEB-INF/jsp/body/accueil.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/jsp/footer/footer.jsp"/>
+	</definition>
+	
+	<definition name="corbeille/afficheTache" extends="main">
+		<put-attribute name="corpsPage" value="/WEB-INF/jsp/body/workflow/taskDetails.jsp" />
+	</definition>
+
+	<definition name="corbeille/afficheCorbeille" extends="main">
+		<put-attribute name="corpsPage" value="/WEB-INF/jsp/body/workflow/tasksList.jsp" />
+	</definition>
+
+</tiles-definitions>

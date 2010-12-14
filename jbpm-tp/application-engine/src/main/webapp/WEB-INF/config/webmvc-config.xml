@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<!-- URL to flow mapping rules -->
+	<bean id="flowMappings"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="urlMap">
+			<map>
+				<!-- add your Spring web flow definitions here -->				
+			</map>
+		</property>
+		<property name="order" value="0" />
+	</bean>
+
+	<!--
+		Enables convention-based request URL mapping to @Controllers e.g.
+		/hotels/* maps to HotelsController
+	-->
+	<bean
+		class="org.springframework.web.servlet.mvc.support.ControllerClassNameHandlerMapping">
+		<property name="order" value="1" />
+	</bean>
+
+	<!-- Maps all other request URLs to views -->
+	<bean id="viewMappings"
+		class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="defaultHandler">
+			<!--
+				Selects view names to render based on the request URI: e.g. the
+				"/intro" URL would map to the view named "intro"
+			-->
+			<bean class="org.springframework.web.servlet.mvc.UrlFilenameViewController" />
+		</property>
+		<property name="order" value="1" />
+	</bean>
+
+	<!-- Configures the Tiles layout system -->
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles2.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles/tiles-def.xml
+				</value>
+			</list>
+		</property>
+	</bean>
+
+	<!--
+		Resolves views by delegating to the Tiles layout system; a view name
+		to resolve is treated as the name of a tiles definition
+	-->
+	<!--
+		<bean id="tilesViewResolver"
+		class="org.springframework.js.ajax.AjaxUrlBasedViewResolver">
+	-->
+	<bean id="tilesViewResolver"
+		class="org.springframework.js.ajax.AjaxUrlBasedViewResolver">
+		<property name="order" value="2" />
+		<property name="viewClass"
+			value="org.springframework.webflow.mvc.view.FlowAjaxTilesView" />
+	</bean>
+
+	<!-- définition d'un autre view résolver pour des cas particuliers -->
+	<!-- bean id="customViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver">
+		<property name="order" value="0" />
+		<property name="location" value="/WEB-INF/views/customViews.xml" />
+	</bean>-->
+
+	<!-- Enables annotated POJO @Controllers -->
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
+
+	<!-- Enables plain Controllers -->
+	<bean
+		class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter" />
+
+	<!-- defines flow controler 
+	<bean id="flowController" class="org.springframework.webflow.mvc.servlet.FlowController">
+		<property name="flowExecutor" ref="flowExecutor" />
+	</bean>-->
+
+	<!-- Enables FlowHandlers 
+	<bean class="org.springframework.webflow.mvc.servlet.FlowHandlerAdapter">
+		<property name="flowExecutor" ref="flowExecutor" />
+	</bean>-->
+
+</beans>
