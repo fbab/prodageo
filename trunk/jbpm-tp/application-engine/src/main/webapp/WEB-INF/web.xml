@@ -18,7 +18,7 @@
 		</param-value>
 	</context-param>
 
-	<!-- Loads the Spring web application context -->
+	<!-- Loads the Spring web application context -->	
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
@@ -41,6 +41,25 @@
 		<url-pattern>/resources/*</url-pattern>
 	</servlet-mapping>
 
+	<!--
+		The front controller of this Spring Web application, responsible for
+		handling all application requests
+	-->
+	<servlet>
+		<servlet-name>Spring MVC Dispatcher Servlet</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value></param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<!-- Map all *.spring requests to the DispatcherServlet for handling -->
+	<servlet-mapping>
+		<servlet-name>Spring MVC Dispatcher Servlet</servlet-name>
+		<url-pattern>/myApplication/*</url-pattern>
+	</servlet-mapping>
 
 	<!-- For CXF using -->
 	<servlet>
