@@ -1,9 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project-modules id="moduleCoreId" project-version="1.5.0">
-<wb-module deploy-name="goracc-ear">
-<wb-resource deploy-path="/" source-path="/EarContent"/>
-<dependent-object></dependent-object>
-<dependency-type>uses</dependency-type>
-</dependent-module>
-</wb-module>
-</project-modules>
+<project-modules id="moduleCoreId"/>
