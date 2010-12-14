@@ -35,6 +35,9 @@ This is just for sample purpose
 		<description>
 			a back-end user check the command and if the is some errors, the command is suspended a notification is sent to the customer
 		</description>
+		<task name="check-cmd" swimlane="default-pool">
+			<controller class="org.springmodules.workflow.jbpm31.JbpmHandlerProxy" config-type="bean"></controller>
+		</task>
 		<transition to="default-end"></transition>
 		<transition to="mail-node1" name="to mail-node1"></transition>
 	</task-node>

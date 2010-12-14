@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>goracc-ear</name>
+	<name>application-ear</name>
 	<comment></comment>
 	<projects>
-		<project>goracc-front</project>
+		<project>application-front</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

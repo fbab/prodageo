@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<root-container name="sample.order.processing" width="730" height="506">
+<root-container name="sample.order.processing" width="679" height="520">
   <node name="receive-cmd" x="194" y="31" width="132" height="36">
     <edge>
       <label x="5" y="-10"/>
