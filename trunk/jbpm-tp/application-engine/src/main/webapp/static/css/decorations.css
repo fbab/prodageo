@@ -1,0 +1,242 @@
+/*
+*	Fait un joli cadre avec des bords ronds
+*/
+.cadre {
+	border-radius: 10px 10px;
+	-moz-border-radius: 10px;
+}
+
+/*
+*	
+*	Organisation générale de la Page
+*
+*/
+div#bandeau {
+	width: 880px;
+	height: 90px;
+	border: 1px solid #625FA1;
+	text-align: center;
+	padding: 20px 0 0 15px;
+}
+
+div#menu {
+	margin: 5px 0px 5px 0px;
+	float: left;
+	width: 200px;
+	height: 590px;
+	border-right: 1px solid #625FA1;
+	float: left;
+}
+
+div#contenu {
+	margin: 5px 0px 5px 0px;
+	padding: 10px 0 0 10px;
+	float: left;
+	width: 690px;
+	height: 590px;
+}
+
+div#pied_page {
+	clear: both;
+	width: 890px;
+	height: 50px;
+	border: 1px solid #625FA1;
+	margin: 0px;
+}
+
+/*
+*
+*	Générales
+*
+*/
+.left {
+	float: left;
+}
+
+ul,li,p,h1,h2,div {
+	margin: 0px;
+	color: #5A5885;
+	font-family: "Trebuchet MS", "Times New Roman", Arial, Times, serif;
+}
+
+li {
+	list-style: square;
+	margin-left: 15px;
+}
+
+form {
+	font-size: 13px;
+	margin-left: 50px;
+}
+
+select {
+	padding: 0px;
+	border-color: #B8C7D3;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #FFFFFF;
+	color: #5A5885;
+}
+
+p.souligne {
+	text-decoration: underline;
+}
+
+/*
+	Bandeau
+
+*/
+#bandeau div.titre {
+	width: 810px;
+	padding-top: 15px;
+}
+
+#bandeau h1.titre {
+	margin: 0px;
+	color: #625FA1;
+}
+
+/*
+*	Corps Page
+*/
+h2.rubrique {
+	color: #625FA1;
+	font-weight: normal;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+div.help {
+	margin-bottom: 10px;
+	border: 1px solid #625FA1;
+	padding: 5px;
+	font-style: italic;
+	background-color: #FFFFCC;
+}
+
+div.transition {
+	margin-bottom: 10px;
+	border: 1px solid #625FA1;
+	padding: 5px;
+	font-style: italic;
+	width: 600px;
+	background-color: #D6F3FF;
+}
+
+div.recap {
+	border: 1px solid #625FA1;
+	padding: 5px;
+	width: 500px;
+}
+
+ul.help {
+	margin-left: 10px;
+}
+
+ul.transition {
+	margin-left: 10px;
+}
+
+.inputText {
+	padding: 0px;
+	border-color: #B8C7D3;
+	border-style: solid;
+	border-width: 1px;
+	color: #5A5885;
+}
+
+.inputButton {
+	float: right;
+	padding: 0px;
+	border-color: #B8C7D3;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #FFFFFF;
+	color: #B768C5;
+}
+
+.inputButton:hover {
+	padding: 0px;
+	border-color: #B768C5;
+	border-style: solid;
+	border-width: 1px;
+	background-color: #FFFFFF;
+	color: #B768C5;
+}
+
+.margeGauche{
+	margin-left: 20px;
+}
+
+tr.lignesPaires {
+	background-color : #B8C7D3;
+}
+
+tr.lignesImpaires {
+	background-color: #CCCCCC;
+}
+
+#scrollableTable {
+	padding-top: 20px;
+	clear: both;
+}
+
+p.erreur{
+	color : red;
+	font-weight: bold;
+}
+
+.right{
+	float:right;
+}
+
+.marginLeft{
+	margin-left : 20px;
+}
+
+tr.alreadyExists{
+	font-style : italic;
+	background-color: #F5F4F4;
+	color : #778899;
+}
+
+td.middle{
+	text-align: center;
+}
+
+td.erreur{
+	color: red; 
+}
+
+td.success{
+	color: green;
+}
+
+/*
+*
+*	Footer
+*
+*/
+#footer {
+	text-align: center;
+	font-family: Tahoma, sans-serif;
+	font-size: 75%;
+	color: #625FA1;
+	margin-left: 5px;
+	font-weight: bold;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+/*
+ *	Couleurs 
+ */
+.red{
+	background-color: red;
+}

@@ -1,0 +1,190 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<parent>
+		<groupId>fr.insa.rouen.bpm.tp
+		</groupId>
+		<artifactId>jbpm-parent-project</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>fr.insa.rouen.bpm.tp</groupId>
+	<artifactId>application-ear</artifactId>
+	<packaging>ear</packaging>
+	<name>application-ear</name>
+	<description>ear de l'application de demo</description>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<properties>
+		<jbpm.version>3.2.3</jbpm.version>
+		<cxf.version>2.1.2</cxf.version>
+		<hibernate.version>3.3.0.ga</hibernate.version>
+	</properties>
+
+	<build>
+
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<configuration>
+					<version>5</version>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+						</manifest>
+					</archive>
+					<includeLibInApplicationXml>true</includeLibInApplicationXml>
+					<modules>
+						<ejbModule>
+							<groupId>org.jbpm.jbpm3</groupId>
+							<artifactId>jbpm-enterprise-beans</artifactId>
+						</ejbModule>
+						<webModule>
+							<groupId>fr.insa.rouen.bpm.tp</groupId>
+							<artifactId>jbpm-console</artifactId>
+						</webModule>
+						<webModule>
+							<groupId>fr.insa.rouen.bpm.tp</groupId>
+							<artifactId>application-engine</artifactId>
+						</webModule>
+						<!--
+							<webModule> <groupId>fr.neuf.thd.oss.sadirah.goracc</groupId>
+							<artifactId>goracc-front</artifactId> </webModule>
+						-->
+						<jarModule>
+							<groupId>org.jbpm</groupId>
+							<artifactId>jbpm-jpdl</artifactId>
+							<!--							<bundleDir>APP-INF/lib</bundleDir>-->
+
+						</jarModule>
+						<jarModule>
+							<groupId>org.jbpm.jbpm3</groupId>
+							<artifactId>jbpm-identity</artifactId>
+							<!--							<bundleDir>APP-INF/lib</bundleDir>-->
+						</jarModule>
+						<jarModule>
+							<groupId>org.hibernate</groupId>
+							<artifactId>hibernate</artifactId>
+							<!--							<bundleDir>APP-INF/lib</bundleDir>-->
+						</jarModule>
+						<jarModule>
+							<groupId>fr.insa.rouen.bpm.tp</groupId>
+							<artifactId>jbpm-config</artifactId>
+							<!--							<bundleDir>APP-INF/lib</bundleDir>-->
+						</jarModule>
+						<jarModule>
+							<groupId>org.hibernate</groupId>
+							<artifactId>hibernate-commons-annotations</artifactId>
+						</jarModule>
+						<jarModule>
+							<groupId>org.hibernate</groupId>
+							<artifactId>hibernate-annotations</artifactId>
+						</jarModule>
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
+	<repositories>
+		
+		<repository>
+			<id>java.net</id>
+			<url>http://download.java.net/maven/1/
+			</url>
+			<layout>legacy</layout>
+		</repository>
+
+
+		<repository>
+			<url>http://repository.jboss.org/maven2/
+			</url>
+			<id>jboss</id>
+		</repository>
+
+
+	</repositories>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.jbpm.jbpm3</groupId>
+			<artifactId>jbpm-enterprise-beans</artifactId>
+			<version>3.2.4.GA</version>
+			<type>ejb</type>
+			<exclusions>
+				<exclusion>
+					<groupId>org.jbpm.jbpm3</groupId>
+					<artifactId>jbpm-jpdl</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.jbpm</groupId>
+			<artifactId>jbpm-jpdl</artifactId>
+			<version>3.2.3</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.jbpm.jbpm3</groupId>
+			<artifactId>jbpm-identity</artifactId>
+			<version>3.2.4.GA</version>
+			<type>jar</type>
+			<exclusions>
+				<exclusion>
+					<groupId>org.jbpm.jbpm3</groupId>
+					<artifactId>jbpm-jpdl</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate</artifactId>
+			<version>3.2.7.ga</version>
+			<type>jar</type>
+			<exclusions>
+				<exclusion>
+				    <groupId>javax.transaction</groupId>
+				    <artifactId>jta</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>fr.insa.rouen.bpm.tp</groupId>
+			<artifactId>jbpm-config</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>fr.insa.rouen.bpm.tp</groupId>
+			<artifactId>jbpm-console</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>fr.insa.rouen.bpm.tp</groupId>
+			<artifactId>application-engine</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.3.0.ga</version>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>3.3.0.ga</version>
+		</dependency>
+	</dependencies>
+
+</project>
