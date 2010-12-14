@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<forms>
-  <form task="receive-cmd-task" form="receive-cmd-task.xhtml"/>
-</forms>
