@@ -40,28 +40,17 @@ public class Client {
 			items.getItem().add(o);
 			type.setItems(items);
 
-			// JAXBElement<PurchaseOrder> element = factory.createPurchaseOrder(type);
+
 			Marshaller m = jcout.createMarshaller();
 			m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.TRUE);
 			m.marshal(type, System.out);
 			
-			// exploitation d'un fichier XML existant
-			// JAXBContext jcin = JAXBContext.newInstance("generated.PurchaseOrderType"); <-- KO
-			// JAXBContext jcin = JAXBContext.newInstance("generated.PurchaseOrderType.class"); KO
-			// JAXBContext jcin = JAXBContext.newInstance(PurchaseOrder.class);
-			// JAXBContext jcin = JAXBContext.newInstance("import"); KO
 			JAXBContext jcin = JAXBContext.newInstance("org.prodageo.purchaseorder");
-			// JAXBContext jcin = JAXBContext.newInstance();
+
 			
 			Unmarshaller unmarshaller = jcin.createUnmarshaller();
 			
-			// le fichier est bien vu mais il provoque une exception
-			// generated.PurchaseOrder root = (generated.PurchaseOrder) unmarshaller.unmarshal(new File("H:\\home\\fbab\\ide\\eclipse\\jaxb\\sample.xml") );
-			PurchaseOrder root = (PurchaseOrder) unmarshaller.unmarshal(new File("H:\\home\\fbab\\ide\\eclipse\\jaxb\\sample.xml") );
-			// JAXBElement<generated.PurchaseOrder> root = JAXBElement<generated.PurchaseOrder> unmarshaller.unmarshal(new File("H:\\home\\fbab\\ide\\eclipse\\jaxb\\sample.xml") , generated.PurchaseOrder.class ); KO
-			//PurchaseOrder root = (PurchaseOrder) unmarshaller.unmarshal(new File("H:\\home\\fbab\\ide\\eclipse\\jaxb\\sample.xml"));
-			
-			// PurchaseOrderType root = (PurchaseOrderType) unmarshaller.unmarshal(new File("pouf.xml"));
+			PurchaseOrder root = (PurchaseOrder) unmarshaller.unmarshal(new File("C:\\prodageo\\EXA2974\\sample.xml") );
 			Items items2 = root.getItems();
 			
 			Iterator it = items2.getItem().iterator() ;
