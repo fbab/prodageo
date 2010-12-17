@@ -33,17 +33,11 @@
 
 
     <bean class="org.springframework.ws.server.endpoint.adapter.GenericMarshallingMethodEndpointAdapter">
-        <description>Enables the MessageDispatchServlet to invoke methods
-            requiring OXM marshalling.
-        </description>
-
+        <description>Enables the MessageDispatchServlet to invoke methods requiring OXM marshalling.</description>
         <constructor-arg ref="marshaller"/>
-
     </bean>
-
     <bean id="marshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller">
         <property name="contextPath" value="com.mycompany.hr.schemas"/>
-
     </bean>
 
 </beans>
