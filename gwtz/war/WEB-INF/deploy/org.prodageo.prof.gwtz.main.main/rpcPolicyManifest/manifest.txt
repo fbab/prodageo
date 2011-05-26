@@ -1,0 +1,3 @@
+# Module org.prodageo.prof.gwtz.main.main
+# RPC service class, partial path of RPC policy file
+org.prodageo.prof.gwtz.main.client.Controller, 079767D3D99174C415E0781FEA409CAC.gwt.rpc

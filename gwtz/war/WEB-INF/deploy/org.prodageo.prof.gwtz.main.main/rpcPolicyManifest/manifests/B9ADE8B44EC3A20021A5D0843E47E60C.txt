@@ -1,0 +1,2 @@
+serviceClass: org.prodageo.prof.gwtz.main.client.Controller
+path: 079767D3D99174C415E0781FEA409CAC.gwt.rpc
