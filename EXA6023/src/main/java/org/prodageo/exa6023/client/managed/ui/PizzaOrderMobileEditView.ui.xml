@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:a="urn:import:org.prodageo.exa6023.client.managed.ui" xmlns:d="urn:import:com.google.gwt.user.datepicker.client" xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:r="urn:import:org.prodageo.exa6023.client.scaffold.ui">
+  <ui:style>
+    .outer {
+      padding: 10px;
+    }
+    .error {
+      padding-left: 0.5em;
+      background-color: red;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .value {
+      padding-bottom: 10px;
+    }
+  </ui:style>
+ 
+  <g:HTMLPanel id="boundElementHolder" styleName="{style.outer}">
+    <div class="{style.error}" ui:field="errors"/>
+    
+    <div id="name">
+            <div class="{style.label}">Name</div>
+            <div class="{style.value}">
+                <g:TextBox ui:field="name"/>
+            </div>
+        </div>
+    <div id="address">
+            <div class="{style.label}">Address</div>
+            <div class="{style.value}">
+                <g:TextBox ui:field="address"/>
+            </div>
+        </div>
+    <div id="total">
+            <div class="{style.label}">Total</div>
+            <div class="{style.value}">
+                <r:FloatBox ui:field="total"/>
+            </div>
+        </div>
+    <div id="paymentType">
+            <div class="{style.label}">Payment Type</div>
+            <div class="{style.value}">
+                <g:ValueListBox ui:field="paymentType"/>
+            </div>
+        </div>
+    <div id="deliveryDate">
+            <div class="{style.label}">Delivery Date</div>
+            <div class="{style.value}">
+                <d:DateBox ui:field="deliveryDate"/>
+            </div>
+        </div>
+    <div id="pizzas">
+            <div class="{style.label}">Pizzas</div>
+            <div class="{style.value}">
+                <a:PizzaSetEditor ui:field="pizzas"/>
+            </div>
+        </div>
+
+    <g:Button ui:field="save">Save</g:Button>
+  </g:HTMLPanel>
+</ui:UiBinder>
