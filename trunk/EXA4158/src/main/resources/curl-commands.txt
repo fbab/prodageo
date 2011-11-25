@@ -1,0 +1,27 @@
+List the cars (XML Format)
+==========================
+curl -v -X GET -H"Accept: application/xml" http://localhost:9080/rest/cars
+
+List the cars (JSON Format)
+==========================
+curl -v -X GET -H"Accept: application/json" http://localhost:9080/rest/cars
+
+Get a single car in XML Format
+==============================
+curl -H "accept: application/xml" localhost:9080/rest/cars/1
+
+Get a single car in JSON Format
+==============================
+curl -H "accept: application/json" localhost:9080/rest/cars/1
+
+Create a new car
+================
+curl -v -X POST --data-binary "<car make=\"kevin\"/>" -H"Content-Type: application/xml" -H"Accept: application/xml" http://localhost:9080/rest/cars/
+
+Update a car
+============
+curl -v -X PUT --data-binary "<car id=\"2\" make=\"kevin\" model=\"civic\"/>" -H"Content-Type: application/xml" -H"Accept: application/xml" http://localhost:9080/rest/cars/2
+
+Delete a car
+============
+curl -v -X DELETE http://localhost:9080/rest/cars/2
