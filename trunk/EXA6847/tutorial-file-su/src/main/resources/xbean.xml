@@ -3,7 +3,7 @@
   <!-- add the sender endpoint here -->
 <file:sender service="tut:file" 
              endpoint="sender"
-             directory="file:/temp/EXA6847/test/sender" />
+             directory="file:/tmp/EXA6847/test/sender" />
   <!-- add the poller endpoint here -->   
 <file:poller service="tut:file" 
              endpoint="poller"
