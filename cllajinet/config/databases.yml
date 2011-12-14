@@ -1,7 +1,0 @@
-all:
-  propel:
-    class: sfPropelDatabase
-    param:
-      phptype: mysql
-      database: null 
-      dsn: 'mysql://root:@localhost/cllajinet'

@@ -1,3 +1,0 @@
-Main-Class: producer.HelloProducer
-Class-Path: /usr/share/lib/imq.jar /usr/share/lib/jms.jar
-

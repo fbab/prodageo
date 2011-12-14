@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: APP-INF/lib/jbpm-jpdl-3.2.3.jar
-Archiver-Version: Plexus Archiver
-Created-By: Apache Maven
-Built-By: tdiesler
-Build-Jdk: 1.6.0_06
-
