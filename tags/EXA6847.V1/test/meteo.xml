@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<xml_api_reply version="1">
+<weather module_id="0" tab_id="0" mobile_row="0" mobile_zipped="1" row="0" section="0" >
+<forecast_information>
+<city data="Paris, Îe-de-France"/>
+<postal_code data="Paris"/>
+<latitude_e6 data=""/>
+<longitude_e6 data=""/>
+<forecast_date data="2011-12-13"/>
+<current_date_time data="1970-01-01 00:00:00 +0000"/>
+<unit_system data="SI"/>
+</forecast_information>
+<current_conditions>
+<condition data="Ciel nuageux"/>
+<temp_f data="48"/>
+<temp_c data="9"/>
+<humidity data="Humidité 82 %"/>
+<icon data="/ig/images/weather/cloudy.gif"/>
+<wind_condition data="Vent : S à5 km/h"/>
+</current_conditions>
+<forecast_conditions>
+<day_of_week data="mar."/>
+<low data="6"/>
+<high data="12"/>
+<icon data="/ig/images/weather/rain.gif"/>
+<condition data="Pluie"/>
+</forecast_conditions>
+<forecast_conditions>
+<day_of_week data="mer."/>
+<low data="5"/>
+<high data="10"/>
+<icon data="/ig/images/weather/chance_of_rain.gif"/>
+<condition data="Risques de pluie"/>
+</forecast_conditions>
+<forecast_conditions>
+<day_of_week data="jeu."/>
+<low data="7"/>
+<high data="8"/>
+<icon data="/ig/images/weather/chance_of_rain.gif"/>
+<condition data="Risques de pluie"/>
+</forecast_conditions>
+<forecast_conditions>
+<day_of_week data="ven."/>
+<low data="3"/>
+<high data="9"/>
+<icon data="/ig/images/weather/chance_of_rain.gif"/>
+<condition data="Risques de pluie"/>
+</forecast_conditions>
+</weather>
+</xml_api_reply>

@@ -1,0 +1,15 @@
+ <beans xmlns:file="http://servicemix.apache.org/file/1.0"
+       xmlns:tut="urn:servicemix:tutorial">
+  <!-- add the sender endpoint here -->
+<file:sender service="tut:file" 
+             endpoint="sender"
+             directory="file:/tmp/EXA6847/test/sender" />
+  <!-- add the poller endpoint here -->   
+<file:poller service="tut:file" 
+             endpoint="poller"
+             file="file:/tmp/EXA6847/test/poller" 
+             targetService="tut:file"
+             targetEndpoint="sender"/> 
+</beans>
+
+
