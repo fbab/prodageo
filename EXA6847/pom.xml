@@ -13,5 +13,7 @@
   <modules>
     <module>tutorial-file-su</module>
     <module>tutorial-sa</module>
+    <module>tutorial-eip-su</module>
+    <module>tutorial-jms-su</module>
   </modules>
 </project>
