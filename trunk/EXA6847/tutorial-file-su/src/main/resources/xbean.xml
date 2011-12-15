@@ -8,7 +8,7 @@
 <file:poller service="tut:file" 
              endpoint="poller"
              file="file:/tmp/EXA6847/test/poller" 
-             targetService="tut:file"
+             targetService="tut:wiretap"
              targetEndpoint="sender"/> 
 </beans>
 
