@@ -17,7 +17,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "AsyncTestResponseImplService", targetNamespace = "http://prodageo.org/", wsdlLocation = "file:/home/fbaucher/NetBeansProjects/AsyncWs/dist/AsyncTestResponseImplService.wsdl")
+@WebServiceClient(name = "AsyncTestResponseImplService", targetNamespace = "http://prodageo.org/", wsdlLocation = "/AsyncTestResponseImplService.wsdl")
 public class AsyncTestResponseImplService
     extends Service
 {
@@ -25,12 +25,17 @@ public class AsyncTestResponseImplService
     private final static URL ASYNCTESTRESPONSEIMPLSERVICE_WSDL_LOCATION;
     private final static Logger logger = Logger.getLogger(org.prodageo.AsyncTestResponseImplService.class.getName());
 
+
     static {
         URL url = null;
+        if ( logger != null)  { System.out.println("logger OK"); }
+ else { System.out.println("logger null"); }
+        
         try {
             URL baseUrl;
             baseUrl = org.prodageo.AsyncTestResponseImplService.class.getResource(".");
-            url = new URL(baseUrl, "file:/home/fbaucher/NetBeansProjects/AsyncWs/dist/AsyncTestResponseImplService.wsdl");
+            url = new URL(baseUrl, "file:/home/fbaucher/NetBeansProjects/AsyncWs/web/WEB-INF/wsdl/AsyncTestResponseImplService.wsdl");
+            // url = new URL(baseUrl, "http://localhost:8080/AsyncTestImplService/AsyncTestResponseImpliService?wsdl");
         } catch (MalformedURLException e) {
             logger.warning("Failed to create URL for the wsdl Location: 'file:/home/fbaucher/NetBeansProjects/AsyncWs/dist/AsyncTestResponseImplService.wsdl', retrying as a local file");
             logger.warning(e.getMessage());
