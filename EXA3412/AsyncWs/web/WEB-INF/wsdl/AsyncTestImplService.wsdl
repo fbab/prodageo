@@ -33,7 +33,7 @@
   </binding>
   <service name="AsyncTestImplService">
     <port name="AsyncTestImplPort" binding="tns:AsyncTestImplPortBinding">
-      <soap:address location="REPLACE_WITH_ACTUAL_URL"/>
+      <soap:address location="http://127.0.0.1:8080/AsyncTestImplService/AsyncTestImpl"/>
     </port>
   </service>
 </definitions>
