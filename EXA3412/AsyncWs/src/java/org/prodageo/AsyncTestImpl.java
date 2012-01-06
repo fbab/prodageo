@@ -9,36 +9,25 @@ package org.prodageo;
  *
  * @author fbaucher
  */
-
-/*
-import com.sun.xml.internal.ws.api.message.Header;
-import com.sun.xml.internal.ws.api.message.HeaderList;
-import com.sun.xml.internal.ws.api.message.Headers;
-import com.sun.xml.internal.ws.developer.JAXWSProperties;
-import com.sun.xml.internal.ws.developer.WSBindingProvider;
+import java.net.URL;
 import javax.annotation.Resource;
 import javax.jws.WebService;
 import javax.ejb.Stateless;
+import javax.servlet.ServletContext;
 import javax.xml.namespace.QName;
 import javax.xml.ws.WebServiceContext;
-*/
-
-// internal
-
 
 import com.sun.xml.ws.api.message.Header;
 import com.sun.xml.ws.api.message.HeaderList;
 import com.sun.xml.ws.api.message.Headers;
+
+// internal
 import com.sun.xml.ws.developer.JAXWSProperties;
 import com.sun.xml.ws.developer.WSBindingProvider;
-import javax.annotation.Resource;
-import javax.ejb.Stateless;
-import javax.jws.WebService;
-import javax.xml.namespace.QName;
 import javax.xml.stream.XMLStreamConstants;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamReader;
-import javax.xml.ws.WebServiceContext;
+import javax.xml.ws.handler.MessageContext;
 
 
 @Stateless
@@ -70,9 +59,23 @@ public class AsyncTestImpl implements AsyncTest {
         (HeaderList) context.getMessageContext().get(
         JAXWSProperties.INBOUND_HEADER_LIST_PROPERTY);
 
+        if ( hl == null )
+        {
+            System.out.println("hl est null");
+        }
+        else
+        {
+            System.out.println("hl non null");
+        }
+        
         String address = null;
         try {
             Header replyTo = hl.get(NS_ADDRESSING_2003, HEADER_REPLYTO, false);
+            if (replyTo == null  )
+            {
+               System.out.println("replyTo null");
+        }
+            
             XMLStreamReader replyToReader = replyTo.readHeader();
             while (
 (address == null) &&
@@ -82,22 +85,25 @@ public class AsyncTestImpl implements AsyncTest {
                     if (replyToReader.getLocalName().equals(HEADER_ADDRESS)) {
                         replyToReader.next();
                         address = replyToReader.getText();
+                        System.out.println(address);
                     }
                 }
             }
             } catch (XMLStreamException xe) {
             xe.printStackTrace();
+            System.out.println("exception avec ReplyTo");
             return;
         }
         String messageId =
-        hl.get(NS_ADDRESSING_2003, HEADER_MESSAGEID, false)
-.getStringContent();
+        hl.get(NS_ADDRESSING_2003, HEADER_MESSAGEID, false).getStringContent();
 
-
+       if ( messageId != null)  { System.out.println(messageId); }
+ else { System.out.println("messageId null"); }
         AsyncTestResponseImplService srv = new AsyncTestResponseImplService();
         AsyncTestResponseImpl portType = srv.getAsyncTestResponseImplPort();
         WSBindingProvider bp = (WSBindingProvider) portType;
 
+        if ( bp == null)  { System.out.println("bp null"); }
         bp.setAddress(address);
         bp.setOutboundHeaders(Headers.create(
         new QName(NS_ADDRESSING_2003,
@@ -108,4 +114,4 @@ public class AsyncTestImpl implements AsyncTest {
 
         System.out.println("Response sent");
     }
-}
+} 
