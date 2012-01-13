@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>parent</artifactId>
+    <groupId>com.bytes.tutorial</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <groupId>com.bytes.tutorial</groupId>
+  <artifactId>bytes-sa</artifactId>
+  <version>1.01</version>
+  <packaging>jbi-service-assembly</packaging>
+  <name>A custom project</name>
+  <url>http://www.myorganization.org</url>
+  <properties>
+    <servicemix-version>3.2.3</servicemix-version>
+  </properties>
+  <dependencies>
+      <dependency>
+	 <groupId>com.bytes.tutorial</groupId>
+  <artifactId>file-su</artifactId>
+  <version>1.01</version>
+    </dependency>
+	<dependency>
+	<groupId>com.bytes.tutorial</groupId>
+  <artifactId>drools-su</artifactId>
+  <version>1.01</version>
+  </dependency>
+  </dependencies>
+  <repositories>
+    <repository>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>apache</id>
+      <name>Apache Repository</name>
+      <url>http://people.apache.org/repo/m2-ibiblio-rsync-repository</url>
+    </repository>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshots Repository</name>
+      <url>http://people.apache.org/repo/m2-snapshot-repository</url>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <id>apache</id>
+      <name>Apache Repository</name>
+      <url>http://people.apache.org/repo/m2-ibiblio-rsync-repository</url>
+    </pluginRepository>
+    <pluginRepository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>apache.snapshots</id>
+      <name>Apache Snapshots Repository</name>
+      <url>http://people.apache.org/repo/m2-snapshot-repository</url>
+    </pluginRepository>
+  </pluginRepositories>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.servicemix.tooling</groupId>
+        <artifactId>jbi-maven-plugin</artifactId>
+        <version>${servicemix-version}</version>
+        <extensions>true</extensions>
+        <configuration>
+          <type>service-assembly</type>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>
