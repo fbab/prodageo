@@ -46,6 +46,7 @@ public class EXU9941sql1Servlet extends HttpServlet
 		String[] prenom = new String[10] ;
 		int nb = 0 ;
 		
+		id[0] = 1 ;
 		nb = dbw.select_personnage(id, nom, prenom) ;
 
 		PrintWriter out = resp.getWriter();
