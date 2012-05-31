@@ -88,7 +88,12 @@ public class EXU9941dbWrapper {
     	try {    	
 
 	    	c = DriverManager.getConnection(jdbcUrl);
-	    	ResultSet rs = c.createStatement().executeQuery("SELECT id, nom, prenom FROM annuaire"); 
+	    	String sqlQuery = "SELECT id, nom, prenom FROM annuaire" ;
+	    	if ( id[0] > 0 )
+	    		sqlQuery = sqlQuery + " where id = " + id[0] ;  
+	    	
+	    	log.info(sqlQuery);
+	    	ResultSet rs = c.createStatement().executeQuery(sqlQuery); 
 	    	
 	    	int i = 0 ;
 	    	while (rs.next()){
