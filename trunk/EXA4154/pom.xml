@@ -56,7 +56,7 @@
             <version>1.0</version>
                 <configuration>
                 <server>casisbellitomcat</server>
-                <url>http://casisbelli:8080/manager</url>
+                <url>http://casisbelli.insa-rouen.fr:8080/manager</url>
             </configuration>
         </plugin>
 
