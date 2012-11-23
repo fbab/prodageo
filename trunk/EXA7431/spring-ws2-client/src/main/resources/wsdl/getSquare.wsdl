@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:sch="http://ankeetmaini.wordpress.com/spring-ws2-square" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ankeetmaini.wordpress.com/spring-ws2-square" targetNamespace="http://ankeetmaini.wordpress.com/spring-ws2-square">
+  <wsdl:types>
+    <xs:schema xmlns:s="http://ankeetmaini.wordpress.com/spring-ws2-square" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://ankeetmaini.wordpress.com/spring-ws2-square">
+  
+  <xs:element name="SquareServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Input" type="xs:integer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="SquareServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Output" type="xs:integer"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="SquareServiceRequest">
+    <wsdl:part element="tns:SquareServiceRequest" name="SquareServiceRequest">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="SquareServiceResponse">
+    <wsdl:part element="tns:SquareServiceResponse" name="SquareServiceResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="SquareService">
+    <wsdl:operation name="SquareService">
+      <wsdl:input message="tns:SquareServiceRequest" name="SquareServiceRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:SquareServiceResponse" name="SquareServiceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SquareServiceSoap11" type="tns:SquareService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="SquareService">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="SquareServiceRequest">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="SquareServiceResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SquareServiceService">
+    <wsdl:port binding="tns:SquareServiceSoap11" name="SquareServiceSoap11">
+      <soap:address location="http://127.0.0.1:8080/squareService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

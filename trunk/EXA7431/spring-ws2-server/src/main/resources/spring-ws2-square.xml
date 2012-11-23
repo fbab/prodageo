@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SquareService xmlns="http://ankeetmaini.wordpress.com/spring-ws2-square">
+
+	<SquareServiceRequest>
+		<Input>3</Input>
+	</SquareServiceRequest>
+
+	<SquareServiceResponse>
+		<Output>9</Output>
+	</SquareServiceResponse>
+
+</SquareService>
