@@ -24,9 +24,7 @@ public class MyMailRouteBuilder extends RouteBuilder
 	theSmtpServer
 	+ "?username=" + theRegisteredUser + "&password=" + thePassword
 	+ "&mail.smtp.auth=true"
-	// + "&mail.pop3.starttls.required=true"
 	+ "&mail.smtp.starttls.enable=true"
-	// + "&mail.smtp.port=587"
 	+ "&from=" +  theRegisteredUser
 	+ "&subject=test camel"
 	+ "&to=" +  theRegisteredUser
@@ -35,13 +33,7 @@ public class MyMailRouteBuilder extends RouteBuilder
 	final String dateDuJour = 
                new SimpleDateFormat("dd/MM/yy HH:mm:ss")
 			.format(Calendar.getInstance().getTime());
-	Endpoint ep = endpoint(HOST_MAIL_OPTIONS);
-	Exchange exchange = ep.createExchange();
-	Message messageIn = exchange.getIn();
-	messageIn.setBody("Hello Camel World!, le " + dateDuJour);
-        //messageIn.addAttachment("logo.png", 
-        // new DataHandler(new FileDataSource(
-       //		"spring-mini-logo.png")));		
-	ep.createProducer().process(exchange);
+
+	from("file:/tmp/input").to(HOST_MAIL_OPTIONS);
   }
 }
