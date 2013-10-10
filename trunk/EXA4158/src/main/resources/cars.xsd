@@ -25,13 +25,24 @@
     </xs:complexType>
 </xs:element>
 
+<xs:element name="Color" type="xs:string"/>
+
+<xs:element name="model" type="xs:string"/>
+
 <xs:element name="Car" type="c:CarType" />
 
 <xs:complexType name="CarType">
+
+    <xs:sequence> 
+	 <xs:element ref="c:Color" />
+	 <xs:element ref="c:model" />	 
+	 </xs:sequence> 
+	 
     <xs:attribute name="id" type="xs:int" />
     <xs:attribute name="make" type="xs:string" />
-    <xs:attribute name="model" type="xs:string" />
+    <!-- <xs:attribute name="model" type="xs:string" /> -->
     <xs:attribute name="price" type="xs:int" />
+
 </xs:complexType>
 
 
