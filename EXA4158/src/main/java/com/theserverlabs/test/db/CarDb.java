@@ -31,10 +31,12 @@ public class CarDb {
     	Car p306 = new Car();
 		p306.setMake("Peugeot");
 		p306.setModel("306");
+		p306.setColor("blue");
 		addCar(p306);
 		Car clio = new Car();
 		clio.setMake("Renault");
 		clio.setModel("Clio");
+		clio.setColor("green");		
         addCar(clio);
     }
 
