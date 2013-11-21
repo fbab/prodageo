@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script src="res/knockout/knockout-2.2.1.js"></script>
+        <script src="obelix.js"></script>
+        <script src="panoramix.js"></script>
+        <script src="asterix.js"></script>
+    </head>
+    <body>
+        <h1 data-bind="text: title"></h1>
+        <p>
+            Change the title here :
+            <input type="text" data-bind="value: title, valueUpdate: 'afterkeydown'" />
+        </p>
+        <p data-bind="text: sampleText"></p>
+        <section data-bind="foreach: obelixs">
+			<article>
+				<h2 data-bind="text: fullName"></h2>
+				<p>
+					FirstName :
+					<input type="text" data-bind="value: firstName" /><br/>
+					LastName :
+					<input type="text" data-bind="value: lastName" />
+				</p>
+			</article>
+        </section>
+ 
+        <script>
+            var asterix = new asterix();
+            ko.applyBindings(asterix);
+        </script>
+    </body>
+</html>
