@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.prodageo</groupId>
+  <artifactId>EXA4154-prof</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>EXA4154</name>
+  <url>http://maven.apache.org</url>
+
+<!-- http://www.xinotes.org/notes/note/1667/ -->
+    <properties>
+	<java.version>1.6</java.version>
+	<javax.jstl.version>1.2</javax.jstl.version>
+	<org.springframework.version>3.1.0.RELEASE</org.springframework.version>
+	<project.build.finalName>springmvc</project.build.finalName>
+    </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${org.springframework.version}</version>
+	</dependency>
+
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>jstl</artifactId>
+	    <version>${javax.jstl.version}</version>
+	    <scope>runtime</scope>
+	</dependency>
+
+  </dependencies>
+
+  <build>
+	<plugins>
+	    <plugin>
+		<groupId>org.apache.maven.plugins</groupId>
+		<artifactId>maven-compiler-plugin</artifactId>
+		<configuration>
+		    <source>${java.version}</source>
+		    <target>${java.version}</target>
+		</configuration>
+	    </plugin>
+
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>tomcat-maven-plugin</artifactId>
+            <version>1.0</version>
+                <configuration>
+                <server>casisbellitomcat</server>
+                <url>http://casisbelli.insa-rouen.fr:8080/manager</url>
+            </configuration>
+        </plugin>
+
+	</plugins>
+    <finalName>EXA4154-prof</finalName>
+  </build>
+</project>
