@@ -43,9 +43,15 @@ public final class CamelToJms {
         // ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("vm://localhost?broker.persistent=false");
 
 	// to understand vm:, tcp:, cf http://activemq.apache.org/configuring-transports.html
-        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://casisbelli:3700");
+        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://casisbelli:3700") ;
         // Note we can explicit name the component
-        context.addComponent("proxy-jms-broker", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
+        // context.addComponent("proxy-jms-broker", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));a
+
+	// kekasi4equipe designe l'instance du composant sur le client
+	// cette instance communique avec le serveur MOM ecoutant le port "tcp://casisbelli:3700" 
+	// ce port est relie a un broket nomme kekasi
+	// (cf balise /bean/osgi:service/osgi:properties/entry@value in kekasi_broker.xml deploye sur smx)
+        context.addComponent("cnx2kekasiBroker", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
         
 // Camel template - a handy class for kicking off exchanges
         ProducerTemplate template = context.createProducerTemplate();
@@ -54,7 +60,11 @@ public final class CamelToJms {
         // Now send some test text to a component - for this case a JMS Queue
         // The text get converted to JMS messages - and sent to the Queue
         for (int i = 0; i < 10; i++) {
-            template.sendBody("proxy-jms-broker:queue:equipe", "Test Message de mon equipe : " + i);
+            // template.sendBody("proxy-jms-broker:queue:equipe", "Test Message de mon equipe : " + i);
+	    // queue
+            template.sendBody("cnx2kekasiBroker:queue:equipe2queue", "Test Queue Message de mon equipe : " + i);
+	    // topic
+            template.sendBody("cnx2kekasiBroker:topic:equipe2topic", "Test Topic Message de mon equipe : " + i);
         }
         // wait a bit and then stop
         Thread.sleep(1000);
