@@ -64,7 +64,7 @@
 
         <!-- The transport connectors ActiveMQ will listen to -->
         <transportConnectors>
-            <transportConnector name="openwire" uri="tcp://casisbelli:3690"/>
+            <transportConnector name="openwire" uri="tcp://casisbelli:3700"/>
             <transportConnector name="stomp" uri="stomp://localhost:61613"/>
         </transportConnectors>
 
@@ -72,7 +72,7 @@
 
     <bean id="activemqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
 
-        <property name="brokerURL" value="tcp://casisbelli:3690" />
+        <property name="brokerURL" value="tcp://casisbelli:3700" />
     </bean>
 
     <bean id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory">
