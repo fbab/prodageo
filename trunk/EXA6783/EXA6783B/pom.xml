@@ -81,7 +81,7 @@
     </dependency>
 
 	</dependencies>
-
+<!--
 	<profiles>
 		<profile>
 			<id>Example</id>
@@ -90,7 +90,7 @@
 			</properties>
 		</profile>
 	</profiles>
-
+-->
 	<build>
 		<plugins>
 			<!-- Allows the example to be run via 'mvn compile exec:java' -->
@@ -98,7 +98,8 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>${target.main.class}</mainClass>
+					<!-- <mainClass>${target.main.class}</mainClass> -->
+					<mainClass>org.apache.camel.example.jmstofile.CamelJmsToFileExample</mainClass>
 					<includePluginDependencies>false</includePluginDependencies>
 				</configuration>
 			</plugin>
