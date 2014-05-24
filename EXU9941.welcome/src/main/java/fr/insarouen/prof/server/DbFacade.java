@@ -6,8 +6,17 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DbFacade {
+/* cet exemple est paramétré pour communiquer 
+ * avec un serveur mysqld situé sur la même machine que le serveur d'application Tomcat
+ * la base s'appelle    
+ */
 
+public class DbFacade
+{
+
+		String myDbBase = "monagenda" ;
+		String myDbUser = "prof" ;
+		String myDbPassword = "cavapasnon" ;	
 		// boolean is_bouchon = true ;
 		boolean is_bouchon = false ;
 
@@ -51,7 +60,8 @@ public class DbFacade {
 	          try {
 	                  Class.forName("com.mysql.jdbc.Driver");
 	                  con =DriverManager.getConnection
-	                          ("jdbc:mysql://localhost:3306/monagenda","prof","cavapasnon") ;
+	                          // ("jdbc:mysql://localhost:3306/monagenda","prof","cavapasnon") ;
+	                  		  ("jdbc:mysql://localhost:3306/" + myDbBase, myDbUser, myDbPassword) ;
 	                  stmt = con.createStatement();
 	                  rs = stmt.executeQuery("SELECT * FROM departement where code = " + codePostal);
 	                  // displaying records
@@ -66,7 +76,7 @@ public class DbFacade {
 	          {
 	
 	                 // throw new ServletException("Servlet Could not display records.", e);
-	                 the_error = "E001 : probleme en retour de JDBC (cas fréquents : nom de base et/ou identifiant et/ou mot de passe erronés)";
+	                 the_error = "E001 : probleme en retour de JDBC (cas fréquents : nom de base et/ou identifiant et/ou mot de passe erronés). Avez-vous notamment changé le mot de passe par défaut dans le fichier DbFacade.java par celui remis par l'enseignant ?";
 	
 	                 // Dans le cas d'une exécution locale (sur machine de dév)
 	                 // avec la commande en ligne suivante :
