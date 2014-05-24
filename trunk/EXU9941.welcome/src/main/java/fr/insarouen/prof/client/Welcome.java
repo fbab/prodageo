@@ -94,11 +94,12 @@ public class Welcome implements EntryPoint {
 	    rootPanel.add(nameField);
 	    RootPanel.get("sendButtonContainer").add(sendButton);
 	    RootPanel.get("errorLabelContainer").add(errorLabel);
-	    RootPanel.get("newAreaForMyWidget").add(clickMeButton);
 	    
 	    // on met le widget à tester dans cette cellule du tableau HTML qui structure la page
 	    // Liste des widgets testables : myListBox, myComboBox, myGrid
-	     // RootPanel.get("freeContainer").add(myListBox); 
+	    // par défaut : clickMeButton
+	    RootPanel.get("newAreaForMyWidget").add(clickMeButton);
+	    
 	    
 	    // Focus the cursor on the name field when the app loads
 	    nameField.setFocus(true);
