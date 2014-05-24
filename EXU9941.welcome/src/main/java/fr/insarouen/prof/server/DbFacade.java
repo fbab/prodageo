@@ -8,7 +8,8 @@ import java.sql.Statement;
 
 /* cet exemple est paramétré pour communiquer 
  * avec un serveur mysqld situé sur la même machine que le serveur d'application Tomcat
- * la base s'appelle    
+ * la base s'appelle monagenda (elle contient une table departement avec deux champs : code et nom)
+ * cette table est accessible a un compte utilisateur sur mysql : prof
  */
 
 public class DbFacade
@@ -17,16 +18,26 @@ public class DbFacade
 		String myDbBase = "monagenda" ;
 		String myDbUser = "prof" ;
 		String myDbPassword = "cavapasnon" ;	
-		// boolean is_bouchon = true ;
-		boolean is_bouchon = false ;
+		boolean is_bouchon = true ; // dans cas où la base de données n'est pas exploitée
+		// boolean is_bouchon = false ;
 
-/*
-		DbFacade()
-		{
-			// vérifier si la base de données est présente
-			// is_bouchon = false ;
+		// Is_Db_Accessible permet de determiner s'il faut recourir au bouchon
+		public DbFacade() {
+			super();
+			if ( Is_Db_Accessible() )
+			{
+				this.is_bouchon = false ;
+			}
+			else
+			{
+				this.is_bouchon = true ;
+			}
+				
 		}
-*/
+		
+		
+		// FONCTION TRANSPARENTE APPELEE PAR LA COUCHE METIER
+		// CETTE FONCTION PERMET DE ROUTER VERS LA FONCTION BOUCHON OU BD 
 		String retrieve_dept_by_code ( Integer codePostal )
 		{
 			if ( is_bouchon )
@@ -40,11 +51,23 @@ public class DbFacade
 					
 		}
 
+
+		// FONCTION BOUCHON
 		String retrieve_dept_by_code_bouchon ( Integer codePostal )
-		{
-			return "AIN" ;
-		}
-		
+        {
+            // on met quelques valeurs juste pour rendre crédible quelques tests
+            String[] departement = { "ZERO", "AIN", "AISNE", "ALLIER" };
+            if ( ( codePostal > 0) && ( codePostal < 4) )
+            {
+                    return departement[codePostal];
+            }
+            else
+            {
+                    return "INCONNU" ;
+            }
+        }
+
+		// FONCTION ACCEDANT Au SGBD MYSQL
 		String retrieve_dept_by_code_mysql ( Integer codePostal )
 		{
 			// on met quelques valeurs juste pour rendre crÃ©dible quelques tests
@@ -118,5 +141,47 @@ public class DbFacade
 	          return the_result + the_error ;
 	
 	  }
+		
+		boolean Is_Db_Accessible ()
+		{
+	        String the_result = "vide" ;
+	        String the_error = "" ;
+	          
+			     try
+			     {
+			          // connecting to database
+			          Connection con = null;
+			          
+			    	 Class.forName("com.mysql.jdbc.Driver");
+			    	 con = DriverManager.getConnection
+	            		 	// ("jdbc:mysql://localhost:3306/monagenda","prof","cavapasnon") ;
+	                  		("jdbc:mysql://localhost:3306/" + myDbBase, myDbUser, myDbPassword) ;
+			    	 return true ;
+		          }
+		          catch (SQLException e)
+		          {
+		
+		                 // throw new ServletException("Servlet Could not display records.", e);
+		                 the_error = "E001 : probleme en retour de JDBC (cas fréquents : nom de base et/ou identifiant et/ou mot de passe erronés). Avez-vous notamment changé le mot de passe par défaut dans le fichier DbFacade.java par celui remis par l'enseignant ?";
+		
+		                 // Dans le cas d'une exécution locale (sur machine de dév)
+		                 // avec la commande en ligne suivante :
+		                 // > mvn gwt:run
+		                 // (à exécuter dans le répertoire racine contenant le pom.xml du projet)
+		                 // l'exception SQLException sera levée.
+		                 // On peut donc mettre un ''bouchon'' dans cette section
+		                 // en simulant un retour comme s'il venait de la base de données.
+		                  return false ;		                 
+		
+		          }
+		          catch (ClassNotFoundException e)
+		          {
+		                // throw new ServletException("JDBC Driver not found.", e);
+		                  the_error = "E002 : pilote JDBC non trouvé (ajouter le jar mysql-connector-java dans votre projet)" ;
+		                  return false ;
+		          }
+		}
+
+
 }
 
