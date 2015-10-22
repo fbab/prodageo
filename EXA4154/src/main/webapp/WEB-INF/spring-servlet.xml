@@ -13,7 +13,8 @@
 		
 	<!-- selects a static view for rendering without the need for an 
 	    explicit controller -->
-     	<mvc:view-controller path="/" view-name="home"/>
+     	<!-- <mvc:view-controller path="/" view-name="home"/> -->
+     	<mvc:view-controller path="/spring" view-name="home"/>
 
 	<bean id="viewResolver"
 	    class="org.springframework.web.servlet.view.UrlBasedViewResolver">
