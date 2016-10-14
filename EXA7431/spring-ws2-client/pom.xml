@@ -132,16 +132,34 @@
                 </execution>
             </executions>
             <configuration>
+		<!-- Needed with JAXP 1.5 -->
+		<vmArgs>
+        	  <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+		</vmArgs>
                 <wsdlDirectory>${basedir}/src/main/resources/wsdl</wsdlDirectory>
             </configuration>
         </plugin>
+
+<!--
+<plugin>
+  <groupId>org.jvnet.jax-ws-commons</groupId>
+  <artifactId>jaxws-maven-plugin</artifactId>
+  <version>2.3</version>
+  <configuration>
+    <vmArgs>
+        <vmArg>-Djavax.xml.accessExternalSchema=all</vmArg>
+    </vmArgs>
+	  </configuration>
+</plugin>
+-->
+
 <plugin>
   <groupId>org.apache.maven.plugins</groupId>
   <artifactId>maven-compiler-plugin</artifactId>
   <version>2.3.1</version>
   <configuration>
-    <source>1.5</source>
-    <target>1.5</target>
+    <source>1.6</source>
+    <target>1.6</target>
   </configuration>
 </plugin>
 </plugins>
