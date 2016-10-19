@@ -71,11 +71,36 @@
                     </execution>
                 </executions>
                 <configuration>
+			
+    <!-- http://www.mojohaus.org/jaxb2-maven-plugin/Documentation/v2.2/filters.html -->			
+    <!-- pour exclure les fichiers de SCM du traitement XJC -->
+    <xjcSourceExcludeFilters>
+        <filter implementation="org.codehaus.mojo.jaxb2.shared.filters.pattern.PatternFileFilter">
+            <patterns>
+                <pattern>\.svn.*</pattern>
+                <pattern>\.svn</pattern>
+            </patterns>
+        </filter>
+    </xjcSourceExcludeFilters>
+			
+    <!-- d'autres filtres mais applicable à SchemaGenerator -->
+    <!--
+                <schemaSourceExcludeFilters>
+                    <noJaxbIndex implementation="org.codehaus.mojo.jaxb2.shared.filters.pattern.PatternFileFilter">
+                        <patterns>
+                            <pattern>jaxb\.index</pattern>
+                            <pattern>\.txt</pattern>
+                            <pattern>\.svn.*</pattern>
+                        </patterns>
+                    </noJaxbIndex>
+                </schemaSourceExcludeFilters>
+   -->		
+			
                     <sources>
-						<target>2.2</target>
-						
+			<target>2.2</target>
                         <source>src/main/resources/xsd</source>
                     </sources>
+			
                 </configuration>
             </plugin>
 			
