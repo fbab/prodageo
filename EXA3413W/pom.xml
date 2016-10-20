@@ -5,8 +5,8 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.memorynotfound.spring.ws</groupId>
-    <artifactId>produce-soap-web-service</artifactId>
+    <groupId>com.memorynotfound.spring.ws.wsaddressing</groupId>
+    <artifactId>replyto-faultto</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>SPRING-WS - ${project.artifactId}</name>
     <url>http://memorynotfound.com</url>
@@ -33,6 +33,19 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+
+        <dependency>		
+             <groupId>org.apache.httpcomponents</groupId>		
+             <artifactId>httpclient</artifactId>		
+             <version>4.5.2</version>		
+         </dependency>		
+         <dependency>		
+             <groupId>javax.servlet</groupId>		
+             <artifactId>javax.servlet-api</artifactId>		
+             <version>3.1.0</version>		
+         </dependency>
+
+
     </dependencies>
 
     <build>
