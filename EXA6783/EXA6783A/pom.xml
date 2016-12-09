@@ -86,7 +86,7 @@
 		<profile>
 			<id>Example</id>
 			<properties>
-				<target.main.class>org.apache.camel.example.jmstofile.CamelJmsToFileExample</target.main.class>
+				<target.main.class>org.apache.camel.example.tojms.CamelToJms</target.main.class>
 			</properties>
 		</profile>
 	</profiles>
@@ -98,7 +98,7 @@
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
 				<configuration>
-					<mainClass>${target.main.class}</mainClass>
+					<mainClass>org.apache.camel.example.tojms.CamelToJms</mainClass>
 					<includePluginDependencies>false</includePluginDependencies>
 				</configuration>
 			</plugin>
