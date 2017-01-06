@@ -43,7 +43,7 @@ public final class CamelToJms {
         // ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("vm://localhost?broker.persistent=false");
 
 	// to understand vm:, tcp:, cf http://activemq.apache.org/configuring-transports.html
-        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://casisbelli:3700") ;
+        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616") ;
         // Note we can explicit name the component
         // context.addComponent("proxy-jms-broker", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));a
 
