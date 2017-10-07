@@ -92,6 +92,21 @@
 						</goals>
 					</execution>
 				</executions>
+				<!-- schemaDirectory - Specifies the schema directory,
+						src/main/resources where cars.xsd is located by default. -->
+				<!-- generatePackage - The generated classes will all be placed under this Java package (XJC's -p option),
+ 					unless otherwise specified in the schemas. 
+					If left unspecified, the package will be derived from the schemas only.
+					In this project, the package can be derived from XML schema since it is explicitly written
+					<xs:schema targetNamespace="http://www.theserverlabs.com/namespaces/cars" ...
+				-->
+				<!-- generateDirectory - 
+					default : ${project.build.directory}/generated-sources/xjc
+					In this project, Java files are generated in 
+					 target/generated-sources/xjc/com/theserverlabs/namespaces/cars/
+					with files
+					 Car.java  Cars.java  ObjectFactory.java  package-info.java
+				-->
                 <configuration>
                     <extension>true</extension>
                 </configuration>
