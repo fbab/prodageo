@@ -61,6 +61,7 @@ public class CarsResource {
      * @param carid the ID of the Car
      * @return a CarResource object that processes the request
      */
+    // no HTTP verb => getCar is a method delegating to sub-resource CarResource (that will handle the different verbs)
     @Path("{carid}/")
     public CarResource getCar(@PathParam("carid") String carid) {
         System.out.println("getting here");
