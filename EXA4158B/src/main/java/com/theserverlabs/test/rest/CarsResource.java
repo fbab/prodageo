@@ -16,8 +16,8 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import javax.xml.bind.JAXBElement;
 
-
-
+// CarsResource is a root resource
+// For more information on root resources, cf http://prodageo.insa-rouen.fr/wiki/pmwiki.php?n=CASI.EXA4158rootsub
 @Path("cars")
 public class CarsResource {
 
