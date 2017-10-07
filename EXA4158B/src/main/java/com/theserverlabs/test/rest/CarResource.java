@@ -17,6 +17,9 @@ import javax.xml.bind.JAXBElement;
  *
  * @author Kevin McCormack
  */
+
+// no @Path annotation in front of CarResource => CarResource is a sub-resource (since it has verbs in front of some of its methods)
+// For more information on sub-resources, cf http://prodageo.insa-rouen.fr/wiki/pmwiki.php?n=CASI.EXA4158rootsub
 public class CarResource {
 
     @Context private UriInfo uriInfo;
