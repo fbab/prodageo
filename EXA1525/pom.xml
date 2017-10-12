@@ -114,7 +114,7 @@
 						<mainClass>org.h2.tools.Shell</mainClass>
 						<arguments>
 							<argument>-url</argument>
-							<argument>jdbc:h2:/tmp/data/test</argument>
+							<argument>jdbc:h2:/tmp/data/test;AUTO_SERVER=TRUE</argument> <!-- AUTO_SERVER=TRUE : cf http://www.h2database.com/html/features.html#auto_mixed_mode -->
 							<argument>-user</argument>
 							<argument>sa</argument>
 							<argument>-password</argument>
