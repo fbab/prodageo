@@ -37,4 +37,46 @@
 </dependency>
 
   </dependencies>
+  
+  
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<configuration>
+				<archive>
+					<manifestEntries>
+						<Implementation-Version>${pom.version}</Implementation-Version>
+						<implementation-Build>${buildNumber}</implementation-Build>
+					</manifestEntries>
+					<manifest>
+						<mainClass>org.prodageo.prof.orm.App</mainClass>
+						<packageName>org.prodageo.prof.orm</packageName>
+					</manifest>
+				</archive>
+			</configuration>
+		</plugin>
+
+	
+		<plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>exec-maven-plugin</artifactId>
+			<version>1.1</version>
+			<executions>
+				<execution>
+					<goals>
+					<goal>exec</goal>
+					</goals>
+				</execution>
+			</executions>
+			<configuration>
+				<mainClass>org.prodageo.prof.orm.App</mainClass>
+			</configuration>
+		</plugin>	
+
+	</plugins>		
+</build>  
+  
+  
 </project>

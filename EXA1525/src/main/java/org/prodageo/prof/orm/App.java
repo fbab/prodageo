@@ -1,5 +1,23 @@
 package org.prodageo.prof.orm;
 
+// import com.j256.ormlite.field.DatabaseField;
+
+import org.prodageo.prof.orm.User ;
+
+
+import com.j256.ormlite.db.DatabaseType;
+import com.j256.ormlite.db.DatabaseTypeUtils;
+import com.j256.ormlite.logger.Logger;
+import com.j256.ormlite.logger.LoggerFactory;
+import com.j256.ormlite.misc.IOUtils;
+import com.j256.ormlite.support.BaseConnectionSource;
+import com.j256.ormlite.support.ConnectionSource;
+import com.j256.ormlite.support.DatabaseConnection;
+import com.j256.ormlite.support.DatabaseConnectionProxyFactory;
+import com.j256.ormlite.jdbc.JdbcConnectionSource;
+
+import com.j256.ormlite.dao.DaoManager ;
+import com.j256.ormlite.dao.Dao ;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,6 +28,7 @@ import org.h2.store.fs.FileUtils;
 import org.h2.tools.Script;
 import org.h2.tools.DeleteDbFiles;
 import org.h2.tools.RunScript;
+
 
 
 /**
@@ -37,10 +56,30 @@ import org.h2.tools.RunScript;
     public static void main(String... args) throws Exception {
         DeleteDbFiles.execute("./data", "test", true);
         Class.forName("org.h2.Driver");
-        Connection conn = DriverManager.getConnection("jdbc:h2:./data/test", "sa", "");
+		String databaseUrl = "jdbc:h2:./data/test" ;
+        Connection conn = DriverManager.getConnection(databaseUrl, "sa", "");
         Statement stat = conn.createStatement();
         stat.execute("CREATE TABLE TEST(ID INT PRIMARY KEY, NAME VARCHAR)");
         stat.execute("INSERT INTO TEST VALUES(1, 'Hello'), (2, 'World');");
+
+
+				
+		ConnectionSource connectionSource = new JdbcConnectionSource(databaseUrl);
+		((JdbcConnectionSource)connectionSource).setUsername("spark");
+		((JdbcConnectionSource)connectionSource).setPassword("spark");
+
+		
+		Dao<User,String> userDao = DaoManager.createDao(connectionSource, User.class);		
+		
+		String username = "Tic TAC" ;
+		String email = "tic@tac.com" ;
+		
+        User user = new User();
+        user.setUsername(username);
+        user.setEmail(email);
+                
+        userDao.create(user);		
+		
         stat.close();
         conn.close();
         System.out.println("Compacting...");
