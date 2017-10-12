@@ -3,7 +3,9 @@ package org.prodageo.prof.orm;
 // import com.j256.ormlite.field.DatabaseField;
 
 import org.prodageo.prof.orm.User ;
+import org.prodageo.prof.orm.Shoe ;
 
+import java.util.*; // List
 
 import com.j256.ormlite.db.DatabaseType;
 import com.j256.ormlite.db.DatabaseTypeUtils;
@@ -77,10 +79,14 @@ import org.h2.tools.RunScript;
 		((JdbcConnectionSource)connectionSource).setUsername("sa");
 		((JdbcConnectionSource)connectionSource).setPassword("");
 
+		// INITIALISATION DES TABLES DANS LA BASE
 		// http://ormlite.com/javadoc/ormlite-core/doc-files/ormlite_2.html#TableUtils
 		TableUtils.createTableIfNotExists(connectionSource, User.class);
+		TableUtils.createTableIfNotExists(connectionSource, Shoe.class);		
 
 		Dao<User,Integer> userDao = DaoManager.createDao(connectionSource, User.class);		
+		Dao<Shoe,Integer> shoeDao = DaoManager.createDao(connectionSource, Shoe.class);				
+		Dao<Shop,Integer> shopDao = DaoManager.createDao(connectionSource, Shop.class);						
 		
 		String username = "Tic TAC" ;
 		String email = "tic@tac.com" ;
@@ -97,7 +103,15 @@ import org.h2.tools.RunScript;
 		
 		userDao.update(user);
 		
+		// ONE (User) TO MANY (Shoes)
+		Shoe myshoe = new Shoe();
+		myshoe.setSize(36) ;
+		myshoe.setModelName ( "Crocs" ) ;
+		myshoe.setUser ( user ) ;
 		
+		shoeDao.create(myshoe);
+		
+		String mystring = user.listShoes() ;
 		
 		/*
         stat.close();
@@ -106,7 +120,39 @@ import org.h2.tools.RunScript;
         compact("./data", "test", "sa", "");
 		*/
 		connectionSource.close();
-        System.out.println("Done.");
+		
+		
+        System.out.println( "Shoes list : " + mystring);
+		
+	
+		// retrieve a user with shoes from database by using his name
+		// query for all accounts that have that password
+		String USERNAME_FIELD_NAME = "username"; 
+		
+		List<User> usersList = userDao.queryBuilder().where()
+         .eq("username", "Tic TAC2").query();
+	
+		for ( User ticUser : usersList )
+		{
+			System.out.println( "1- " + ticUser.getUsername() + " :" + ticUser.listShoes() + "." ) ;
+			Shoe myshoe2 = new Shoe();
+			myshoe2.setSize(36) ;
+			myshoe2.setModelName ( "Nouilles" ) ;
+			myshoe2.setUser ( ticUser ) ;
+			
+			// the behaviour is correct if user.addShoe is called within Shoe.setUser
+			System.out.println( "2- " + ticUser.getUsername() + " :" + ticUser.listShoes() + ".\r\n" ) ;
+		}
+		
+		// MANY (Users) TO MANY (Shops)
+		Shop myshop = new Shop();
+		myshop.setShopname ( "Promod" ) ;
+		myshop.addFan ( user ) ;
+		
+		shopDao.create(myshop);		
+		
+		// user.add (
+		
     }
 
     /**
