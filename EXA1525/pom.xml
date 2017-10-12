@@ -66,7 +66,7 @@
 			<executions>
 				<execution>
 					<goals>
-					<goal>exec</goal>
+						<goal>exec</goal>
 					</goals>
 				</execution>
 			</executions>
@@ -75,6 +75,67 @@
 			</configuration>
 		</plugin>	
 
+		
+		<plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>exec-maven-plugin</artifactId>
+			<version>1.1</version>
+			<executions>
+				<!-- mvn exec:java => Pour executer l'application construite par ce POM  -->
+				<execution>
+					<goals>
+						<goal>java</goal>
+					</goals>
+					<configuration>
+						<mainClass>org.prodageo.prof.orm.App</mainClass>
+					</configuration>
+				</execution>
+			
+				<!-- mvn exec:java@h2 => Pour executer des utilitaires (ici, une console en mode console de la base H2)  -->
+				<execution>
+					<id>h2</id>
+					<goals>
+						<goal>java</goal>
+					</goals>
+					<!-- 					<phase></phase> -->
+					<configuration>
+					<!--
+						<executable>echo</executable>
+						<arguments>
+							<argument>foooooo</argument>
+						</arguments>
+					-->
+						<!--
+							http://www.h2database.com/html/tutorial.html#shell_tool
+							https://stackoverflow.com/questions/14282924/connect-remotely-to-an-h2-database-using-a-java-application
+							
+							 java -cp /tmp/maven/com/h2database/h2/1.4.196/h2*.jar org.h2.tools.Shell -url "jdbc:h2:/tmp/data/test" -user "sa" -password ""
+						-->
+						<mainClass>org.h2.tools.Shell</mainClass>
+						<arguments>
+							<argument>-url</argument>
+							<argument>jdbc:h2:/tmp/data/test</argument>
+							<argument>-user</argument>
+							<argument>sa</argument>
+							<argument>-password</argument>
+							<argument></argument>							
+						</arguments>
+						<!--
+						<systemProperties>
+							<systemProperty>
+								<key>url</key>
+								<value>"jdbc:h2:/tmp/data/test"</value>
+							</systemProperty>
+						</systemProperties>
+						-->
+					</configuration>
+					
+				</execution>			
+
+			</executions>					
+
+		</plugin>
+		
 	</plugins>		
 </build>  
   
