@@ -86,17 +86,19 @@ import org.h2.tools.RunScript;
 		TableUtils.createTableIfNotExists(connectionSource, Shop.class);				
 		// TableUtils.createTableIfNotExists(connectionSource, UserShop.class);	 // TODO : manyToMana					
 
+/*
+// TODO : çà marche sans DAO ??? 
 		Dao<User,Integer> userDao = DaoManager.createDao(connectionSource, User.class);		
 		Dao<Shoe,Integer> shoeDao = DaoManager.createDao(connectionSource, Shoe.class);				
 		Dao<Shop,Integer> shopDao = DaoManager.createDao(connectionSource, Shop.class);						
-
+*/
 	    
 		// MANY (Users) TO MANY (Shops)
 		Shop myshop = new Shop();
 		myshop.setShopname ( "Promod" ) ;
 		// myshop.addFan ( user ) ;
 		
-		shopDao.create(myshop);		    
+		// shopDao.create(myshop);		// TODO : çà marche sans DAO ???    
 	    
 	    
 		String username = "Tic TAC" ;
@@ -106,13 +108,13 @@ import org.h2.tools.RunScript;
         user.setUsername(username);
         user.setEmail(email);
         user.setPreferredShop(myshop);
-        userDao.create(user);
+        // userDao.create(user); // TODO : çà marche sans DAO ??? 
 
 
         user.setUsername(username + "2");
         user.setEmail(email + "2");
 		
-		userDao.update(user);
+		// userDao.update(user); // TODO : çà marche sans DAO ??? 
 		
 		// ONE (User) TO MANY (Shoes)
 		Shoe myshoe = new Shoe();
@@ -120,7 +122,7 @@ import org.h2.tools.RunScript;
 		myshoe.setModelName ( "Crocs" ) ;
 		myshoe.setUser ( user ) ;
 		
-		shoeDao.create(myshoe);
+		// shoeDao.create(myshoe); // TODO : çà marche sans DAO ??? 
 		
 		String mystring = user.listShoes() ;
 		
@@ -138,8 +140,10 @@ import org.h2.tools.RunScript;
 	
 		// retrieve a user with shoes from database by using his name
 		// query for all accounts that have that password
-		String USERNAME_FIELD_NAME = "username"; 
-		
+		String USERNAME_FIELD_NAME = "username";
+
+// TODO : çà marche sans DAO ??? 	    
+/*
 		List<User> usersList = userDao.queryBuilder().where()
          .eq("username", "Tic TAC2").query();
 	
@@ -154,10 +158,9 @@ import org.h2.tools.RunScript;
 			// the behaviour is correct if user.addShoe is called within Shoe.setUser
 			System.out.println( "2- " + ticUser.getUsername() + " :" + ticUser.listShoes() + ".\r\n" ) ;
 		}
-		
+*/		
 	
 		
-		// user.add (
 		
     }
 
