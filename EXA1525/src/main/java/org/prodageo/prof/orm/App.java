@@ -153,6 +153,8 @@ import org.h2.tools.RunScript;
 			myshoe2.setModelName ( "Nouilles" ) ;
 			myshoe2.setUser ( ticUser ) ;
 			
+			shoeDao.create(myshoe2); // TODO : est-ce utile ???
+			
 			// the behaviour is correct if user.addShoe is called within Shoe.setUser
 			System.out.println( "2- " + ticUser.getUsername() + " :" + ticUser.listShoes() + ".\r\n" ) ;
 		}
