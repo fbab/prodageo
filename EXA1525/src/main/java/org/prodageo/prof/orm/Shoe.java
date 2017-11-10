@@ -18,7 +18,7 @@ public class Shoe {
     @DatabaseField
     private int size;
 
-    @DatabaseField (canBeNull = false, foreign = true)
+    @DatabaseField (canBeNull = false, foreign = true) // TODO : que se passerait-il si User.shoes n'était @ForeignCollectionField : est-ce que cela plante à la compil ?
     private User user ;
     
     public Shoe() {
