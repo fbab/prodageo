@@ -106,13 +106,13 @@ import org.h2.tools.RunScript;
         user.setUsername(username);
         user.setEmail(email);
         user.setPreferredShop(myshop);
-        // userDao.create(user); // TODO : çà marche sans DAO ??? 
+         userDao.create(user); 
 
 
         user.setUsername(username + "2");
         user.setEmail(email + "2");
 		
-		// userDao.update(user); // TODO : çà marche sans DAO ??? 
+		 userDao.update(user);
 		
 		// ONE (User) TO MANY (Shoes)
 		Shoe myshoe = new Shoe();
@@ -140,8 +140,8 @@ import org.h2.tools.RunScript;
 		// query for all accounts that have that password
 		String USERNAME_FIELD_NAME = "username";
 
-// TODO : çà marche sans DAO ??? 	    
-/*
+	    
+
 		List<User> usersList = userDao.queryBuilder().where()
          .eq("username", "Tic TAC2").query();
 	
@@ -156,7 +156,7 @@ import org.h2.tools.RunScript;
 			// the behaviour is correct if user.addShoe is called within Shoe.setUser
 			System.out.println( "2- " + ticUser.getUsername() + " :" + ticUser.listShoes() + ".\r\n" ) ;
 		}
-*/		
+		
 	
 		
 		
