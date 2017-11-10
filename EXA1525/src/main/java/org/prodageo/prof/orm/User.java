@@ -48,6 +48,14 @@ public class User {
     public void setUsername(String username) {
         this.username = username;
     }
+	
+    public String getPreferredShop() {    
+        return this.preferredShop;
+    }
+    
+    public void setPreferredShop(String preferredShop) {
+        this.preferredShop = preferredShop;
+    }
     
     public String getEmail() {
         return email;
