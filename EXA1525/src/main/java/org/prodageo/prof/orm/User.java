@@ -49,11 +49,11 @@ public class User {
         this.username = username;
     }
 	
-    public String getPreferredShop() {    
+    public Shop getPreferredShop() {    
         return this.preferredShop;
     }
     
-    public void setPreferredShop(String preferredShop) {
+    public void setPreferredShop(Shop preferredShop) {
         this.preferredShop = preferredShop;
     }
     
