@@ -24,8 +24,9 @@ public class User {
 	/* pourquoi accepte-t-on les annotations ? car elles peuvent être retirées du code si on le décide */
 	Collection<Shoe> shoes ;
 
-	@ForeignCollectionField(eager = false)
-    private Collection<Shop> preferredShops ;
+	// @ForeignCollectionField(eager = false) : DO NOT WORK : many-to-many is not implemented in ormlite
+	@DatabaseField (canBeNull = false, foreign = true)
+        private Shop preferredShop ;
     
 	// Constraints : ORMLite needs a no-arg constructor !!!
     public User() {
