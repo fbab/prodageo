@@ -159,6 +159,12 @@ import org.h2.tools.RunScript;
 			System.out.println( "2- " + ticUser.getUsername() + " :" + ticUser.listShoes() + ".\r\n" ) ;
 		}
 		
+		Shoe myshoe3 = new Shoe();
+			myshoe3.setSize(36) ;
+			myshoe3.setModelName ( "BenSimon" ) ;
+			myshoe3.setUser ( user ) ;
+			
+			// shoeDao.create(myshoe2); // TODO : est-ce utile ???
 	
 		
 		
