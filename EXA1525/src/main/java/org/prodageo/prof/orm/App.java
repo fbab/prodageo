@@ -96,7 +96,7 @@ import org.h2.tools.RunScript;
 		myshop.setShopname ( "Promod" ) ;
 		// myshop.addFan ( user ) ;
 		
-		// shopDao.create(myshop);		// TODO : çà marche sans DAO ???    
+		 shopDao.create(myshop);		  
 	    
 	    
 		String username = "Tic TAC" ;
