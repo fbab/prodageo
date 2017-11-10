@@ -86,12 +86,10 @@ import org.h2.tools.RunScript;
 		TableUtils.createTableIfNotExists(connectionSource, Shop.class);				
 		// TableUtils.createTableIfNotExists(connectionSource, UserShop.class);	 // TODO : manyToMana					
 
-/*
-// TODO : çà marche sans DAO ??? 
+
 		Dao<User,Integer> userDao = DaoManager.createDao(connectionSource, User.class);		
 		Dao<Shoe,Integer> shoeDao = DaoManager.createDao(connectionSource, Shoe.class);				
 		Dao<Shop,Integer> shopDao = DaoManager.createDao(connectionSource, Shop.class);						
-*/
 	    
 		// MANY (Users) TO MANY (Shops)
 		Shop myshop = new Shop();
