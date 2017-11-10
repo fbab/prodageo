@@ -89,14 +89,23 @@ import org.h2.tools.RunScript;
 		Dao<User,Integer> userDao = DaoManager.createDao(connectionSource, User.class);		
 		Dao<Shoe,Integer> shoeDao = DaoManager.createDao(connectionSource, Shoe.class);				
 		Dao<Shop,Integer> shopDao = DaoManager.createDao(connectionSource, Shop.class);						
+
+	    
+		// MANY (Users) TO MANY (Shops)
+		Shop myshop = new Shop();
+		myshop.setShopname ( "Promod" ) ;
+		// myshop.addFan ( user ) ;
 		
+		shopDao.create(myshop);		    
+	    
+	    
 		String username = "Tic TAC" ;
 		String email = "tic@tac.com" ;
 		
         User user = new User();
         user.setUsername(username);
         user.setEmail(email);
-                
+        user.setPreferredShop(myshop);
         userDao.create(user);
 
 
@@ -146,12 +155,7 @@ import org.h2.tools.RunScript;
 			System.out.println( "2- " + ticUser.getUsername() + " :" + ticUser.listShoes() + ".\r\n" ) ;
 		}
 		
-		// MANY (Users) TO MANY (Shops)
-		Shop myshop = new Shop();
-		myshop.setShopname ( "Promod" ) ;
-		myshop.addFan ( user ) ;
-		
-		shopDao.create(myshop);		
+	
 		
 		// user.add (
 		
