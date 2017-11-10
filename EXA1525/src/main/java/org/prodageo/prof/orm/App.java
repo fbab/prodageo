@@ -84,7 +84,7 @@ import org.h2.tools.RunScript;
 		TableUtils.createTableIfNotExists(connectionSource, User.class);
 		TableUtils.createTableIfNotExists(connectionSource, Shoe.class);		
 		TableUtils.createTableIfNotExists(connectionSource, Shop.class);				
-		TableUtils.createTableIfNotExists(connectionSource, UserShop.class);						
+		// TableUtils.createTableIfNotExists(connectionSource, UserShop.class);	 // TODO : manyToMana					
 
 		Dao<User,Integer> userDao = DaoManager.createDao(connectionSource, User.class);		
 		Dao<Shoe,Integer> shoeDao = DaoManager.createDao(connectionSource, Shoe.class);				
