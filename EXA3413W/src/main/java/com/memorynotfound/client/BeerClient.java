@@ -17,9 +17,9 @@ public class BeerClient extends WebServiceGatewaySupport {
         ActionCallback callback = new ActionCallback(
                 new URI("http://memorynotfound.com/getBeerRequest"));
         callback.setReplyTo(new EndpointReference(
-                new URI("http://localhost:8080/response")));
+                new URI("http://localhost:9080/response")));
         callback.setFaultTo(new EndpointReference(
-                new URI("http://localhost:8080/fault")));
+                new URI("http://localhost:9081/fault")));
 
         getWebServiceTemplate().marshalSendAndReceive(request, callback);
     }
