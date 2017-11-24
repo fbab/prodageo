@@ -106,7 +106,7 @@ import org.h2.tools.RunScript;
         user.setUsername(username);
         user.setEmail(email);
         user.setPreferredShop(myshop);
-         userDao.create(user); 
+        userDao.create(user); 
 
 
         user.setUsername(username + "2");
@@ -162,10 +162,19 @@ import org.h2.tools.RunScript;
 		Shoe myshoe3 = new Shoe();
 			myshoe3.setSize(36) ;
 			myshoe3.setModelName ( "BenSimon" ) ;
-			myshoe3.setUser ( user ) ;
+			// myshoe3.setUser ( user ) ;
 	
-		user.addShoe ( myshoe3 ) ; // expected Tic Tac : Crocs => BenSimone
-		shoeDao.create(myshoe3); // TODO : est-ce utile ???
+		user.addShoe ( myshoe3 ) ; // expected Tic Tac 2 : Crocs => BenSimone
+
+		Shoe myshoe4 = new Shoe();
+			myshoe4.setSize(38) ;
+			myshoe4.setModelName ( "Minelli" ) ;
+			// myshoe3.setUser ( user ) ;
+	
+		// user.addShoe ( myshoe4 ) ; // what is the user of shoe4 if not set ?
+
+	    
+	    shoeDao.create(myshoe3); // TODO : est-ce utile ???
 		
     }
 
