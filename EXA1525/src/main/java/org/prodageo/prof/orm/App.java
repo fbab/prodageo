@@ -171,7 +171,12 @@ import org.h2.tools.RunScript;
 			myshoe4.setModelName ( "Minelli" ) ;
 			// myshoe3.setUser ( user ) ;
 	
-		// user.addShoe ( myshoe4 ) ; // what is the user of shoe4 if not set ?
+		user.addShoe ( myshoe4 ) ; // if commented, the user of shoe4 if not set => ERROR below
+	        /* ERROR
+			Unable to run insert stmt on object org.prodageo.prof.orm.Shoe@31ae47b: 
+			INSERT INTO `shoes` (`modelname` ,`size` ,`user_id` ) VALUES (?,?,?): 
+			NULL not allowed for column "USER_ID"; SQL statement:
+		*/
 
 	    
 	    shoeDao.create(myshoe3); // TODO : est-ce utile ???
