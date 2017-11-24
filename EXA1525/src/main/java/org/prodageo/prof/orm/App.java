@@ -163,10 +163,9 @@ import org.h2.tools.RunScript;
 			myshoe3.setSize(36) ;
 			myshoe3.setModelName ( "BenSimon" ) ;
 			myshoe3.setUser ( user ) ;
-			
-			// shoeDao.create(myshoe2); // TODO : est-ce utile ???
 	
 		user.addShoe ( myshoe3 ) ; // expected Tic Tac : Crocs => BenSimone
+		shoeDao.create(myshoe2); // TODO : est-ce utile ???
 		
     }
 
