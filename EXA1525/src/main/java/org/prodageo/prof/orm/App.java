@@ -165,7 +165,7 @@ import org.h2.tools.RunScript;
 			myshoe3.setUser ( user ) ;
 	
 		user.addShoe ( myshoe3 ) ; // expected Tic Tac : Crocs => BenSimone
-		shoeDao.create(myshoe2); // TODO : est-ce utile ???
+		shoeDao.create(myshoe3); // TODO : est-ce utile ???
 		
     }
 
