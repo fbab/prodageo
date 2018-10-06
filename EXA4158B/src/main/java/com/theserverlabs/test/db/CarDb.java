@@ -35,7 +35,7 @@ public class CarDb {
 		p306.setMake("Peugeot");
 		p306.setModel("306");
 		p306.setColor("blue");
-		addCar(p306);
+		addCar(p306); // addCar set the id of the p306 Car object
 		Car clio = new Car();
 		clio.setMake("Renault");
 		clio.setModel("Clio");
