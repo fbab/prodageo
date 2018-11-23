@@ -47,11 +47,9 @@ public final class CamelToJms {
         // Note we can explicit name the component
         // context.addComponent("proxy-jms-broker", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));a
 
-	// kekasi4equipe designe l'instance du composant sur le client
-	// cette instance communique avec le serveur MOM ecoutant le port "tcp://casisbelli:3700" 
-	// ce port est relie a un broket nomme kekasi
-	// (cf balise /bean/osgi:service/osgi:properties/entry@value in kekasi_broker.xml deploye sur smx)
-        context.addComponent("cnx2kekasiBroker", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
+	// cnx2jms is a local name (an alias) of the broker that is listening on "tcp://localhost:61616"
+	// the name on the server is amq-broker by default for broker started by ActiveMQ in ServiceMix
+	    context.addComponent("cnx4jms", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
         
 // Camel template - a handy class for kicking off exchanges
         ProducerTemplate template = context.createProducerTemplate();
@@ -62,9 +60,9 @@ public final class CamelToJms {
         for (int i = 0; i < 10; i++) {
             // template.sendBody("proxy-jms-broker:queue:equipe", "Test Message de mon equipe : " + i);
 	    // queue
-            template.sendBody("cnx2kekasiBroker:queue:equipe2queue", "Test Queue Message de mon equipe : " + i);
+            template.sendBody("cnx4jms:queue:equipe2queue", "Test Queue Message de mon equipe : " + i);
 	    // topic
-            template.sendBody("cnx2kekasiBroker:topic:equipe2topic", "Test Topic Message de mon equipe : " + i);
+            template.sendBody("cnx4jms:topic:equipe2topic", "Test Topic Message de mon equipe : " + i);
         }
         // wait a bit and then stop
         Thread.sleep(1000);
