@@ -44,6 +44,8 @@ public final class CamelJmsToFileExample {
 	// to understand vm:, tcp:, cf http://activemq.apache.org/configuring-transports.html
         ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
         // Note we can explicit name the component
+	// cnx2jms is a local name (an alias) of the broker that is listening on "tcp://localhost:61616"
+	// the name on the server is amq-broker by default for broker started by ActiveMQ in ServiceMix
         context.addComponent("cnx2jms", JmsComponent.jmsComponentAutoAcknowledge(connectionFactory));
         
 	context.addRoutes(new RouteBuilder() {
