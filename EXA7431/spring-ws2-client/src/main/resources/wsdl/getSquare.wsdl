@@ -50,7 +50,7 @@
   </wsdl:binding>
   <wsdl:service name="SquareServiceService">
     <wsdl:port binding="tns:SquareServiceSoap11" name="SquareServiceSoap11">
-      <soap:address location="http://127.0.0.1:8080/squareService"/>
+      <soap:address location="http://localhost:9998/squareService"/>
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>
