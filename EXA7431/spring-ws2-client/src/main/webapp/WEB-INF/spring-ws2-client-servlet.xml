@@ -30,13 +30,14 @@
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:prefix="/WEB-INF/views/" p:suffix=".jsp" />
 		
-	 	<bean id="webServiceTemplate" class="org.springframework.ws.client.core.WebServiceTemplate"
+	<bean id="webServiceTemplate" class="org.springframework.ws.client.core.WebServiceTemplate"
 		p:marshaller-ref="jaxbMarshaller"
 		p:unmarshaller-ref="jaxbMarshaller"
 		p:defaultUri="http://localhost:9998/squareService"
 		p:messageSender-ref="messageSender">
 		<constructor-arg ref="messageFactory"/>
 	</bean>
+	
 	<bean id="messageSender" class="org.springframework.ws.transport.http.CommonsHttpMessageSender"/>
 	<bean id="messageFactory" class="org.springframework.ws.soap.saaj.SaajSoapMessageFactory"/>
 	<bean id="jaxbMarshaller" class="org.springframework.oxm.jaxb.Jaxb2Marshaller"
