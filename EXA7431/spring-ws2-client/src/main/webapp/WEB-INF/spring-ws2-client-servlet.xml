@@ -33,7 +33,7 @@
 	 	<bean id="webServiceTemplate" class="org.springframework.ws.client.core.WebServiceTemplate"
 		p:marshaller-ref="jaxbMarshaller"
 		p:unmarshaller-ref="jaxbMarshaller"
-		p:defaultUri="http://localhost:8080/spring-ws2-exemplary/squareService"
+		p:defaultUri="http://localhost:9998/squareService"
 		p:messageSender-ref="messageSender">
 		<constructor-arg ref="messageFactory"/>
 	</bean>
